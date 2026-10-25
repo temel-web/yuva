@@ -1,0 +1,58 @@
+/** Every Page Essentials custom element. */
+export const PAGE_ESSENTIAL_ELEMENT_TAGS = Object.freeze([
+  "temel-action-group",
+  "temel-announcement",
+  "temel-audio-player",
+  "temel-cards",
+  "temel-comparison-cell",
+  "temel-comparison-row",
+  "temel-comparison-table",
+  "temel-content-card",
+  "temel-faq",
+  "temel-faq-item",
+  "temel-feature",
+  "temel-figure",
+  "temel-hero",
+  "temel-price",
+  "temel-pricing",
+  "temel-pricing-plan",
+  "temel-quote",
+  "temel-showcase-panel",
+  "temel-site-brand",
+  "temel-site-footer",
+  "temel-site-header",
+  "temel-site-nav",
+  "temel-stat",
+  "temel-stats",
+  "temel-step",
+  "temel-steps",
+  "temel-tabbed-showcase",
+  "temel-testimonial",
+  "temel-testimonials",
+  "temel-text-section",
+  "temel-theme-switcher",
+]);
+
+/** Elements that own a complete page band and share the block presentation contract. */
+export const PAGE_BLOCK_ELEMENT_TAGS = Object.freeze([
+  "temel-announcement",
+  "temel-beta-signup",
+  "temel-cards",
+  "temel-comparison-table",
+  "temel-faq",
+  "temel-feature",
+  "temel-hero",
+  "temel-invite-list",
+  "temel-pricing",
+  "temel-quote",
+  "temel-site-footer",
+  "temel-site-header",
+  "temel-stats",
+  "temel-steps",
+  "temel-tabbed-showcase",
+  "temel-testimonials",
+  "temel-text-section",
+]);
+
+/** Blocks presented as bars: their vertical padding is half of their inline padding. */
+export const PAGE_BAR_ELEMENT_TAGS = Object.freeze(["temel-announcement", "temel-site-header"]);

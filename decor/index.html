@@ -1,0 +1,55 @@
+<temel-page lang="en" title="Decor — Yuva" max-width="1440"
+  ><header><temel-reference href="/header.html"></temel-reference></header>
+  <main>
+    <temel-announcement
+      padding="comfortable"
+      tone="muted"
+      alignment="start"
+      width="wide"
+      spacing-before="comfortable"
+      ><p slot="text">Our spring opening hours are here. <a href="/">See what changed</a></p>
+      <temel-provenance
+        slot="provenance"
+        source="ai"
+        contribution="modified"
+        evidence="observed"
+        tool="chatgpt"
+        provider="openai"
+      ></temel-provenance></temel-announcement
+    ><temel-hero padding="comfortable" width="wide">
+      <h1 slot="heading">Decor</h1>
+      <div slot="summary">
+        <p>A pot for the sprawling plant. A mirror to catch the window. Art because you like it.</p>
+      </div>
+      <temel-provenance
+        slot="provenance:summary"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="modified"
+      ></temel-provenance>
+      <temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance></temel-hero
+    ><yuva-product-grid
+      ><temel-query path="/products/decor/" limit="8" sort="path"
+        ><template name="item"
+          ><yuva-product-card
+            ><temel-reference slot="source"></temel-reference></yuva-product-card></template
+        ><yuva-show-more slot="show-more"></yuva-show-more></temel-query
+      ><temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance
+    ></yuva-product-grid>
+    <temel-loading-boundary></temel-loading-boundary>
+  </main>
+  <footer><temel-reference href="/footer.html"></temel-reference></footer
+></temel-page>
