@@ -1,0 +1,579 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T12:00:17.191Z",
+  "title": "Design System: Yuva",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Rust / coral action",
+        "tonalRamp": [
+          "oklch(15.00% 0.16918 30.95)",
+          "oklch(26.43% 0.16918 30.95)",
+          "oklch(37.86% 0.16918 30.95)",
+          "oklch(49.29% 0.16918 30.95)",
+          "oklch(60.71% 0.16918 30.95)",
+          "oklch(72.14% 0.16918 30.95)",
+          "oklch(83.57% 0.16918 30.95)",
+          "oklch(95.00% 0.16918 30.95)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Rust / coral hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.14890 30.83)",
+          "oklch(26.43% 0.14890 30.83)",
+          "oklch(37.86% 0.14890 30.83)",
+          "oklch(49.29% 0.14890 30.83)",
+          "oklch(60.71% 0.14890 30.83)",
+          "oklch(72.14% 0.14890 30.83)",
+          "oklch(83.57% 0.14890 30.83)",
+          "oklch(95.00% 0.14890 30.83)"
+        ]
+      },
+      "accent-press": {
+        "role": "primary",
+        "displayName": "Rust / coral press",
+        "tonalRamp": [
+          "oklch(15.00% 0.12469 30.34)",
+          "oklch(26.43% 0.12469 30.34)",
+          "oklch(37.86% 0.12469 30.34)",
+          "oklch(49.29% 0.12469 30.34)",
+          "oklch(60.71% 0.12469 30.34)",
+          "oklch(72.14% 0.12469 30.34)",
+          "oklch(83.57% 0.12469 30.34)",
+          "oklch(95.00% 0.12469 30.34)"
+        ]
+      },
+      "accent-subtle": {
+        "role": "primary",
+        "displayName": "Warm / plum accent field",
+        "tonalRamp": [
+          "oklch(15.00% 0.02978 38.56)",
+          "oklch(26.43% 0.02978 38.56)",
+          "oklch(37.86% 0.02978 38.56)",
+          "oklch(49.29% 0.02978 38.56)",
+          "oklch(60.71% 0.02978 38.56)",
+          "oklch(72.14% 0.02978 38.56)",
+          "oklch(83.57% 0.02978 38.56)",
+          "oklch(95.00% 0.02978 38.56)"
+        ]
+      },
+      "accent-text": {
+        "role": "primary",
+        "displayName": "Rust / coral accent text",
+        "tonalRamp": [
+          "oklch(15.00% 0.15334 30.95)",
+          "oklch(26.43% 0.15334 30.95)",
+          "oklch(37.86% 0.15334 30.95)",
+          "oklch(49.29% 0.15334 30.95)",
+          "oklch(60.71% 0.15334 30.95)",
+          "oklch(72.14% 0.15334 30.95)",
+          "oklch(83.57% 0.15334 30.95)",
+          "oklch(95.00% 0.15334 30.95)"
+        ]
+      },
+      "background-color": {
+        "role": "neutral",
+        "displayName": "Cream / deep plum page",
+        "tonalRamp": [
+          "oklch(15.00% 0.00857 84.57)",
+          "oklch(26.43% 0.00857 84.57)",
+          "oklch(37.86% 0.00857 84.57)",
+          "oklch(49.29% 0.00857 84.57)",
+          "oklch(60.71% 0.00857 84.57)",
+          "oklch(72.14% 0.00857 84.57)",
+          "oklch(83.57% 0.00857 84.57)",
+          "oklch(95.00% 0.00857 84.57)"
+        ]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Plum / warm white text",
+        "tonalRamp": [
+          "oklch(15.00% 0.04998 317.39)",
+          "oklch(26.43% 0.04998 317.39)",
+          "oklch(37.86% 0.04998 317.39)",
+          "oklch(49.29% 0.04998 317.39)",
+          "oklch(60.71% 0.04998 317.39)",
+          "oklch(72.14% 0.04998 317.39)",
+          "oklch(83.57% 0.04998 317.39)",
+          "oklch(95.00% 0.04998 317.39)"
+        ]
+      },
+      "text-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary plum / pale orchid text",
+        "tonalRamp": [
+          "oklch(15.00% 0.06233 324.43)",
+          "oklch(26.43% 0.06233 324.43)",
+          "oklch(37.86% 0.06233 324.43)",
+          "oklch(49.29% 0.06233 324.43)",
+          "oklch(60.71% 0.06233 324.43)",
+          "oklch(72.14% 0.06233 324.43)",
+          "oklch(83.57% 0.06233 324.43)",
+          "oklch(95.00% 0.06233 324.43)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted plum / orchid text",
+        "tonalRamp": [
+          "oklch(15.00% 0.05037 328.92)",
+          "oklch(26.43% 0.05037 328.92)",
+          "oklch(37.86% 0.05037 328.92)",
+          "oklch(49.29% 0.05037 328.92)",
+          "oklch(60.71% 0.05037 328.92)",
+          "oklch(72.14% 0.05037 328.92)",
+          "oklch(83.57% 0.05037 328.92)",
+          "oklch(95.00% 0.05037 328.92)"
+        ]
+      },
+      "text-on-accent": {
+        "role": "neutral",
+        "displayName": "Action contrast",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "text-link": {
+        "role": "primary",
+        "displayName": "Rust / coral link",
+        "tonalRamp": [
+          "oklch(15.00% 0.15334 30.95)",
+          "oklch(26.43% 0.15334 30.95)",
+          "oklch(37.86% 0.15334 30.95)",
+          "oklch(49.29% 0.15334 30.95)",
+          "oklch(60.71% 0.15334 30.95)",
+          "oklch(72.14% 0.15334 30.95)",
+          "oklch(83.57% 0.15334 30.95)",
+          "oklch(95.00% 0.15334 30.95)"
+        ]
+      },
+      "text-link-hover": {
+        "role": "primary",
+        "displayName": "Deep rust / pale coral link hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.12469 30.34)",
+          "oklch(26.43% 0.12469 30.34)",
+          "oklch(37.86% 0.12469 30.34)",
+          "oklch(49.29% 0.12469 30.34)",
+          "oklch(60.71% 0.12469 30.34)",
+          "oklch(72.14% 0.12469 30.34)",
+          "oklch(83.57% 0.12469 30.34)",
+          "oklch(95.00% 0.12469 30.34)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Warm / plum hover field",
+        "tonalRamp": [
+          "oklch(15.00% 0.01878 51.96)",
+          "oklch(26.43% 0.01878 51.96)",
+          "oklch(37.86% 0.01878 51.96)",
+          "oklch(49.29% 0.01878 51.96)",
+          "oklch(60.71% 0.01878 51.96)",
+          "oklch(72.14% 0.01878 51.96)",
+          "oklch(83.57% 0.01878 51.96)",
+          "oklch(95.00% 0.01878 51.96)"
+        ]
+      },
+      "surface-active": {
+        "role": "neutral",
+        "displayName": "Warm / plum pressed field",
+        "tonalRamp": [
+          "oklch(15.00% 0.03363 46.36)",
+          "oklch(26.43% 0.03363 46.36)",
+          "oklch(37.86% 0.03363 46.36)",
+          "oklch(49.29% 0.03363 46.36)",
+          "oklch(60.71% 0.03363 46.36)",
+          "oklch(72.14% 0.03363 46.36)",
+          "oklch(83.57% 0.03363 46.36)",
+          "oklch(95.00% 0.03363 46.36)"
+        ]
+      },
+      "surface-selected": {
+        "role": "neutral",
+        "displayName": "Warm / plum selected field",
+        "tonalRamp": [
+          "oklch(15.00% 0.02978 38.56)",
+          "oklch(26.43% 0.02978 38.56)",
+          "oklch(37.86% 0.02978 38.56)",
+          "oklch(49.29% 0.02978 38.56)",
+          "oklch(60.71% 0.02978 38.56)",
+          "oklch(72.14% 0.02978 38.56)",
+          "oklch(83.57% 0.02978 38.56)",
+          "oklch(95.00% 0.02978 38.56)"
+        ]
+      },
+      "surface-input": {
+        "role": "neutral",
+        "displayName": "Light / plum input field",
+        "tonalRamp": [
+          "oklch(15.00% 0.00619 75.41)",
+          "oklch(26.43% 0.00619 75.41)",
+          "oklch(37.86% 0.00619 75.41)",
+          "oklch(49.29% 0.00619 75.41)",
+          "oklch(60.71% 0.00619 75.41)",
+          "oklch(72.14% 0.00619 75.41)",
+          "oklch(83.57% 0.00619 75.41)",
+          "oklch(95.00% 0.00619 75.41)"
+        ]
+      },
+      "surface-panel": {
+        "role": "secondary",
+        "displayName": "Orchid / plum panel",
+        "tonalRamp": [
+          "oklch(15.00% 0.03477 308.03)",
+          "oklch(26.43% 0.03477 308.03)",
+          "oklch(37.86% 0.03477 308.03)",
+          "oklch(49.29% 0.03477 308.03)",
+          "oklch(60.71% 0.03477 308.03)",
+          "oklch(72.14% 0.03477 308.03)",
+          "oklch(83.57% 0.03477 308.03)",
+          "oklch(95.00% 0.03477 308.03)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Light / plum raised field",
+        "tonalRamp": [
+          "oklch(15.00% 0.00619 75.41)",
+          "oklch(26.43% 0.00619 75.41)",
+          "oklch(37.86% 0.00619 75.41)",
+          "oklch(49.29% 0.00619 75.41)",
+          "oklch(60.71% 0.00619 75.41)",
+          "oklch(72.14% 0.00619 75.41)",
+          "oklch(83.57% 0.00619 75.41)",
+          "oklch(95.00% 0.00619 75.41)"
+        ]
+      },
+      "border-default": {
+        "role": "neutral",
+        "displayName": "Default plum stroke",
+        "tonalRamp": [
+          "oklch(15.00% 0.03129 331.07)",
+          "oklch(26.43% 0.03129 331.07)",
+          "oklch(37.86% 0.03129 331.07)",
+          "oklch(49.29% 0.03129 331.07)",
+          "oklch(60.71% 0.03129 331.07)",
+          "oklch(72.14% 0.03129 331.07)",
+          "oklch(83.57% 0.03129 331.07)",
+          "oklch(95.00% 0.03129 331.07)"
+        ]
+      },
+      "border-subtle": {
+        "role": "neutral",
+        "displayName": "Subtle plum divider",
+        "tonalRamp": [
+          "oklch(15.00% 0.01446 17.44)",
+          "oklch(26.43% 0.01446 17.44)",
+          "oklch(37.86% 0.01446 17.44)",
+          "oklch(49.29% 0.01446 17.44)",
+          "oklch(60.71% 0.01446 17.44)",
+          "oklch(72.14% 0.01446 17.44)",
+          "oklch(83.57% 0.01446 17.44)",
+          "oklch(95.00% 0.01446 17.44)"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Strong plum stroke",
+        "tonalRamp": [
+          "oklch(15.00% 0.03570 334.47)",
+          "oklch(26.43% 0.03570 334.47)",
+          "oklch(37.86% 0.03570 334.47)",
+          "oklch(49.29% 0.03570 334.47)",
+          "oklch(60.71% 0.03570 334.47)",
+          "oklch(72.14% 0.03570 334.47)",
+          "oklch(83.57% 0.03570 334.47)",
+          "oklch(95.00% 0.03570 334.47)"
+        ]
+      },
+      "border-focus": {
+        "role": "secondary",
+        "displayName": "Violet focus",
+        "tonalRamp": [
+          "oklch(15.00% 0.13541 304.06)",
+          "oklch(26.43% 0.13541 304.06)",
+          "oklch(37.86% 0.13541 304.06)",
+          "oklch(49.29% 0.13541 304.06)",
+          "oklch(60.71% 0.13541 304.06)",
+          "oklch(72.14% 0.13541 304.06)",
+          "oklch(83.57% 0.13541 304.06)",
+          "oklch(95.00% 0.13541 304.06)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Storefront display",
+        "purpose": "Sans-serif hero; from 48rem the study heading uses clamp(50px, 5.4cqi, 68px) at a 15ch measure, while the masthead retains clamp(68px, 7.4cqi, 6rem). These are observed component overrides, not the retained serif --type-display role."
+      },
+      "headline": {
+        "displayName": "Section and product heading",
+        "purpose": "Collection, Cards, FAQ, and product-page heading overrides. Product-grid introduction headings are capped at 22ch."
+      },
+      "title": {
+        "displayName": "Supporting serif title",
+        "purpose": "Existing --type-title used by cart names and totals."
+      },
+      "object-title": {
+        "displayName": "Object name",
+        "purpose": "Product-card name, with long titles allowed to wrap."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Authored descriptions and facts using --type-body. Product-grid summaries are capped at 60ch."
+      },
+      "label": {
+        "displayName": "Control label",
+        "purpose": "Shared --type-ui-strong controls. Default large add-to-cart uses 16px instead."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Metadata, statuses, and demo notice; figure captions use the separate observed 13px / 1.6 treatment."
+      },
+      "price": {
+        "displayName": "Product-page price",
+        "purpose": "Serif product-page amount; card prices use regular --type-ui instead."
+      }
+    },
+    "shadows": [
+      {
+        "name": "--shadow-widget",
+        "value": "0 2px 4px light-dark(#2e1c3408, #00000024)",
+        "purpose": "Optional raised Page Essentials block variant."
+      },
+      {
+        "name": "--shadow-menu",
+        "value": "0 12px 24px light-dark(#2e1c341a, #00000066)",
+        "purpose": "Existing surfaced linked content-card hover variant; the header index itself stays flat."
+      },
+      {
+        "name": "--shadow-dialog",
+        "value": "0 20px 48px light-dark(#2e1c3426, #00000080)",
+        "purpose": "Optional elevated figure frame."
+      }
+    ],
+    "motion": [
+      {
+        "name": "--dur-fast",
+        "value": "140ms",
+        "purpose": "Control background, stroke, and color feedback; becomes 0ms with reduced motion."
+      },
+      {
+        "name": "--dur-base",
+        "value": "180ms",
+        "purpose": "Disclosure text feedback and add-to-cart indicator transition; becomes 0ms with reduced motion."
+      },
+      {
+        "name": "--dur-slow",
+        "value": "220ms",
+        "purpose": "Menu entry, product-image scale, row image shift, and action arrow response; becomes 0ms with reduced motion."
+      },
+      {
+        "name": "--dur-slowest",
+        "value": "260ms",
+        "purpose": "FAQ content transition, cart confirmation entry and exit, and retained content-card image hover; becomes 0ms with reduced motion."
+      },
+      {
+        "name": "--ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0.38, 0.9)",
+        "purpose": "Shared control feedback."
+      },
+      {
+        "name": "--ease-out",
+        "value": "cubic-bezier(0, 0, 0.38, 0.9)",
+        "purpose": "Menu and cart confirmation entry and exit, media response, arrow movement, and disclosure expansion."
+      },
+      {
+        "name": "room-study",
+        "value": "translate: 0 var(--space-4) → 0 calc(-1 * var(--space-8)); animation-timeline: view(); animation-range: entry 0% exit 100%; linear both",
+        "purpose": "Progressive enhancement on the study hero photo; source elements/temel-hero.js. Runs only with view-timeline support and no reduced-motion preference."
+      },
+      {
+        "name": "product-image-focus",
+        "value": "transform: scale(1.04)",
+        "purpose": "Product-card hover and focus-within only when motion is permitted."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "product-card heading stack (max container width)",
+        "value": "18rem"
+      },
+      {
+        "name": "product grid two columns (min container width)",
+        "value": "20rem"
+      },
+      {
+        "name": "illustrated category row / filled collection heading and summary side by side (min container width)",
+        "value": "36rem"
+      },
+      {
+        "name": "Cards two columns (min container width)",
+        "value": "38rem"
+      },
+      {
+        "name": "category index two columns (min) / hidden Menu and Cart labels, compact header gaps (max container width)",
+        "value": "40rem"
+      },
+      {
+        "name": "cart line / footer columns (min container width)",
+        "value": "42rem"
+      },
+      {
+        "name": "hero study grouped copy / photograph on 4fr / 5fr tracks with 28px gap / split FAQ (min container width)",
+        "value": "48rem"
+      },
+      {
+        "name": "product inspection columns and side rail (min container width)",
+        "value": "52rem"
+      },
+      {
+        "name": "Cards three / four columns (min container width)",
+        "value": "60rem"
+      },
+      {
+        "name": "hero study column gap increases to 44px / sticky introduced collection and wide product grid (min container width)",
+        "value": "62rem"
+      },
+      {
+        "name": "unintroduced product grid four columns (min container width)",
+        "value": "76rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "First emphasized link from temel-action-group; source: elements/temel-action-group.js.",
+      "html": "<a class=\"ds-action-primary\" href=\"/decor/index.html\">Browse décor<svg aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 17 17 7M7 7h10v10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-action-primary { display: inline-flex; align-items: center; justify-content: center; min-block-size: var(--space-11, 48px); padding: var(--space-6, 12px) var(--space-7, 16px); border: 1px solid var(--accent, light-dark(#ad2b1a, #ffb9a6)); border-radius: 0; background: var(--accent, light-dark(#ad2b1a, #ffb9a6)); color: var(--text-on-accent, light-dark(#ffffff, #2e1c34)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); text-decoration: none; text-underline-offset: 4px; cursor: pointer; transition: background-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), border-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)); } .ds-action-primary:hover { background: var(--accent-hover, light-dark(#902113, #ffcebd)); border-color: var(--accent-hover, light-dark(#902113, #ffcebd)); } .ds-action-primary:active { background: var(--accent-press, light-dark(#72190f, #fba48d)); border-color: var(--accent-press, light-dark(#72190f, #fba48d)); } .ds-action-primary svg { inline-size: var(--size-icon, 16px); block-size: var(--size-icon, 16px); margin-inline-start: var(--space-5, 10px); transition: transform var(--dur-slow, 220ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)); } .ds-action-primary:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 2px; } @media (prefers-reduced-motion: no-preference) { .ds-action-primary:hover svg { transform: translate(2px, -2px); } } @media (prefers-reduced-motion: reduce) { .ds-action-primary, .ds-action-primary svg { transition: none; } }"
+    },
+    {
+      "name": "Outlined action",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Shared square outlined action; source: elements/temel-action-group.js and page-essentials/button-foundation.js.",
+      "html": "<a class=\"ds-action-outline\" href=\"/lighting/index.html\">Browse lighting</a>",
+      "css": ".ds-action-outline { display: inline-flex; align-items: center; justify-content: center; min-block-size: var(--space-11, 48px); padding: var(--space-6, 12px) var(--space-7, 16px); border: 1px solid var(--border-default, light-dark(#b6a3b3, #7c6b82)); border-radius: 0; background: transparent; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); text-decoration: none; text-underline-offset: 4px; cursor: pointer; transition: background-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), border-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)); } .ds-action-outline:hover { background: var(--surface-hover, light-dark(#f1e3db, #4a374a)); border-color: var(--border-strong, light-dark(#7b6676, #b19cb7)); } .ds-action-outline:active { background: var(--surface-active, light-dark(#e7cdc1, #5a414b)); border-color: var(--border-strong, light-dark(#7b6676, #b19cb7)); } .ds-action-outline svg { inline-size: var(--size-icon, 16px); block-size: var(--size-icon, 16px); margin-inline-start: var(--space-5, 10px); transition: transform var(--dur-slow, 220ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)); } .ds-action-outline:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 2px; } @media (prefers-reduced-motion: no-preference) { .ds-action-outline:hover svg { transform: translate(2px, -2px); } } @media (prefers-reduced-motion: reduce) { .ds-action-outline, .ds-action-outline svg { transition: none; } }"
+    },
+    {
+      "name": "Quiet companion action",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Underlined companion link in a primary-first action group; source: elements/temel-action-group.js.",
+      "html": "<a class=\"ds-action-quiet\" href=\"/lighting/index.html\">Browse lighting<svg aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"><path d=\"M7 17 17 7M7 7h10v10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-action-quiet { display: inline-flex; align-items: center; justify-content: center; min-block-size: var(--space-11, 48px); padding: var(--space-6, 12px) var(--space-4, 8px); border: 1px solid transparent; border-radius: 0; background: transparent; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); text-decoration: underline; text-underline-offset: 4px; cursor: pointer; transition: background-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), border-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)); } .ds-action-quiet:hover { background: transparent; border-color: transparent; } .ds-action-quiet:active { background: transparent; border-color: transparent; } .ds-action-quiet svg { inline-size: var(--size-icon, 16px); block-size: var(--size-icon, 16px); margin-inline-start: var(--space-5, 10px); transition: transform var(--dur-slow, 220ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)); } .ds-action-quiet:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 2px; } @media (prefers-reduced-motion: no-preference) { .ds-action-quiet:hover svg { transform: translate(2px, -2px); } } @media (prefers-reduced-motion: reduce) { .ds-action-quiet, .ds-action-quiet svg { transition: none; } }"
+    },
+    {
+      "name": "Add to cart",
+      "kind": "button",
+      "refersTo": "add-to-cart",
+      "description": "Default large native cart command; this self-contained preview preserves its default presentation without cart persistence. Source: elements/yuva-add-to-cart.js and templates/yuva-add-to-cart.template.html. Saving uses the authored Adding… label, an interrupted-circle indicator rotating at 700ms linear, and disabled activation to prevent duplicate additions. Reduced motion removes the rotation. Success changes the plus to a check and opens a native auto nonmodal popover at the lower trailing viewport corner, named by the authored Added to your cart. heading, with the actual owner product photo and title, its saved quantity, and the total View cart count. Keep browsing and Escape close it and return focus; outside activation light-dismisses it without taking focus. The existing dur-slowest / ease-out opacity and space-7 translation animate entry and exit with discrete display / overlay transitions; reduced motion removes them. Authored errors remain visible below the command; the success announcement is visually hidden to avoid layout shift.",
+      "html": "<button class=\"ds-add-to-cart\" type=\"button\">Add to cart<svg aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 8 8\"><path d=\"M0 4h8M4 0v8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></button>",
+      "css": ".ds-add-to-cart { display: flex; justify-content: space-between; align-items: center; gap: var(--space-6, 12px); inline-size: 100%; min-block-size: var(--space-11, 48px); padding: var(--space-5, 10px) var(--space-8, 28px); border: 1px solid var(--accent, light-dark(#ad2b1a, #ffb9a6)); border-radius: 0; background: var(--accent, light-dark(#ad2b1a, #ffb9a6)); color: var(--text-on-accent, light-dark(#ffffff, #2e1c34)); font: 600 16px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); cursor: pointer; transition: background-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), border-color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)), color var(--dur-fast, 140ms) var(--ease-standard, cubic-bezier(0.2, 0, 0.38, 0.9)); } .ds-add-to-cart svg { inline-size: var(--space-4, 8px); block-size: var(--space-4, 8px); flex: none; } .ds-add-to-cart:hover { background: var(--accent-hover, light-dark(#902113, #ffcebd)); } .ds-add-to-cart:active { background: var(--accent-press, light-dark(#72190f, #fba48d)); } .ds-add-to-cart:disabled { opacity: 0.5; cursor: default; } .ds-add-to-cart:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 4px; } @media (prefers-reduced-motion: reduce) { .ds-add-to-cart { transition: none; } }"
+    },
+    {
+      "name": "Quantity field",
+      "kind": "input",
+      "refersTo": "quantity-input",
+      "description": "Native cart number input; source: elements/yuva-cart-line.js and shared/store-element.js.",
+      "html": "<label class=\"ds-quantity-label\">Quantity <input class=\"ds-quantity-input\" type=\"number\" min=\"1\" step=\"1\" value=\"1\"></label>",
+      "css": ".ds-quantity-label { color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); } .ds-quantity-input { inline-size: 4rem; min-block-size: var(--h-control, 44px); padding: var(--space-4, 8px) var(--space-6, 12px); border: 1px solid var(--border-default, light-dark(#b6a3b3, #7c6b82)); border-radius: 0; background: var(--surface-input, light-dark(#fffcf8, #332738)); color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); } .ds-quantity-input:hover { background: var(--surface-hover, light-dark(#f1e3db, #4a374a)); } .ds-quantity-input:disabled { opacity: 0.5; } .ds-quantity-input:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 4px; }"
+    },
+    {
+      "name": "Currency choices",
+      "kind": "chip",
+      "refersTo": "currency-choice",
+      "description": "Native selected-choice presentation; source: elements/yuva-currency-switcher.js. This snippet previews states without changing the visitor preference.",
+      "html": "<div class=\"ds-currencies\" role=\"group\" aria-label=\"Currency\"><button class=\"ds-currency\" type=\"button\" aria-pressed=\"true\">EUR</button><button class=\"ds-currency\" type=\"button\" aria-pressed=\"false\">USD</button><button class=\"ds-currency\" type=\"button\" aria-pressed=\"false\">CHF</button></div>",
+      "css": ".ds-currencies { display: flex; gap: var(--space-1, 2px); } .ds-currency { min-block-size: var(--space-11, 48px); padding: var(--space-4, 8px) var(--space-6, 12px); border: 1px solid transparent; border-radius: var(--radius-sm, 2px); background: transparent; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); cursor: pointer; } .ds-currency[aria-pressed=\"true\"] { background: var(--surface-selected, light-dark(#f8dfd7, #502b30)); font-weight: 700; } .ds-currency:not([aria-pressed=\"true\"]):hover { background: var(--surface-hover, light-dark(#f1e3db, #4a374a)); } .ds-currency:not([aria-pressed=\"true\"]):active { background: var(--surface-active, light-dark(#e7cdc1, #5a414b)); } .ds-currency:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 4px; }"
+    },
+    {
+      "name": "Category index",
+      "kind": "nav",
+      "description": "Large native index links; source: elements/yuva-category-nav.js. Header context from elements/temel-site-header.js and elements/temel-site-header.author.js: Menu left, Yuva centered, and Cart far right use equal outer grid tracks at every width; currency and theme follow categories in the expanded panel. elements/yuva-cart-link.js and elements/yuva-cart-link.author.js supply the outlined bag and plain live count, exact below 1000 and compact through Intl.NumberFormat otherwise, with the full accessible quantity. Menu and Cart labels are visually hidden through a 40rem container; both native controls retain 48px targets. Closed focus order is Menu, brand, Cart; expanded categories follow Menu before the brand. Escape returns focus; outside activation and category activation close the bounded panel, whose entry respects reduced motion. This preview retains the category link presentation and responsive query context.",
+      "html": "<div class=\"ds-index-container\"><nav class=\"ds-index\" aria-label=\"Categories\"><a class=\"ds-index-link\" href=\"/seating/index.html\" aria-current=\"page\">Seating</a><a class=\"ds-index-link\" href=\"/tables/index.html\">Tables</a><a class=\"ds-index-link\" href=\"/lighting/index.html\">Lighting</a><a class=\"ds-index-link\" href=\"/rugs/index.html\">Rugs</a></nav></div>",
+      "css": ".ds-index-container { container-type: inline-size; } .ds-index { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3, 6px) var(--space-9, 36px); min-inline-size: var(--space-11, 48px); min-block-size: var(--space-11, 48px); } .ds-index-link { display: flex; align-items: center; justify-content: space-between; min-block-size: var(--space-11, 48px); padding: var(--space-6, 12px) var(--space-4, 8px); border-block-end: 1px solid var(--border-subtle, light-dark(#ddd0d0, #514457)); color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 clamp(18px, 3cqi, 40px)/1.08 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); text-decoration: none; overflow-wrap: anywhere; } .ds-index-link::after { content: \"\"; inline-size: var(--space-4, 8px); block-size: var(--space-4, 8px); border-block-start: 2px solid currentColor; border-inline-end: 2px solid currentColor; rotate: 45deg; margin-inline: var(--space-4, 8px); flex: none; } .ds-index-link:hover { background: var(--surface-hover, light-dark(#f1e3db, #4a374a)); } .ds-index-link[aria-current=\"page\"] { background: var(--surface-selected, light-dark(#f8dfd7, #502b30)); font-weight: 700; } .ds-index-link:focus-visible { outline: 2px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 2px; } @container (min-width: 40rem) { .ds-index { grid-template-columns: repeat(2, minmax(0, 1fr)); } }"
+    },
+    {
+      "name": "Product card",
+      "kind": "card",
+      "refersTo": "product-card",
+      "description": "Portrait object field and baseline name / price grid from elements/yuva-product-card.js. The embedded 320px ABO photograph is the existing b07374m818 asset; illustrative price is evidenced by the final product capture.",
+      "html": "<article class=\"ds-product-card\"><a class=\"ds-product-image\" href=\"/products/lighting/rivet-marble-brass-table-lamp.html\" tabindex=\"-1\" aria-hidden=\"true\"><img class=\"ds-product-photo\" src=\"data:image/webp;base64,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\" alt=\"\"></a><div class=\"ds-product-heading\"><a class=\"ds-product-title\" href=\"/products/lighting/rivet-marble-brass-table-lamp.html\">Marble &amp; brass lamp</a><output class=\"ds-product-price\">€89</output><div class=\"ds-product-meta\">Rivet · Lighting</div></div></article>",
+      "css": ".ds-product-card { container-type: inline-size; display: flex; flex-direction: column; background: transparent; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); } .ds-product-image { display: block; position: relative; flex: none; aspect-ratio: 4 / 5; background: white; overflow: clip; } .ds-product-photo { box-sizing: border-box; position: absolute; inset: 0; inline-size: 100%; block-size: 100%; padding: var(--space-8, 28px); object-fit: contain; transition: transform var(--dur-slow, 220ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)); } .ds-product-heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-4, 8px); align-items: baseline; padding-block-start: var(--space-7, 16px); } .ds-product-title { color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); text-decoration: none; font: 600 18px/1.3 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); text-wrap: pretty; } .ds-product-title:hover { color: var(--text-link, light-dark(#972415, #ffb9a6)); } .ds-product-price { font: 400 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-product-meta { grid-column: 1 / -1; color: var(--text-secondary, light-dark(#5d405f, #e2cfe5)); font: 400 12px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); } .ds-product-title:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 4px; } @container (max-width: 18rem) { .ds-product-heading { grid-template-columns: minmax(0, 1fr); } } @media (prefers-reduced-motion: no-preference) { .ds-product-card:hover .ds-product-photo, .ds-product-card:focus-within .ds-product-photo { transform: scale(1.04); } } @media (prefers-reduced-motion: reduce) { .ds-product-photo { transition: none; } }"
+    },
+    {
+      "name": "Gallery modes",
+      "kind": "button",
+      "refersTo": "gallery-mode",
+      "description": "Mode controls that precede the photograph or spin stage; source: elements/yuva-product.js. This snippet previews pressed states without gallery runtime.",
+      "html": "<div class=\"ds-gallery-modes\" role=\"group\" aria-label=\"Product view\"><button class=\"ds-gallery-mode\" type=\"button\" aria-pressed=\"true\">Photos</button><button class=\"ds-gallery-mode\" type=\"button\" aria-pressed=\"false\">360° view</button></div>",
+      "css": ".ds-gallery-modes { display: flex; flex-wrap: wrap; gap: var(--space-4, 8px); } .ds-gallery-mode { min-block-size: var(--h-control, 44px); padding: var(--space-4, 8px) var(--space-6, 12px); border: 1px solid transparent; border-block-end-color: var(--border-subtle, light-dark(#ddd0d0, #514457)); border-radius: 0; background: transparent; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); font: 600 14px/1.4 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); cursor: pointer; } .ds-gallery-mode[aria-pressed=\"true\"] { background: var(--surface-selected, light-dark(#f8dfd7, #502b30)); border-block-end-color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); } .ds-gallery-mode:not([aria-pressed=\"true\"]):hover { background: var(--surface-hover, light-dark(#f1e3db, #4a374a)); } .ds-gallery-mode:not([aria-pressed=\"true\"]):active { background: var(--surface-active, light-dark(#e7cdc1, #5a414b)); } .ds-gallery-mode:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 4px; }"
+    },
+    {
+      "name": "FAQ disclosure",
+      "kind": "custom",
+      "description": "Native disclosure from elements/temel-faq-item.js; question and answer are the existing authored index.html copy.",
+      "html": "<details class=\"ds-faq\"><summary class=\"ds-faq-question\">Can I buy these products?<svg class=\"ds-faq-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\"><path class=\"ds-faq-plus\" d=\"M12 5v14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/><path d=\"M5 12h14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"/></svg></summary><div class=\"ds-faq-answer\">Yuva is a demonstration store. Nothing is for sale, prices are illustrative, and the cart ends at the subtotal.</div></details>",
+      "css": ".ds-faq { border-block-end: 1px solid var(--border-default, light-dark(#b6a3b3, #7c6b82)); interpolate-size: allow-keywords; color: var(--text-primary, light-dark(#2e1c34, #fff6ee)); } .ds-faq-question { display: flex; align-items: center; justify-content: space-between; gap: var(--space-8, 28px); padding-block: var(--space-9, 36px); font: 600 18px/1.3 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); list-style: none; cursor: pointer; transition: color var(--dur-base, 180ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)); } .ds-faq-question::-webkit-details-marker { display: none; } .ds-faq-icon { flex: none; inline-size: var(--space-9, 36px); block-size: var(--space-9, 36px); color: var(--accent-text, light-dark(#972415, #ffb9a6)); } .ds-faq[open] .ds-faq-plus { display: none; } .ds-faq-question:hover { color: var(--accent-text, light-dark(#972415, #ffb9a6)); } .ds-faq::details-content { block-size: 0; overflow: clip; transition: block-size var(--dur-slowest, 260ms) var(--ease-out, cubic-bezier(0, 0, 0.38, 0.9)), content-visibility var(--dur-slowest, 260ms) allow-discrete; } .ds-faq[open]::details-content { block-size: auto; } .ds-faq-answer { padding-block-end: var(--space-9, 36px); max-inline-size: 66ch; color: var(--text-secondary, light-dark(#5d405f, #e2cfe5)); font: 400 16px/1.6 var(--font-ui, \"Source Sans 3\", \"Noto Sans\", ui-sans-serif, system-ui, sans-serif); } .ds-faq-question:focus-visible { outline: 3px solid var(--border-focus, light-dark(#683f93, #d6bbf8)); outline-offset: 2px; } @media (prefers-reduced-motion: reduce) { .ds-faq::details-content, .ds-faq-question { transition: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Room studies",
+    "overview": "Room studies gives Yuva generous photographic space, weighty sans-serif headings, and a quiet\nsetting for inspecting furniture and home objects. Cream and plum frame the photography; rust\nmarks the principal actions. Flat surfaces, square imagery, fine dividers, and restrained motion\nkeep the objects and authored text legible.\n\nThis document extracts the implemented storefront. The organization-owned\n[styles.css](design-system/styles.css), [fonts.css](design-system/fonts.css), and native custom\nelement modules remain the source of truth. Frontmatter records their observed values and selected\ncomponent presentations; it does not replace the canonical Design System or create new public CSS\nvariables. The Room studies homepage is one expression of these foundations. Its grouped hero copy,\ndistinct lead photograph, and unequal featured objects are not mandatory layouts for every custom\nelement.\nComponent `height` entries record the source minimum block size, allowing labels to wrap or grow.",
+    "keyCharacteristics": [
+      "Generous photography and contained product images with their original proportions.",
+      "Source Sans 3 for the storefront's principal headings, body copy, and controls.",
+      "Source Serif 4 retained for selected prices, cart titles, and totals.",
+      "Square actions, quiet dividers, and filled selection states with separate focus outlines.",
+      "Content-responsive layouts and motion that respects reduced-motion preferences."
+    ],
+    "rules": [
+      {
+        "name": "The Color Scheme Rule",
+        "body": "Consume the existing semantic CSS roles and let `color-scheme` resolve their `light-dark()` values.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Order Rule",
+        "body": "Preserve the implemented DOM sequence when a layout changes; gallery mode controls precede the image or spin stage at every width.",
+        "section": "layout"
+      },
+      {
+        "name": "The Reduced Motion Rule",
+        "body": "Decorative transforms, menu entry, and disclosure transitions are removed when reduced motion is requested; reading, gallery selection, and manual inspection remain available.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do consume the canonical semantic CSS properties and native color-scheme resolution.",
+      "Do use the observed sans-serif storefront heading roles while retaining serif prices and cart typography where the component source uses them.",
+      "Do keep product photographs contained and preserve their white inspection field in both color schemes.",
+      "Do keep keyboard focus visible and separate from filled selected states.",
+      "Do preserve responsive DOM order, authored text, Slots, references, and manual gallery controls when extending a component.",
+      "Do respect reduced motion and keep the complete reading and interaction sequence available."
+    ],
+    "donts": [
+      "Don't turn the homepage's paired copy and photograph, sticky introduction, or 3fr / 2fr stagger into a required layout for every reusable custom element.",
+      "Don't substitute new colors or inferred swatch ramps for the canonical CSS values.",
+      "Don't replace real product photographs or authored facts with decorative substitutes.",
+      "Don't make selection depend on a persistent side rail or keyboard focus depend on animation.",
+      "Don't promote dormant eyebrow styling or unrelated library variants into the storefront's required visual grammar."
+    ]
+  }
+}
