@@ -1,0 +1,55 @@
+<temel-page lang="de" title="Deko — Yuva" max-width="1440"
+  ><header><temel-reference href="/de/header.html"></temel-reference></header>
+  <main>
+    <temel-announcement
+      padding="comfortable"
+      tone="muted"
+      alignment="start"
+      width="wide"
+      spacing-before="comfortable"
+      ><p slot="text">Unsere Öffnungszeiten für den Frühling sind da. <a href="/de/">Änderungen ansehen</a></p>
+      <temel-provenance
+        slot="provenance"
+        source="ai"
+        contribution="modified"
+        evidence="observed"
+        tool="chatgpt"
+        provider="openai"
+      ></temel-provenance></temel-announcement
+    ><temel-hero padding="comfortable" width="wide">
+      <h1 slot="heading">Deko</h1>
+      <div slot="summary">
+        <p>Ein Topf für die ausufernde Pflanze. Ein Spiegel, der das Fenster einfängt. Kunst, weil sie Ihnen gefällt.</p>
+      </div>
+      <temel-provenance
+        slot="provenance:summary"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="modified"
+      ></temel-provenance>
+      <temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance></temel-hero
+    ><yuva-product-grid
+      ><temel-query path="/de/products/decor/" limit="8" sort="path"
+        ><template name="item"
+          ><yuva-product-card
+            ><temel-reference slot="source"></temel-reference></yuva-product-card></template
+        ><yuva-show-more slot="show-more"></yuva-show-more></temel-query
+      ><temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance
+    ></yuva-product-grid>
+    <temel-loading-boundary></temel-loading-boundary>
+  </main>
+  <footer><temel-reference href="/de/footer.html"></temel-reference></footer
+></temel-page>
