@@ -1,0 +1,44 @@
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link rel="preload" href="/design-system/styles.css" as="style" />
+
+<link
+  rel="preload"
+  href="/design-system/fonts/source-sans-3-latin-wght-normal.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<link
+  rel="preload"
+  href="/design-system/fonts/source-serif-4-latin-wght-normal.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+<title data-temel-head="title">Yuva</title>
+
+<meta
+  name="description"
+  content="Furniture, lighting, rugs, and everyday objects for the rooms you live in. Yuva is a demonstration store."
+  data-temel-head="description"
+/>
+
+<link rel="canonical" data-temel-head="canonicalUrl" />
+
+<link rel="stylesheet" href="/design-system/fonts.css" />
+
+<style>
+  *:not(:defined) {
+    display: none;
+  }
+</style>
+
+<script type="module">
+  import { initializeStore } from "/elements/shared/store-bootstrap.js";
+  initializeStore();
+</script>

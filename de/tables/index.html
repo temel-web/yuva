@@ -1,0 +1,44 @@
+<temel-page lang="de" title="Tische — Yuva" max-width="1440"
+  ><header><temel-reference href="/de/header.html"></temel-reference></header>
+  <main>
+    <temel-hero padding="comfortable" width="wide">
+      <h1 slot="heading">Tische</h1>
+      <div slot="summary">
+        <p>
+          Ein Platz, um den Kaffee abzustellen, ein Notizbuch aufzuschlagen oder
+          noch einen Stuhl heranzuziehen.
+        </p>
+      </div>
+      <temel-provenance
+        slot="provenance:summary"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="modified"
+      ></temel-provenance>
+      <temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance></temel-hero
+    ><yuva-product-grid
+      ><temel-query path="/de/products/tables/" limit="100" sort="path"
+        ><template name="item"
+          ><yuva-product-card
+            ><temel-reference
+              slot="source"
+            ></temel-reference></yuva-product-card></template></temel-query
+      ><temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance
+    ></yuva-product-grid>
+    <temel-loading-boundary></temel-loading-boundary>
+  </main>
+  <footer><temel-reference href="/de/footer.html"></temel-reference></footer
+></temel-page>
