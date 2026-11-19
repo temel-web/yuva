@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "repository": {
+    "displayName": "Yuva",
+    "type": "organization"
+  },
+  "delivery": {
+    "targets": {
+      "live": {
+        "access": "public",
+        "bindings": [
+          {
+            "root": "/",
+            "primaryHostname": "yuva.demo.temel.page",
+            "aliases": []
+          }
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "provider": null,
+    "submissionBranch": null,
+    "adoptedArtifacts": {}
+  }
+}
