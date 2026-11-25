@@ -1,0 +1,24 @@
+<temel-page lang="fr" title="Produit — Yuva" max-width="1440"
+  ><header><temel-reference href="/fr/header.html"></temel-reference></header>
+  <main>
+    <temel-page-content></temel-page-content>
+    <temel-loading-boundary></temel-loading-boundary
+    ><yuva-product-grid
+      ><h2 slot="heading">Pour compléter votre pièce</h2>
+      <temel-query path="/fr/products/lighting/" limit="4" sort="path" exclude-current=""
+        ><template name="item"
+          ><yuva-product-card
+            ><temel-reference
+              slot="source"
+            ></temel-reference></yuva-product-card></template></temel-query
+      ><temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance
+    ></yuva-product-grid>
+  </main>
+  <footer><temel-reference href="/fr/footer.html"></temel-reference></footer
+></temel-page>
