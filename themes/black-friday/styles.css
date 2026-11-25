@@ -1,0 +1,36 @@
+@scope {
+  :scope {
+    --accent: light-dark(#e8a91e, #e8a91e);
+    --accent-hover: light-dark(#f3bd45, #f3bd45);
+    --accent-press: light-dark(#d99a0f, #d99a0f);
+    --accent-subtle: light-dark(#3b2742, #3b2742);
+    --accent-text: light-dark(#f2c14e, #f2c14e);
+    --background-color: light-dark(#120b14, #120b14);
+    --border-default: light-dark(#6a5870, #6a5870);
+    --border-focus: light-dark(#f2c14e, #f2c14e);
+    --border-input: light-dark(#a896ae, #a896ae);
+    --border-strong: light-dark(#a896ae, #a896ae);
+    --border-subtle: light-dark(#43314a, #43314a);
+    --surface-active: light-dark(#4a3352, #4a3352);
+    --surface-card: light-dark(#241528, #241528);
+    --surface-editor: light-dark(#120b14, #120b14);
+    --surface-hover: light-dark(#3b2742, #3b2742);
+    --surface-inline-code: light-dark(#3b2742, #3b2742);
+    --surface-input: light-dark(#2f1e36, #2f1e36);
+    --surface-overlay: light-dark(#2f1e36, #2f1e36);
+    --surface-panel: light-dark(#241528, #241528);
+    --surface-raised: light-dark(#2f1e36, #2f1e36);
+    --surface-selected: light-dark(#3b2742, #3b2742);
+    --surface-sidebar: light-dark(#241528, #241528);
+    --surface-statusbar: light-dark(#241528, #241528);
+    --surface-titlebar: light-dark(#241528, #241528);
+    --text-code: light-dark(#f4efe7, #f4efe7);
+    --text-inverse: light-dark(#f4efe7, #f4efe7);
+    --text-link: light-dark(#f2c14e, #f2c14e);
+    --text-link-hover: light-dark(#ffd979, #ffd979);
+    --text-muted: light-dark(#cdbfd2, #cdbfd2);
+    --text-on-accent: light-dark(#2a1830, #2a1830);
+    --text-primary: light-dark(#f4efe7, #f4efe7);
+    --text-secondary: light-dark(#d9cddd, #d9cddd);
+  }
+}

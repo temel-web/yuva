@@ -1,0 +1,446 @@
+{
+  "data": {
+    "prices": {
+      "/products/seating/rivet-north-end-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/seating/rivet-sloane-ottoman.html": {
+        "eur": 179,
+        "usd": 209,
+        "chf": 169
+      },
+      "/products/seating/ashley-leahlyn-dining-chairs.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-apex-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/seating/rivet-ross-storage-ottoman.html": {
+        "eur": 179,
+        "usd": 209,
+        "chf": 169
+      },
+      "/products/seating/stone-beam-bradbury-leather-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/tables/movian-corona-nesting-tables.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/vida-corona-four-drawer-chest.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/vida-corona-dining-set.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/movian-corona-console-table.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/movian-haven-desk.html": {
+        "eur": 299,
+        "usd": 339,
+        "chf": 289
+      },
+      "/products/tables/movian-corona-bedside-chest.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/lighting/rivet-white-cage-pendant.html": {
+        "eur": 139,
+        "usd": 159,
+        "chf": 129
+      },
+      "/products/lighting/stone-beam-glass-column-floor-lamp.html": {
+        "eur": 89,
+        "usd": 99,
+        "chf": 89
+      },
+      "/products/lighting/stone-beam-farmhouse-pendant.html": {
+        "eur": 139,
+        "usd": 159,
+        "chf": 129
+      },
+      "/products/lighting/rivet-caden-floor-lamp.html": {
+        "eur": 89,
+        "usd": 99,
+        "chf": 89
+      },
+      "/products/lighting/rivet-black-cage-pendant.html": {
+        "eur": 139,
+        "usd": 159,
+        "chf": 129
+      },
+      "/products/lighting/stone-beam-glass-column-table-lamp.html": {
+        "eur": 89,
+        "usd": 99,
+        "chf": 89
+      },
+      "/products/lighting/stone-beam-pulley-chandelier.html": {
+        "eur": 139,
+        "usd": 159,
+        "chf": 129
+      },
+      "/products/lighting/stone-beam-geometric-table-lamp.html": {
+        "eur": 89,
+        "usd": 99,
+        "chf": 89
+      },
+      "/products/lighting/stone-beam-dome-pendant.html": {
+        "eur": 139,
+        "usd": 159,
+        "chf": 129
+      },
+      "/products/lighting/rivet-marble-brass-table-lamp.html": {
+        "eur": 89,
+        "usd": 99,
+        "chf": 89
+      },
+      "/products/rugs/rivet-sunset-rug-blush.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/stone-beam-textured-wool-rug.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/stone-beam-jute-rug-tan.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-wave-rug-moss.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-ombre-wool-rug-red.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-medallion-rug-7ft6x9ft6.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-medallion-rug-5x8.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/stone-beam-dusk-wool-rug.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-bordered-sisal-rug.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/rugs/rivet-diamond-trellis-rug.html": {
+        "eur": 229,
+        "usd": 259,
+        "chf": 219
+      },
+      "/products/decor/rivet-roaring-twenties-wall-art.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/stone-beam-striped-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/decor/rivet-ceramic-planter-wide.html": {
+        "eur": 45,
+        "usd": 49,
+        "chf": 45
+      },
+      "/products/decor/stone-beam-rectangular-mirror.html": {
+        "eur": 149,
+        "usd": 169,
+        "chf": 139
+      },
+      "/products/decor/rivet-be-a-little-wild-wall-art.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/stone-beam-medallion-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/decor/rivet-ceramic-planter-tall.html": {
+        "eur": 45,
+        "usd": 49,
+        "chf": 45
+      },
+      "/products/decor/stone-beam-wood-rope-mirror.html": {
+        "eur": 149,
+        "usd": 169,
+        "chf": 139
+      },
+      "/products/decor/stone-beam-purple-floral-wall-art.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/rivet-mudcloth-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/bedroom/rivet-west-queen-bed.html": {
+        "eur": 599,
+        "usd": 689,
+        "chf": 569
+      },
+      "/products/bedroom/stone-beam-newport-dresser.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/bedroom/movian-corona-sideboard.html": {
+        "eur": 329,
+        "usd": 379,
+        "chf": 309
+      },
+      "/products/bedroom/stone-beam-parson-queen-bed.html": {
+        "eur": 599,
+        "usd": 689,
+        "chf": 569
+      },
+      "/products/bedroom/rivet-nova-queen-bed.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/bedroom/movian-loue-sideboard.html": {
+        "eur": 329,
+        "usd": 379,
+        "chf": 309
+      },
+      "/products/bedroom/stone-beam-glenwood-queen-bed.html": {
+        "eur": 599,
+        "usd": 689,
+        "chf": 569
+      },
+      "/products/bedroom/stone-beam-clifton-king-bed.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/bedroom/movian-minho-sideboard.html": {
+        "eur": 329,
+        "usd": 379,
+        "chf": 309
+      },
+      "/products/bedroom/stone-beam-glenwood-king-bed.html": {
+        "eur": 599,
+        "usd": 689,
+        "chf": 569
+      },
+      "/products/seating/rivet-emerly-sectional-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/seating/rivet-madison-storage-ottoman.html": {
+        "eur": 179,
+        "usd": 209,
+        "chf": 169
+      },
+      "/products/seating/stone-beam-dalton-sectional-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/seating/rivet-malida-bar-stool.html": {
+        "eur": 119,
+        "usd": 139,
+        "chf": 109
+      },
+      "/products/seating/stone-beam-kristin-ottoman.html": {
+        "eur": 179,
+        "usd": 209,
+        "chf": 169
+      },
+      "/products/seating/stone-beam-sascha-wingback-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/ravenna-home-mayes-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/seating/stone-beam-sophia-counter-stool.html": {
+        "eur": 119,
+        "usd": 139,
+        "chf": 109
+      },
+      "/products/seating/amazonbasics-storage-ottoman-bench.html": {
+        "eur": 179,
+        "usd": 209,
+        "chf": 169
+      },
+      "/products/seating/rivet-huxley-accent-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/alkove-holt-leather-sofa.html": {
+        "eur": 899,
+        "usd": 1029,
+        "chf": 859
+      },
+      "/products/decor/rivet-san-francisco-canvas-print.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/stone-beam-velvet-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/decor/rivet-crosshatch-planter.html": {
+        "eur": 45,
+        "usd": 49,
+        "chf": 45
+      },
+      "/products/decor/stone-beam-quadrant-mirror.html": {
+        "eur": 149,
+        "usd": 169,
+        "chf": 139
+      },
+      "/products/decor/stone-beam-abstract-wall-art.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/rivet-velvet-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/decor/stone-beam-embossed-planter.html": {
+        "eur": 45,
+        "usd": 49,
+        "chf": 45
+      },
+      "/products/decor/rivet-tile-mirror.html": {
+        "eur": 149,
+        "usd": 169,
+        "chf": 139
+      },
+      "/products/decor/rivet-hanging-plants-wall-art.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/stone-beam-french-laundry-throw-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/decor/amazonbasics-hanging-planter.html": {
+        "eur": 45,
+        "usd": 49,
+        "chf": 45
+      },
+      "/products/decor/amazonbasics-walnut-wall-mirror.html": {
+        "eur": 149,
+        "usd": 169,
+        "chf": 139
+      },
+      "/products/decor/stone-beam-floral-canvas.html": {
+        "eur": 79,
+        "usd": 89,
+        "chf": 79
+      },
+      "/products/decor/rivet-bohemian-stripe-pillow.html": {
+        "eur": 29,
+        "usd": 35,
+        "chf": 29
+      },
+      "/products/seating/rivet-slade-swivel-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-willard-lounge-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-aiden-leather-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/stone-beam-wishbone-dining-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-charlotte-accent-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-channel-back-dining-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/seating/rivet-summit-leather-chair.html": {
+        "eur": 249,
+        "usd": 289,
+        "chf": 239
+      },
+      "/products/tables/rivet-bristol-side-table.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/rivet-round-dining-table.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/rivet-hourglass-marble-side-table.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      },
+      "/products/tables/rivet-hillside-coffee-table.html": {
+        "eur": 349,
+        "usd": 399,
+        "chf": 329
+      }
+    }
+  }
+}

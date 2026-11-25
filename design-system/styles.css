@@ -1,0 +1,385 @@
+@scope {
+  :scope {
+    --font-ui: "Instrument Sans", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Instrument Serif", "Noto Serif", ui-serif, Georgia, serif;
+    --font-mono: "JetBrains Mono", "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+  }
+}
+
+/* Evening rooms foundations. Components consume the semantic roles below. */
+@scope {
+  :scope {
+    --gray-1000: #0d1016;
+    --gray-950: #11141b;
+    --gray-900: #151820;
+    --gray-850: #1a1e27;
+    --gray-800: #1e222c;
+    --gray-750: #242936;
+    --gray-700: #2a303e;
+    --gray-650: #333a49;
+    --gray-600: #3b4354;
+    --gray-550: #465063;
+    --gray-500: #596477;
+    --gray-450: #6d788c;
+    --gray-400: #828da0;
+    --gray-350: #98a1b0;
+    --gray-300: #a5adba;
+    --gray-250: #c5cbd5;
+    --gray-200: #d9dfeb;
+    --gray-150: #e3e8f0;
+    --gray-100: #e8edf5;
+    --gray-80: #edf1f7;
+    --gray-60: #f0f4fc;
+    --gray-40: #f4f7fb;
+    --gray-20: #f7f9fc;
+    --gray-0: #ffffff;
+    --gray-input-border: #cbd3e1;
+    --gray-ink: #151821;
+    --gray-ink-2: #626a79;
+
+    --blue-700: #1746b8;
+    --blue-600: #2864f0;
+    --blue-500: #3b73f5;
+    --blue-400: #5b8af8;
+    --blue-300: #74a0ff;
+    --blue-200: #b5caff;
+    --blue-100: #dbe5ff;
+    --selection-dark: #202e4e;
+    --selection-light: #eaf0ff;
+
+    /* Semantic hues */
+    --red-600: #c93651;
+    --red-500: #f0526b;
+    --red-400: #ff7d91;
+    --amber-700: #9a6700;
+    --amber-600: #d97706;
+    --amber-500: #f4b860;
+    --green-700: #007a69;
+    --green-600: #008f7a;
+    --green-500: #00a98f;
+    --green-400: #48d4bd;
+    --purple-500: #6d5bd0;
+    --purple-400: #a69cff;
+
+    /* Syntax — Dark+ */
+    --dp-keyword: #569cd6;
+    --dp-control: #c586c0;
+    --dp-string: #ce9178;
+    --dp-number: #b5cea8;
+    --dp-comment: #6a9955;
+    --dp-function: #dcdcaa;
+    --dp-type: #4ec9b0;
+    --dp-variable: #9cdcfe;
+    --dp-constant: #4fc1ff;
+    --dp-tag: #569cd6;
+    --dp-attribute: #9cdcfe;
+    --dp-operator: #d4d4d4;
+
+    /* Syntax — Light+ */
+    --lp-keyword: #0000ff;
+    --lp-control: #af00db;
+    --lp-string: #a31515;
+    --lp-number: #098658;
+    --lp-comment: #008000;
+    --lp-function: #795e26;
+    --lp-type: #267f99;
+    --lp-variable: #001080;
+    --lp-constant: #0070c1;
+    --lp-tag: #800000;
+    --lp-attribute: #e50000;
+    --lp-operator: #000000;
+  }
+}
+
+/* Native Light+/Dark+ semantic values. light-dark() receives light first, dark second. */
+@scope {
+  :scope {
+    --brand-center: light-dark(#2a1830, #f4efe7);
+    --brand-edge: light-dark(#e8a91e, #e8a91e);
+    --accent: light-dark(#e8a91e, #e8a91e);
+    --accent-hover: light-dark(#d99a0f, #f3bd45);
+    --accent-press: light-dark(#c0870a, #d99a0f);
+    --accent-subtle: light-dark(#e3e0da, #3b2742);
+    --accent-text: light-dark(#6b4a00, #f2c14e);
+    --background-color: light-dark(#efedea, #1b1020);
+    --border-default: light-dark(#b5aeb6, #6a5870);
+    --border-focus: light-dark(#6b3fa0, #f2c14e);
+    --border-input: light-dark(#6e5f73, #a896ae);
+    --border-strong: light-dark(#6e5f73, #a896ae);
+    --border-subtle: light-dark(#cfcac3, #43314a);
+    --comment-highlight: light-dark(#bf88032e, #cca70033);
+    --comment-highlight-active: light-dark(#bf880347, #cca7004d);
+    --comment-rail: light-dark(var(--amber-700), var(--amber-600));
+    --diff-added-bg: light-dark(#00a98f1f, #48d4bd24);
+    --diff-added-text: light-dark(var(--green-700), var(--green-400));
+    --diff-modified: light-dark(#9a6700, var(--amber-500));
+    --diff-removed-bg: light-dark(#f0526b1f, #ff7d9129);
+    --diff-removed-text: light-dark(var(--red-600), var(--red-400));
+    --scrollbar-thumb: light-dark(#9b8978, #ab9887);
+    --scrollbar-thumb-hover: light-dark(#7b6857, #c9b49f);
+    --status-error: light-dark(var(--red-600), var(--red-400));
+    --status-error-bg: light-dark(#f0526b14, #ff7d9124);
+    --status-info: light-dark(var(--blue-400), var(--blue-300));
+    --status-info-bg: light-dark(#2864f014, #74a0ff24);
+    --status-success: light-dark(var(--green-700), var(--green-400));
+    --status-success-bg: light-dark(#00a98f14, #48d4bd24);
+    --status-warning: light-dark(var(--amber-700), var(--amber-500));
+    --status-warning-bg: light-dark(#f4b86018, #f4b86022);
+    --surface-active: light-dark(#d6d2cb, #4a3352);
+    --surface-card: light-dark(#f7f5f2, #2a1830);
+    --surface-editor: light-dark(#efedea, #1b1020);
+    --surface-hover: light-dark(#e3e0da, #3b2742);
+    --surface-inline-code: light-dark(#e3e0da, #3b2742);
+    --surface-input: light-dark(#f7f5f2, #2f1e36);
+    --surface-overlay: light-dark(#f7f5f2, #2f1e36);
+    --surface-panel: light-dark(#e3e0da, #2a1830);
+    --surface-raised: light-dark(#f7f5f2, #2f1e36);
+    --surface-scrim: light-dark(#2a18305c, #0c060fa3);
+    --surface-selected: light-dark(#e3e0da, #3b2742);
+    --surface-sidebar: light-dark(#e7e4df, #2a1830);
+    --surface-statusbar: light-dark(#e7e4df, #2a1830);
+    --surface-titlebar: light-dark(#e7e4df, #2a1830);
+    --syntax-attribute: light-dark(var(--lp-attribute), var(--dp-attribute));
+    --syntax-comment: light-dark(var(--lp-comment), var(--dp-comment));
+    --syntax-constant: light-dark(var(--lp-constant), var(--dp-constant));
+    --syntax-control: light-dark(var(--lp-control), var(--dp-control));
+    --syntax-function: light-dark(var(--lp-function), var(--dp-function));
+    --syntax-keyword: light-dark(var(--lp-keyword), var(--dp-keyword));
+    --syntax-number: light-dark(var(--lp-number), var(--dp-number));
+    --syntax-operator: light-dark(var(--lp-operator), var(--dp-operator));
+    --syntax-string: light-dark(var(--lp-string), var(--dp-string));
+    --syntax-tag: light-dark(var(--lp-tag), var(--dp-tag));
+    --syntax-type: light-dark(var(--lp-type), var(--dp-type));
+    --syntax-variable: light-dark(var(--lp-variable), var(--dp-variable));
+    --text-code: light-dark(#2a1830, #f4efe7);
+    --text-inverse: light-dark(#f4efe7, #f4efe7);
+    --text-link: light-dark(#2a1830, #f2c14e);
+    --text-link-hover: light-dark(#5b4860, #ffd979);
+    --text-muted: light-dark(#65526a, #cdbfd2);
+    --text-on-accent: light-dark(#2a1830, #2a1830);
+    --text-primary: light-dark(#2a1830, #f4efe7);
+    --text-secondary: light-dark(#5b4860, #d9cddd);
+    --workflow-approved: light-dark(var(--green-700), var(--green-400));
+    --workflow-approved-bg: light-dark(#00a98f14, #48d4bd24);
+    --workflow-changes: light-dark(var(--red-600), var(--red-400));
+    --workflow-changes-bg: light-dark(#f0526b14, #ff7d9124);
+    --workflow-draft: light-dark(var(--gray-ink-2), var(--gray-300));
+    --workflow-draft-bg: light-dark(#6161611a, #9d9d9d26);
+    --workflow-published: light-dark(var(--blue-600), var(--blue-300));
+    --workflow-published-bg: light-dark(#2864f014, #74a0ff24);
+    --workflow-review: light-dark(var(--amber-700), var(--amber-600));
+    --workflow-review-bg: light-dark(#bf88031a, #cca70026);
+    --workflow-scheduled: light-dark(var(--purple-500), var(--purple-400));
+    --workflow-scheduled-bg: light-dark(#6d5bd014, #a69cff24);
+  }
+}
+
+/* Shared button presentation roles. Elements keep ownership of their structure and states. */
+@scope {
+  :scope {
+    --button-font: var(--type-ui-strong);
+    --button-min-block-size: var(--h-control);
+    --button-padding-block: var(--space-4);
+    --button-padding-inline: var(--space-6);
+    --button-background: transparent;
+    --button-background-hover: var(--surface-hover);
+    --button-background-active: var(--surface-active);
+    --button-border-color: var(--border-default);
+    --button-border-color-hover: var(--border-strong);
+    --button-border-color-active: var(--border-strong);
+    --button-color: var(--text-primary);
+  }
+}
+
+/* Type scale for the Yuva storefront. */
+@scope {
+  :scope {
+    --text-2xs: 10px;
+    --text-xs: 12px;
+    --text-sm: 13px;
+    --text-ui: 14px; /* default UI + control label size */
+    --text-md: 16px; /* editor body / long-form reading */
+    --text-lg: 16px;
+    --text-xl: 18px;
+    --text-2xl: 20px;
+    --text-3xl: 28px;
+    --text-4xl: 40px;
+    --text-5xl: 56px;
+    --text-6xl: 96px;
+
+    --leading-tight: 1;
+    --leading-snug: 1.3;
+    --leading-ui: 1.4;
+    --leading-body: 1.6;
+    --leading-code: 1.5;
+    --leading-loose: 1.7;
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    --tracking-tight: -0.025em;
+    --tracking-snug: -0.01em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.02em;
+    --tracking-caps: 0.08em;
+
+    /* Composite roles */
+    --type-display: var(--weight-regular) var(--text-4xl)/var(--leading-tight) var(--font-display);
+    --type-title: var(--weight-regular) var(--text-2xl)/var(--leading-snug) var(--font-display);
+    --type-heading: var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-ui);
+    --type-ui: var(--weight-regular) var(--text-ui)/var(--leading-ui) var(--font-ui);
+    --type-ui-strong: var(--weight-semibold) var(--text-ui)/var(--leading-ui) var(--font-ui);
+    --type-body: var(--weight-regular) var(--text-md)/var(--leading-body) var(--font-ui);
+    --type-caption: var(--weight-regular) var(--text-xs)/var(--leading-ui) var(--font-ui);
+    --type-code: var(--weight-regular) var(--text-sm)/var(--leading-code) var(--font-mono);
+    --type-code-editor: var(--weight-regular) var(--text-md)/var(--leading-code) var(--font-mono);
+  }
+}
+
+/* Spacing. 2px base step; editor chrome uses tight steps (2-8), content areas 12-32. */
+@scope {
+  :scope {
+    --space-0: 0;
+    --space-1: 2px;
+    --space-2: 4px;
+    --space-3: 6px;
+    --space-4: 8px;
+    --space-5: 10px;
+    --space-6: 12px;
+    --space-7: 16px;
+    --space-8: 28px;
+    --space-9: 36px;
+    --space-10: 44px;
+    --space-11: 48px;
+    --space-12: 64px;
+    --space-13: 80px;
+    --space-14: 96px;
+
+    /* Roles */
+    --pad-control-x: var(--space-6);
+    --pad-control-y: var(--space-2);
+    --pad-card: var(--space-7);
+    --pad-panel: var(--space-6);
+    --pad-row-x: var(--space-5);
+    --gap-inline: var(--space-4);
+    --gap-stack: var(--space-6);
+    --gap-section: var(--space-10);
+  }
+}
+
+/* Canvas authoring widths. Ordered from the narrowest supported layout to the widest. */
+@scope {
+  :scope {
+    --canvas-widths: 320px 390px 768px 1024px 1200px 1280px 1440px;
+  }
+}
+
+/* Corner radii, borders, and visible keyboard focus. */
+@scope {
+  :scope {
+    --radius-none: 0;
+    --radius-xs: 0px; /* buttons, inputs, chrome controls */
+    --radius-sm: 2px; /* menus, popovers, badges */
+    --radius-md: 2px; /* cards, comment bubbles */
+    --radius-lg: 2px; /* dialogs, media thumbs */
+    --radius-pill: 999px;
+
+    --border-style: solid;
+    --border-width: 1px;
+    --border-width-thick: 2px;
+    --rail-width: 2px; /* left rail on comment threads / active list rows */
+    --focus-ring-width: 3px;
+    --focus-ring-offset: 2px;
+  }
+}
+
+/* Elevation. Editor UI is flat; shadow appears only on things that float
+   above the workbench (menus, popovers, dialogs, drag ghosts). */
+@scope {
+  :scope {
+    --shadow-none: none;
+    --shadow-row: 0 1px 0 0 var(--border-subtle);
+    --shadow-widget: 0 2px 4px light-dark(#2a183008, #00000024); /* suggest widgets */
+    --shadow-menu: 0 12px 24px light-dark(#2a18301a, #00000066); /* menus, dropdowns */
+    --shadow-dialog: 0 20px 48px light-dark(#2a183026, #00000080); /* dialogs */
+    --shadow-drag: 0 8px 20px light-dark(#00000038, #00000080); /* drag ghost */
+    --scrim: var(--surface-scrim);
+    --blur-overlay: blur(2px); /* @kind other */
+  }
+}
+
+/* Motion. Short, linear-ish, no bounce. UI state changes are near-instant;
+   only things that enter or leave the screen animate. */
+@scope {
+  :scope {
+    --dur-instant: 0ms; /* @kind other */
+    /* hover, press, focus */
+    --dur-fast: 140ms; /* @kind other */
+    /* menus, tooltips, badges */
+    --dur-base: 180ms; /* @kind other */
+    /* dialogs, panel slide, toast */
+    --dur-slow: 220ms; /* @kind other */
+    /* full-panel transitions only */
+    --dur-slowest: 260ms; /* @kind other */
+
+    --ease-standard: cubic-bezier(0.2, 0, 0.38, 0.9); /* @kind other */
+    --ease-out: cubic-bezier(0, 0, 0.38, 0.9); /* @kind other */
+    --ease-in: cubic-bezier(0.2, 0, 1, 0.9); /* @kind other */
+    --ease-linear: linear; /* @kind other */
+
+    --transition-control:
+      background-color var(--dur-fast) var(--ease-standard),
+      border-color var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard); /* @kind other */
+    --transition-overlay:
+      opacity var(--dur-base) var(--ease-out), transform var(--dur-base) var(--ease-out); /* @kind other */
+  }
+}
+
+/* Workbench layout metrics. These are fixed chrome dimensions — copy them exactly. */
+@scope {
+  :scope {
+    --h-titlebar: 35px;
+    --h-tab: 35px;
+    --h-statusbar: 22px;
+    --h-toolbar: 30px;
+    --h-row: 22px; /* tree / list row */
+    --h-row-comfortable: 30px; /* content table row */
+    --h-control-sm: 44px;
+    --h-control: 44px;
+    --h-control-lg: 48px;
+    --w-activitybar: 48px;
+    --w-sidebar: 300px;
+    --w-sidebar-min: 220px;
+    --w-panel-right: 340px; /* comments / review rail */
+    --w-menu-min: 200px;
+    --w-dialog-sm: 420px;
+    --w-dialog: 560px;
+    --w-dialog-lg: 720px;
+    --size-icon-sm: 14px;
+    --size-icon: 16px;
+    --size-icon-lg: 20px;
+    --size-avatar-sm: 20px;
+    --size-avatar: 24px;
+    --size-avatar-lg: 32px;
+    --z-base: 0; /* @kind other */
+    --z-sticky: 10; /* @kind other */
+    --z-popover: 100; /* @kind other */
+    --z-menu: 200; /* @kind other */
+    --z-dialog: 300; /* @kind other */
+    --z-toast: 400; /* @kind other */
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @scope {
+    :scope {
+      --dur-fast: 0ms;
+      --dur-base: 0ms;
+      --dur-slow: 0ms;
+      --dur-slowest: 0ms;
+    }
+  }
+}

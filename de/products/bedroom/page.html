@@ -1,0 +1,24 @@
+<temel-page lang="de" title="Produkt — Yuva" max-width="1440"
+  ><header><temel-reference href="/de/header.html"></temel-reference></header>
+  <main>
+    <temel-page-content></temel-page-content>
+    <temel-loading-boundary></temel-loading-boundary
+    ><yuva-product-grid
+      ><h2 slot="heading">Mehr für Ihren Raum</h2>
+      <temel-query path="/de/products/bedroom/" limit="4" sort="path" exclude-current=""
+        ><template name="item"
+          ><yuva-product-card
+            ><temel-reference
+              slot="source"
+            ></temel-reference></yuva-product-card></template></temel-query
+      ><temel-provenance
+        slot="provenance"
+        source="ai"
+        evidence="observed"
+        tool="html"
+        contribution="generated"
+      ></temel-provenance
+    ></yuva-product-grid>
+  </main>
+  <footer><temel-reference href="/de/footer.html"></temel-reference></footer
+></temel-page>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .bg { fill: #2a1830; }
+    .mark { fill: #f4efe7; }
+    .dot { fill: #e8a91e; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #f4efe7; }
+      .mark { fill: #2a1830; }
+    }
+  </style>
+  <rect class="bg" width="32" height="32" rx="6" />
+  <path
+    class="mark"
+    d="M7.5 7.5H13L16 14.4L19 7.5H24.5L18.2 18.2V25H13.8V18.2Z"
+  />
+  <circle class="dot" cx="24" cy="23.5" r="2" />
+</svg>

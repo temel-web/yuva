@@ -1,0 +1,8 @@
+@scope {
+  :scope {
+    --icon-size: var(--size-icon);
+    --icon-stroke-width: 1.5;
+    --icon-stroke-linecap: round;
+    --icon-stroke-linejoin: round;
+  }
+}
