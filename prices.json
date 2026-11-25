@@ -441,6 +441,48 @@
         "usd": 399,
         "chf": 329
       }
+    },
+    "reduced": {
+      "/products/seating/rivet-summit-leather-chair.html": {
+        "eur": 189,
+        "usd": 219,
+        "chf": 179
+      },
+      "/products/lighting/stone-beam-dome-pendant.html": {
+        "eur": 99,
+        "usd": 119,
+        "chf": 99
+      },
+      "/products/decor/rivet-mudcloth-throw-pillow.html": {
+        "eur": 19,
+        "usd": 19,
+        "chf": 19
+      },
+      "/products/seating/stone-beam-wishbone-dining-chair.html": {
+        "eur": 189,
+        "usd": 219,
+        "chf": 179
+      },
+      "/products/tables/rivet-hillside-coffee-table.html": {
+        "eur": 269,
+        "usd": 309,
+        "chf": 249
+      },
+      "/products/seating/alkove-holt-leather-sofa.html": {
+        "eur": 699,
+        "usd": 799,
+        "chf": 669
+      },
+      "/products/seating/rivet-willard-lounge-chair.html": {
+        "eur": 189,
+        "usd": 219,
+        "chf": 179
+      },
+      "/products/lighting/rivet-black-cage-pendant.html": {
+        "eur": 99,
+        "usd": 119,
+        "chf": 99
+      }
     }
   }
 }
