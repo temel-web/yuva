@@ -441,6 +441,48 @@
         "usd": 399,
         "chf": 329
       }
+    },
+    "reduced": {
+      "/products/tables/movian-haven-desk.html": {
+        "eur": 219,
+        "usd": 249,
+        "chf": 209
+      },
+      "/products/lighting/rivet-caden-floor-lamp.html": {
+        "eur": 65,
+        "usd": 75,
+        "chf": 65
+      },
+      "/products/seating/rivet-huxley-accent-chair.html": {
+        "eur": 189,
+        "usd": 219,
+        "chf": 179
+      },
+      "/products/lighting/rivet-marble-brass-table-lamp.html": {
+        "eur": 65,
+        "usd": 75,
+        "chf": 65
+      },
+      "/products/seating/rivet-apex-sofa.html": {
+        "eur": 679,
+        "usd": 779,
+        "chf": 649
+      },
+      "/products/decor/stone-beam-abstract-wall-art.html": {
+        "eur": 55,
+        "usd": 65,
+        "chf": 55
+      },
+      "/products/tables/rivet-bristol-side-table.html": {
+        "eur": 259,
+        "usd": 299,
+        "chf": 249
+      },
+      "/products/decor/rivet-san-francisco-canvas-print.html": {
+        "eur": 55,
+        "usd": 65,
+        "chf": 55
+      }
     }
   }
 }
