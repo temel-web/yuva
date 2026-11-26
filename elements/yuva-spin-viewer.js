@@ -1,7 +1,26 @@
 import { AnimationController } from "/@/runtime/animation-controller.js";
-import { StoreElement, node } from "./shared/store-element.js";
+import { StoreElement, createTemplate } from "./shared/store-element.js";
 
 const SPIN_ATLAS_PATH_PATTERN = /^\/(?!\/)[a-z0-9/._-]+\.webp$/u;
+
+const styles = new CSSStyleSheet();
+styles.replaceSync(`
+  canvas { display: block; inline-size: 100%; max-block-size: 65vh; object-fit: contain; aspect-ratio: 320 / 405; touch-action: pan-y; cursor: grab; background: white; }
+  .controls { display: flex; gap: var(--space-4); justify-content: center; margin-block: var(--space-6); }
+  #spin-label { display: block; font: var(--type-caption); color: var(--text-muted); margin-block-end: var(--space-4); }
+`);
+
+const layout = createTemplate(`
+  <span id="spin-label"><slot></slot></span>
+  <canvas width="320" height="405" tabindex="0" aria-labelledby="spin-label"></canvas>
+  <div class="controls">
+    <button type="button" value="previous"><slot name="previous"></slot></button>
+    <button type="button" value="toggle"></button>
+    <button type="button" value="next"><slot name="next"></slot></button>
+  </div>
+  <div role="status" class="status"></div>
+  <slot name="provenance"></slot>
+`);
 
 /** A lazy 36-frame turntable with one owned animation clock. */
 export class YuvaSpinViewer extends StoreElement {
@@ -17,6 +36,8 @@ export class YuvaSpinViewer extends StoreElement {
     "provenance",
   ];
   static observedAttributes = ["src"];
+  static styles = styles;
+  static layout = layout;
   #canvas;
   #context;
   #image = null;
@@ -41,31 +62,10 @@ export class YuvaSpinViewer extends StoreElement {
 
   constructor() {
     super();
-    this.#canvas = node("canvas", {
-      width: "320",
-      height: "405",
-      tabindex: "0",
-      "aria-labelledby": "spin-label",
-    });
+    this.#canvas = this.shadowRoot.querySelector("canvas");
     this.#context = this.#canvas.getContext("2d");
-    this.#toggle = node("button", { type: "button", value: "toggle" });
-    this.#status = node("div", { role: "status", class: "status" });
-    const controls = node("div", { class: "controls" }, [
-      node("button", { type: "button", value: "previous" }, [
-        this.temelSlot("previous"),
-      ]),
-      this.#toggle,
-      node("button", { type: "button", value: "next" }, [
-        this.temelSlot("next"),
-      ]),
-    ]);
-    this.shadowRoot.append(
-      node("span", { id: "spin-label" }, [this.temelSlot("")]),
-      this.#canvas,
-      controls,
-      this.#status,
-      this.temelSlot("provenance"),
-    );
+    this.#toggle = this.shadowRoot.querySelector('button[value="toggle"]');
+    this.#status = this.shadowRoot.querySelector(".status");
     this.shadowRoot.addEventListener(
       "click",
       this.handleControlClick.bind(this),
@@ -91,11 +91,6 @@ export class YuvaSpinViewer extends StoreElement {
       this.handleCanvasPointerup.bind(this),
     );
     this.#animation.pause("unloaded");
-    this.addStyles(`
-      canvas { display: block; inline-size: 100%; max-block-size: 65vh; object-fit: contain; aspect-ratio: 320 / 405; touch-action: pan-y; cursor: grab; background: white; }
-      .controls { display: flex; gap: var(--space-4); justify-content: center; margin-block: var(--space-6); }
-      #spin-label { display: block; font: var(--type-caption); color: var(--text-muted); margin-block-end: var(--space-4); }
-    `);
   }
 
   get animation() {

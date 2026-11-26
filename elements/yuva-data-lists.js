@@ -1,6 +1,8 @@
 import { TemelElement } from "/@/runtime/temel-element.js";
 import "/@/runtime/temel-provenance.js";
 
+import { createTemplate } from "./shared/store-element.js";
+
 const LISTS = new Map([
   [
     "categories",
@@ -65,6 +67,34 @@ styles.replaceSync(`
   @media (pointer: coarse) { a { min-block-size: 44px; display: inline-flex; align-items: center; } }
 `);
 
+const layout = createTemplate(`
+  <main>
+    <header>
+      <h1 id="product-lists">Product lists</h1>
+      <p>
+        Shared choices for categories, brands, colors and finishes, and materials. Keep product
+        details consistent wherever the same values are selected.
+      </p>
+      <nav aria-labelledby="product-lists"></nav>
+    </header>
+    <div class="entries"></div>
+    <slot name="provenance"></slot>
+  </main>
+`);
+
+const navLinkTemplate = createTemplate("<a></a>");
+
+const sectionTemplate = createTemplate(`
+  <section>
+    <div class="title">
+      <h2 tabindex="-1"></h2>
+      <span class="count"></span>
+    </div>
+    <p></p>
+    <slot></slot>
+  </section>
+`);
+
 /**
  * A dedicated product-list app. Fixed application copy and layout live in shadow DOM;
  * only the actual list data persists in light DOM. Headings name the navigation and
@@ -74,7 +104,7 @@ export class YuvaDataLists extends TemelElement(HTMLElement) {
   static temelSlots = ["", "provenance"];
 
   #surface;
-  #entries = document.createElement("div");
+  #entries;
   #sectionByList = new Map();
   #events = null;
 
@@ -85,26 +115,24 @@ export class YuvaDataLists extends TemelElement(HTMLElement) {
       slotAssignment: "manual",
     });
     this.#surface.adoptedStyleSheets = [styles];
-    const main = document.createElement("main");
-    const header = document.createElement("header");
-    const heading = document.createElement("h1");
-    heading.id = "product-lists";
-    heading.textContent = "Product lists";
-    const summary = document.createElement("p");
-    summary.textContent =
-      "Shared choices for categories, brands, colors and finishes, and materials. Keep product details consistent wherever the same values are selected.";
-    const nav = document.createElement("nav");
-    nav.setAttribute("aria-labelledby", heading.id);
+    const fragment = /** @type {DocumentFragment} */ (
+      layout.content.cloneNode(true)
+    );
+    const nav = fragment.querySelector("nav");
     for (const [id, details] of LISTS) {
-      const link = document.createElement("a");
+      const link = /** @type {HTMLAnchorElement} */ (
+        navLinkTemplate.content.firstElementChild.cloneNode(true)
+      );
       link.href = `#${id}`;
       link.dataset.listId = id;
       link.textContent = details.title;
       nav.append(link);
     }
-    header.append(heading, summary, nav);
-    main.append(header, this.#entries, this.temelSlot("provenance"));
-    this.#surface.append(main);
+    this.#entries = fragment.querySelector(".entries");
+    fragment
+      .querySelector('slot[name="provenance"]')
+      .replaceWith(this.temelSlot("provenance"));
+    this.#surface.append(fragment);
   }
 
   connectedCallback() {
@@ -183,19 +211,17 @@ export class YuvaDataLists extends TemelElement(HTMLElement) {
   }
 
   #createSection(index) {
-    const section = document.createElement("section");
-    const title = document.createElement("div");
-    title.className = "title";
-    const heading = document.createElement("h2");
+    const fragment = /** @type {DocumentFragment} */ (
+      sectionTemplate.content.cloneNode(true)
+    );
+    const section = fragment.querySelector("section");
+    const heading = section.querySelector("h2");
     heading.id = `list-heading-${index}`;
-    heading.tabIndex = -1;
     section.setAttribute("aria-labelledby", heading.id);
-    const count = document.createElement("span");
-    count.className = "count";
-    const summary = document.createElement("p");
+    const count = section.querySelector(".count");
+    const summary = section.querySelector("p");
     const slot = this.temelSlot("");
-    title.append(heading, count);
-    section.append(title, summary, slot);
+    section.querySelector("slot").replaceWith(slot);
     return { section, heading, count, summary, slot };
   }
 }
