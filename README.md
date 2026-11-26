@@ -1,34 +1,18 @@
 # Yuva
 
-This repository contains browser-ready web content managed with ordinary Git and Temel. It has no build step. Runtime modules, author modules, and Design Systems remain native
-files and are served exactly as authored.
+A demonstration home-goods store built with [Temel](https://temel.page/) and managed in Git. View the live site at [yuva.demo.temel.page](https://yuva.demo.temel.page/).
 
-Yuva is a local demonstration store with 88 real Amazon Berkeley Objects products. Prices are
-illustrative. Nothing is for sale. A custom element's definition supplies shared behavior and appearance. Files in
-`templates/` supply default content to instances in that folder's content hierarchy; nearer
-templates override individual slots. Content written directly in an instance overrides that slot
-locally. These files have no ongoing connection to the Temel organization repository.
+Yuva includes 88 real products with photography, 360° spin views, audience variations, translations, and a browser-only cart. Prices are illustrative; nothing is for sale.
 
-## Local store
+## Repository layout
 
-The running site is [Yuva locally](http://yuva.localhost:32125/). Build tools and browser tests live
-in the Temel product repository under `scripts/yuva/`; this content checkout contains no development tooling.
+- **Storefront:** `index.html`, category pages (`seating/`, `tables/`, `lighting/`, `rugs/`, `decor/`, `bedroom/`), `campaigns/winter.html`, and `cart/`
+- **Catalog:** 88 products under `products/<category>/<slug>.html`, `prices.json`, and media under `assets/products/`
+- **Translations:** `de/`, `fr/`, and `fr-ch/`
+- **Shared content:** `header.html`, `footer.html`, `templates/`, and `data/lists.html`
+- **Components & design:** `elements/`, `import.library.js` (adopted `@temel` elements), `design-system/` (see [DESIGN.md](DESIGN.md)), and `themes/`
 
-- `index.html`: a full-width room scene, audience variations, a featured product spread, and a category grid.
-- `seating/`, `tables/`, `lighting/`, `rugs/`, `decor/`, `bedroom/`: category pages.
-- `products/<category>/<slug>.html`: product sources with short names from the
-  catalog, all inheriting `products/page.html`.
-- Related products are queries in the category's product template. Product headings are plain
-  text; the separate product-path field supplies navigation and cart identity.
-- `cart/`: browser-owned cart. Saved products load through `.e.html` addresses, with resolved
-  content and images and without the product page's frame, head, or modules.
-- `campaigns/winter.html`: winter campaign.
-- `header.html`, `footer.html`, `templates/`, `data/lists.html`: shared content.
-- `products/<category>/<slug>.html`: authoritative product facts and original media IDs.
-- `prices.json`: the price-service response fetched by product views and the cart.
-- Each product HTML stores Product JSON-LD with its USD offer for initial HTML delivery. Opening
-  the product refreshes that metadata from fetched prices, and Editor saves preserve it.
-- `assets/products/`: four photographs and one spin atlas per product.
+## Credits
 
-The footer credits the official dataset, its CC BY 4.0 license, and the image conversions.
-The published demonstration store is [Yuva](https://yuva.demo.temel.page/).
+- Product data and photography: [Amazon Berkeley Objects](https://amazon-berkeley-objects.s3.amazonaws.com/index.html) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), resized and converted.
+- Fonts: bundled WOFF2 fonts under the SIL Open Font License 1.1 (`design-system/licenses/`).
