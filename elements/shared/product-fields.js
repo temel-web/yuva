@@ -1,9 +1,13 @@
 import { languagePath } from "/@/runtime/language-paths.js";
 
+import { createTemplate } from "./store-element.js";
 import { money, readCurrency } from "./store-preferences.js";
 import { priceClient } from "./price-client.js";
 
-const PRODUCT_PATH_PATTERN = /^\/products\/[a-z0-9-]+\/[a-z0-9]+(?:-[a-z0-9]+)*\.html$/u;
+const reducedPriceTemplate = createTemplate("<del></del> <ins></ins>");
+
+const PRODUCT_PATH_PATTERN =
+  /^\/products\/[a-z0-9-]+\/[a-z0-9]+(?:-[a-z0-9]+)*\.html$/u;
 
 export const PRODUCT_FIELDS = Object.freeze([
   "path",
@@ -16,7 +20,9 @@ export const PRODUCT_FIELDS = Object.freeze([
 
 /** Product identity is separate from its visible heading. @param {HTMLElement} host */
 export function productPath(host) {
-  const value = host.querySelector(":scope > data[slot='path']")?.getAttribute("value") ?? "";
+  const value =
+    host.querySelector(":scope > data[slot='path']")?.getAttribute("value") ??
+    "";
   return PRODUCT_PATH_PATTERN.test(value) ? value : "";
 }
 
@@ -48,11 +54,16 @@ export function showPrice(host, options = {}) {
       output.textContent = money(amount, currency, host);
       return;
     }
-    const regular = document.createElement("del");
-    regular.textContent = money(regularAmount, currency, host);
-    const reduced = document.createElement("ins");
-    reduced.textContent = money(amount, currency, host);
-    output.replaceChildren(regular, " ", reduced);
+    const fragment = /** @type {DocumentFragment} */ (
+      reducedPriceTemplate.content.cloneNode(true)
+    );
+    fragment.querySelector("del").textContent = money(
+      regularAmount,
+      currency,
+      host,
+    );
+    fragment.querySelector("ins").textContent = money(amount, currency, host);
+    output.replaceChildren(fragment);
     return;
   }
   output.replaceChildren(...(isLoading ? [] : [host.temelSlot("price-error")]));

@@ -1,6 +1,11 @@
-import { node } from "./shared/store-element.js";
+import { createTemplate } from "./shared/store-element.js";
 import { PricedStoreElement } from "./shared/priced-store-element.js";
-import { money, readCart, readCurrency, setQuantity } from "./shared/store-preferences.js";
+import {
+  money,
+  readCart,
+  readCurrency,
+  setQuantity,
+} from "./shared/store-preferences.js";
 import { CartContentController } from "./shared/cart-content-controller.js";
 import { priceClient } from "./shared/price-client.js";
 import "./yuva-cart-line.js";
@@ -16,6 +21,70 @@ documentStyles.replaceSync(`
     outline: var(--border-width-thick) solid var(--border-focus); outline-offset: var(--space-2);
   }
 `);
+
+const styles = new CSSStyleSheet();
+styles.replaceSync(`
+  :host { padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); min-block-size: 50svh; }
+  ::slotted([slot="heading"]) { font: var(--weight-regular) clamp(var(--text-5xl), 7cqi, var(--text-6xl))/0.96 var(--font-display); letter-spacing: -0.01em; margin-block: 0 var(--space-7); }
+  ::slotted([slot="notice"]) { color: var(--text-secondary); }
+  ::slotted([slot="empty"]) { display: grid; gap: var(--space-7); max-inline-size: 42ch; padding-block: var(--space-11); }
+  .loading[inert] { visibility: hidden; }
+  .columns { display: none; }
+  .items { list-style: none; padding: 0; margin: var(--space-9) 0 0; border-block-start: var(--border-width) solid var(--text-primary); }
+  .items:empty { border: 0; }
+  .summary { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-7); padding-block-start: var(--space-8); font: var(--weight-regular) var(--text-xl)/var(--leading-snug) var(--font-ui); }
+  .summary output { font: var(--weight-regular) var(--text-4xl)/1 var(--font-display); font-variant-numeric: tabular-nums; }
+  .unavailable { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-6); padding-block: var(--space-8); }
+  .unavailable span { flex: 1; overflow-wrap: anywhere; }
+  @container (min-width: 46rem) {
+    .columns { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 7rem 10rem 7rem; column-gap: var(--space-8); margin-block-start: var(--space-9); padding-block-end: var(--space-5); color: var(--text-secondary); font: var(--type-ui); }
+    .columns:has(+ .items:empty) { display: none; }
+    .columns > :nth-child(1) { grid-column: 1 / 3; }
+    .columns > :is(:nth-child(2), :nth-child(4)) { justify-self: end; }
+    .columns > :nth-child(3) { justify-self: center; }
+    .columns > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+    .items { margin-block-start: 0; }
+  }
+`);
+
+const layout = createTemplate(`
+  <slot name="heading"></slot>
+  <slot name="notice"></slot>
+  <div role="status" tabindex="-1" class="loading" inert>
+    <slot name="loading"></slot>
+  </div>
+  <div class="empty" tabindex="-1" hidden>
+    <slot name="empty"></slot>
+  </div>
+  <div hidden>
+    <slot></slot>
+  </div>
+  <div class="columns" aria-hidden="true">
+    <slot name="item-label"></slot>
+    <slot name="price-label"></slot>
+    <slot name="quantity-label"></slot>
+    <slot name="total-label"></slot>
+  </div>
+  <ul class="items"></ul>
+  <div hidden>
+    <slot name="unavailable"></slot>
+    <slot name="content-error"></slot>
+    <slot name="retry"></slot>
+    <slot name="remove"></slot>
+  </div>
+  <div class="summary" hidden>
+    <slot name="subtotal"></slot>
+    <output></output>
+  </div>
+  <div role="status" class="status"></div>
+  <slot name="provenance"></slot>
+`);
+
+const rowTemplate = createTemplate("<li></li>");
+const unavailableTemplate = createTemplate(
+  '<div class="unavailable"><span></span><button type="button"></button></div>',
+);
+const retryButtonTemplate = createTemplate('<button type="button"></button>');
 
 /** Read saved product documents and compose their cart rows in the browser. */
 export class YuvaCart extends PricedStoreElement {
@@ -38,13 +107,14 @@ export class YuvaCart extends PricedStoreElement {
     "notice",
     "provenance",
   ];
+  static styles = styles;
+  static layout = layout;
   #empty;
   #summary;
   #total;
   #loading;
   #items;
   #status;
-  #lineTemplateSlot;
   #rowsByPath = new Map();
   #observedLines = new WeakSet();
   #initialReady = Promise.withResolvers();
@@ -60,61 +130,16 @@ export class YuvaCart extends PricedStoreElement {
 
   constructor() {
     super();
-    this.#empty = node("div", { tabindex: "-1", hidden: "" }, [this.temelSlot("empty")]);
-    this.#loading = node("div", { role: "status", tabindex: "-1", class: "loading", inert: "" }, [
-      this.temelSlot("loading"),
-    ]);
-    this.#items = node("ul", { class: "items" });
-    this.#total = node("output");
-    this.#summary = node("div", { class: "summary", hidden: "" }, [
-      this.temelSlot("subtotal"),
-      this.#total,
-    ]);
-    this.#status = node("div", { role: "status", class: "status" });
-    this.#lineTemplateSlot = this.temelSlot("");
-    this.shadowRoot.append(
-      this.temelSlot("heading"),
-      this.temelSlot("notice"),
-      this.#loading,
-      this.#empty,
-      node("div", { hidden: "" }, [this.#lineTemplateSlot]),
-      node("div", { class: "columns", "aria-hidden": "true" }, [
-        ...["item-label", "price-label", "quantity-label", "total-label"].map((name) =>
-          this.temelSlot(name),
-        ),
-      ]),
-      this.#items,
-      node("div", { hidden: "" }, [
-        ...["unavailable", "content-error", "retry", "remove"].map((name) => this.temelSlot(name)),
-      ]),
-      this.#summary,
-      this.#status,
-      this.temelSlot("provenance"),
+    this.#loading = this.shadowRoot.querySelector(".loading");
+    this.#empty = this.shadowRoot.querySelector(".empty");
+    this.#items = this.shadowRoot.querySelector(".items");
+    this.#summary = this.shadowRoot.querySelector(".summary");
+    this.#total = this.shadowRoot.querySelector(".summary output");
+    this.#status = this.shadowRoot.querySelector(".status");
+    this.shadowRoot.addEventListener(
+      "cart-item-removed",
+      this.handleItemRemoved.bind(this),
     );
-    this.shadowRoot.addEventListener("cart-item-removed", this.handleItemRemoved.bind(this));
-    this.addStyles(`
-      :host { padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); min-block-size: 50svh; }
-      ::slotted([slot="heading"]) { font: var(--weight-regular) clamp(var(--text-5xl), 7cqi, var(--text-6xl))/0.96 var(--font-display); letter-spacing: -0.01em; margin-block: 0 var(--space-7); }
-      ::slotted([slot="notice"]) { color: var(--text-secondary); }
-      ::slotted([slot="empty"]) { display: grid; gap: var(--space-7); max-inline-size: 42ch; padding-block: var(--space-11); }
-      .loading[inert] { visibility: hidden; }
-      .columns { display: none; }
-      .items { list-style: none; padding: 0; margin: var(--space-9) 0 0; border-block-start: var(--border-width) solid var(--text-primary); }
-      .items:empty { border: 0; }
-      .summary { display: flex; justify-content: space-between; align-items: baseline; gap: var(--space-7); padding-block-start: var(--space-8); font: var(--weight-regular) var(--text-xl)/var(--leading-snug) var(--font-ui); }
-      .summary output { font: var(--weight-regular) var(--text-4xl)/1 var(--font-display); font-variant-numeric: tabular-nums; }
-      .unavailable { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-6); padding-block: var(--space-8); }
-      .unavailable span { flex: 1; overflow-wrap: anywhere; }
-      @container (min-width: 46rem) {
-        .columns { display: grid; grid-template-columns: 7rem minmax(0, 1fr) 7rem 10rem 7rem; column-gap: var(--space-8); margin-block-start: var(--space-9); padding-block-end: var(--space-5); color: var(--text-secondary); font: var(--type-ui); }
-        .columns:has(+ .items:empty) { display: none; }
-        .columns > :nth-child(1) { grid-column: 1 / 3; }
-        .columns > :is(:nth-child(2), :nth-child(4)) { justify-self: end; }
-        .columns > :nth-child(3) { justify-self: center; }
-        .columns > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
-        .items { margin-block-start: 0; }
-      }
-    `);
   }
 
   connectedCallback() {
@@ -142,14 +167,19 @@ export class YuvaCart extends PricedStoreElement {
       return;
     }
     const content = this.#content.synchronize(items.map((item) => item.path));
-    const isLoading = content.some((entry) => ["queued", "loading"].includes(entry.status));
+    const isLoading = content.some((entry) =>
+      ["queued", "loading"].includes(entry.status),
+    );
     const wasLoadingFocused = this.shadowRoot.activeElement === this.#loading;
     this.#loading.inert = !isLoading;
     this.#items.setAttribute("aria-busy", String(isLoading));
     this.#empty.hidden = items.length > 0;
-    this.#renderItems(content.filter((entry) => !["queued", "loading"].includes(entry.status)));
+    this.#renderItems(
+      content.filter((entry) => !["queued", "loading"].includes(entry.status)),
+    );
     this.#updateSubtotal(items, content);
-    if (wasLoadingFocused && !isLoading) this.#focusItem(this.#items.firstElementChild);
+    if (wasLoadingFocused && !isLoading)
+      this.#focusItem(this.#items.firstElementChild);
     this.setState("empty", items.length === 0);
     this.#updateInitialReadiness(items, content, isLoading);
   }
@@ -159,11 +189,14 @@ export class YuvaCart extends PricedStoreElement {
    * @param {boolean} isLoading */
   #updateInitialReadiness(items, content, isLoading) {
     const hasReadyContent = content.some((entry) => entry.status === "ready");
-    const isPricePending = hasReadyContent && ["idle", "loading"].includes(priceClient.status);
+    const isPricePending =
+      hasReadyContent && ["idle", "loading"].includes(priceClient.status);
     if (!isLoading && !isPricePending) this.#settleInitialReady();
     if (items.length > 0 && priceClient.status === "idle") {
       priceClient.fetchPrices().catch(function reportPriceFailure(cause) {
-        document.dispatchEvent(new CustomEvent("prices-error", { detail: cause }));
+        document.dispatchEvent(
+          new CustomEvent("prices-error", { detail: cause }),
+        );
       });
     }
   }
@@ -186,7 +219,9 @@ export class YuvaCart extends PricedStoreElement {
     for (const entry of content) {
       let row = this.#rowsByPath.get(entry.path);
       if (!row) {
-        row = node("li");
+        row = /** @type {HTMLElement} */ (
+          rowTemplate.content.firstElementChild.cloneNode(true)
+        );
         this.#rowsByPath.set(entry.path, row);
       }
       const next = previous ? previous.nextSibling : this.#items.firstChild;
@@ -203,13 +238,18 @@ export class YuvaCart extends PricedStoreElement {
     const hasFocus = row.contains(this.shadowRoot.activeElement);
     if (entry.status === "ready") {
       if (!this.#observedLines.has(entry.line)) {
-        const template = this.#lineTemplateSlot.assignedElements()[0];
-        const populatedSlots = new Set(Array.from(entry.line.children, (child) => child.slot));
+        const template = this.slotFor("").assignedElements()[0];
+        const populatedSlots = new Set(
+          Array.from(entry.line.children, (child) => child.slot),
+        );
         const labels = Array.from(template?.children ?? []).filter(
           (child) => !populatedSlots.has(child.slot),
         );
         entry.line.append(...labels.map((child) => child.cloneNode(true)));
-        entry.line.addEventListener("cart-item-removed", this.handleItemRemoved.bind(this));
+        entry.line.addEventListener(
+          "cart-item-removed",
+          this.handleItemRemoved.bind(this),
+        );
         this.#observedLines.add(entry.line);
       }
       if (row.firstChild !== entry.line) row.replaceChildren(entry.line);
@@ -218,33 +258,43 @@ export class YuvaCart extends PricedStoreElement {
       if (row.dataset.status !== entry.status) {
         row.replaceChildren(this.#unresolvedItem(entry));
       }
-      const message = entry.status === "missing" ? "unavailable" : "content-error";
+      const message =
+        entry.status === "missing" ? "unavailable" : "content-error";
       row.querySelector("span").textContent = this.text(message);
       row.querySelector("button").textContent = this.text("remove");
       const retry = row.querySelector("button + button");
       if (retry) retry.textContent = this.text("retry");
     }
     row.dataset.status = entry.status;
-    if (hasFocus && !row.contains(this.shadowRoot.activeElement)) this.#focusItem(row);
+    if (hasFocus && !row.contains(this.shadowRoot.activeElement))
+      this.#focusItem(row);
   }
 
   /** @param {import("./shared/cart-content-controller.js").CartContent} entry */
   #unresolvedItem(entry) {
     const isFailed = entry.status === "failed";
     const isMissing = entry.status === "missing";
-    const message = node("span");
-    message.textContent = this.text(isMissing ? "unavailable" : "content-error");
-    const remove = node("button", { type: "button" }, [this.text("remove")]);
+    const container = /** @type {HTMLElement} */ (
+      unavailableTemplate.content.firstElementChild.cloneNode(true)
+    );
+    const message = container.querySelector("span");
+    message.textContent = this.text(
+      isMissing ? "unavailable" : "content-error",
+    );
+    const remove = container.querySelector("button");
+    remove.textContent = this.text("remove");
     remove.dataset.path = entry.path;
     remove.addEventListener("click", this.handleUnavailableRemove.bind(this));
-    const children = [message, remove];
     if (isFailed) {
-      const retry = node("button", { type: "button" }, [this.text("retry")]);
+      const retry = /** @type {HTMLButtonElement} */ (
+        retryButtonTemplate.content.firstElementChild.cloneNode(true)
+      );
+      retry.textContent = this.text("retry");
       retry.dataset.path = entry.path;
       retry.addEventListener("click", this.handleContentRetry.bind(this));
-      children.push(retry);
+      container.append(retry);
     }
-    return node("div", { class: "unavailable" }, children);
+    return container;
   }
 
   /** @param {import("./shared/store-preferences.js").CartItem[]} items
@@ -253,12 +303,19 @@ export class YuvaCart extends PricedStoreElement {
     const hasContent = content.every((entry) => entry.status === "ready");
     const lines = content.map((entry) => entry.line);
     const hasPrices =
-      hasContent && priceClient.status === "ready" && lines.every((line) => line.amount !== null);
+      hasContent &&
+      priceClient.status === "ready" &&
+      lines.every((line) => line.amount !== null);
     const subtotal = hasPrices
-      ? items.reduce((total, item, index) => total + item.quantity * lines[index].amount, 0)
+      ? items.reduce(
+          (total, item, index) => total + item.quantity * lines[index].amount,
+          0,
+        )
       : 0;
     const hasSubtotal = hasPrices && Number.isSafeInteger(subtotal);
-    this.#total.textContent = hasSubtotal ? money(subtotal, readCurrency(this), this) : "";
+    this.#total.textContent = hasSubtotal
+      ? money(subtotal, readCurrency(this), this)
+      : "";
     this.#summary.hidden = items.length === 0 || !hasSubtotal;
     const shouldReport =
       items.length > 0 &&
@@ -268,7 +325,9 @@ export class YuvaCart extends PricedStoreElement {
     const message = hasPrices ? "error" : "price-error";
     const current = this.#status.querySelector("slot")?.name;
     if (current !== (shouldReport ? message : undefined)) {
-      this.#status.replaceChildren(...(shouldReport ? [this.temelSlot(message)] : []));
+      this.#status.replaceChildren(
+        ...(shouldReport ? [this.temelSlot(message)] : []),
+      );
     }
   }
 
@@ -317,9 +376,15 @@ export class YuvaCart extends PricedStoreElement {
 
   /** @param {Element | null} row */
   #focusItem(row) {
-    const input = row?.querySelector("yuva-cart-line")?.shadowRoot?.querySelector("input");
+    const input = row
+      ?.querySelector("yuva-cart-line")
+      ?.shadowRoot?.querySelector("input");
     const button = row?.querySelector("button");
-    (input ?? button ?? (this.#loading.inert ? this.#empty : this.#loading)).focus();
+    (
+      input ??
+      button ??
+      (this.#loading.inert ? this.#empty : this.#loading)
+    ).focus();
   }
 }
 customElements.define("yuva-cart", YuvaCart);
