@@ -1,10 +1,13 @@
 import {
   buttonSizeVariables,
   buttonVariantVariables,
-  svgNode,
 } from "/@temel/elements/page-essentials/page-essential-element.js";
-import { StoreElement, node } from "./shared/store-element.js";
-import { CURRENCIES, readCurrency, setCurrency } from "./shared/store-preferences.js";
+import { StoreElement, createTemplate } from "./shared/store-element.js";
+import {
+  CURRENCIES,
+  readCurrency,
+  setCurrency,
+} from "./shared/store-preferences.js";
 
 const MENU_KEYS = new Set(["ArrowDown", "ArrowUp", "Home", "End"]);
 const styles = new CSSStyleSheet();
@@ -55,18 +58,35 @@ styles.replaceSync(`
   @media (forced-colors: active) { .currencies { border-color: CanvasText; } }
 `);
 
-function currencyIcon(className, path) {
-  return svgNode(
-    "svg",
-    {
-      class: className,
-      "aria-hidden": "true",
-      focusable: "false",
-      viewBox: "0 0 24 24",
-    },
-    [svgNode("path", { d: path })],
-  );
-}
+const layout = createTemplate(`
+  <button
+    type="button"
+    class="trigger"
+    popovertarget="currencies"
+    aria-haspopup="menu"
+    aria-controls="currencies"
+    aria-expanded="false"
+    aria-labelledby="currency-label current-currency"
+  >
+    <span id="current-currency"></span>
+    <svg class="chevron" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"></path>
+    </svg>
+  </button>
+  <div id="currencies" class="currencies" role="menu" popover="auto" aria-labelledby="currency-label">
+    <span id="currency-label" class="menu-label"><slot name="label"></slot></span>
+  </div>
+  <slot name="provenance"></slot>
+`);
+
+const choiceTemplate = createTemplate(`
+  <button type="button" class="choice" role="menuitemradio" aria-checked="false">
+    <slot></slot>
+    <svg class="check" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+      <path d="m5 12 5 5 9-10"></path>
+    </svg>
+  </button>
+`);
 
 function nextChoiceIndex(key, index, count) {
   if (key === "Home") return 0;
@@ -79,6 +99,8 @@ function nextChoiceIndex(key, index, count) {
 export class YuvaCurrencySwitcher extends StoreElement {
   static preferenceTopics = Object.freeze(["currency"]);
   static temelSlots = ["label", "eur", "usd", "chf", "provenance"];
+  static styles = styles;
+  static layout = layout;
   #choices = [];
   #trigger;
   #current;
@@ -88,38 +110,21 @@ export class YuvaCurrencySwitcher extends StoreElement {
 
   constructor() {
     super();
-    const label = node("span", { id: "currency-label", class: "menu-label" }, [
-      this.temelSlot("label"),
-    ]);
-    this.#current = node("span", { id: "current-currency" });
-    this.#trigger = node(
-      "button",
-      {
-        type: "button",
-        class: "trigger",
-        popovertarget: "currencies",
-        "aria-haspopup": "menu",
-        "aria-controls": "currencies",
-        "aria-expanded": "false",
-        "aria-labelledby": "currency-label current-currency",
-      },
-      [this.#current, currencyIcon("chevron", "m6 9 6 6 6-6")],
-    );
-    this.#menu = node("div", {
-      id: "currencies",
-      class: "currencies",
-      role: "menu",
-      popover: "auto",
-      "aria-labelledby": "currency-label",
-    });
+    this.#trigger = this.shadowRoot.querySelector(".trigger");
+    this.#current = this.shadowRoot.querySelector("#current-currency");
+    this.#menu = this.shadowRoot.querySelector("#currencies");
     this.#choices = CURRENCIES.map((currency) => this.#createChoice(currency));
-    this.#menu.append(label, ...this.#choices);
+    this.#menu.append(...this.#choices);
     this.#trigger.addEventListener("click", this.handleTriggerClick.bind(this));
     this.#menu.addEventListener("toggle", this.handleMenuToggle.bind(this));
-    this.shadowRoot.addEventListener("keydown", this.handleSelectorKeydown.bind(this));
-    this.shadowRoot.addEventListener("slotchange", this.handleContentChange.bind(this));
-    this.shadowRoot.append(this.#trigger, this.#menu, this.temelSlot("provenance"));
-    this.shadowRoot.adoptedStyleSheets = [...this.shadowRoot.adoptedStyleSheets, styles];
+    this.shadowRoot.addEventListener(
+      "keydown",
+      this.handleSelectorKeydown.bind(this),
+    );
+    this.shadowRoot.addEventListener(
+      "slotchange",
+      this.handleContentChange.bind(this),
+    );
   }
 
   update() {
@@ -192,21 +197,19 @@ export class YuvaCurrencySwitcher extends StoreElement {
       return;
     }
     const index = this.#choices.indexOf(this.shadowRoot.activeElement);
-    this.#choices[nextChoiceIndex(event.key, index, this.#choices.length)].focus();
+    this.#choices[
+      nextChoiceIndex(event.key, index, this.#choices.length)
+    ].focus();
   }
 
   #createChoice(currency) {
-    const choice = node(
-      "button",
-      {
-        type: "button",
-        class: "choice",
-        value: currency,
-        role: "menuitemradio",
-        "aria-checked": "false",
-      },
-      [this.temelSlot(currency), currencyIcon("check", "m5 12 5 5 9-10")],
+    const fragment = /** @type {DocumentFragment} */ (
+      choiceTemplate.content.cloneNode(true)
     );
+    const choice = fragment.querySelector("button");
+    choice.value = currency;
+    fragment.querySelector("slot").setAttribute("name", currency);
+    this.mountSlots(fragment);
     choice.addEventListener("click", this.handleCurrencyClick.bind(this));
     return choice;
   }

@@ -23,20 +23,46 @@ foundation.replaceSync(`
   .sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
 `);
 
+/** Parse a constant HTML template once at module load. @param {string} markup */
+export function createTemplate(markup) {
+  const template = document.createElement("template");
+  template.innerHTML = markup.trim();
+  return template;
+}
+
 /** Native foundation for Yuva's authored content and visitor interactions. */
 export class StoreElement extends TemelElement(HTMLElement) {
   static preferenceTopics = Object.freeze(["cart", "currency"]);
+  /** @type {CSSStyleSheet | null} */
+  static styles = null;
+  /** @type {HTMLTemplateElement | null} */
+  static layout = null;
   #subscriptions;
   #internals;
+  /** @type {{ name: string, className: string, attributes: [string, string][], current: HTMLSlotElement }[]} */
+  #slots = [];
+  #variationChain = "[]";
   #handlePreferenceBound = this.handlePreferenceChange.bind(this);
   #handleStorageBound = this.#handleStorageChange.bind(this);
   #handleContentBound = this.handleContentChange.bind(this);
 
   constructor() {
     super();
+    const { styles, layout } = /** @type {typeof StoreElement} */ (
+      this.constructor
+    );
     this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets = [foundation];
+    this.shadowRoot.adoptedStyleSheets = styles
+      ? [foundation, styles]
+      : [foundation];
     this.#internals = this.attachInternals();
+    if (layout) {
+      const fragment = /** @type {DocumentFragment} */ (
+        layout.content.cloneNode(true)
+      );
+      this.mountSlots(fragment);
+      this.shadowRoot.append(fragment);
+    }
   }
 
   connectedCallback() {
@@ -44,13 +70,23 @@ export class StoreElement extends TemelElement(HTMLElement) {
     this.#subscriptions?.abort();
     this.#subscriptions = new AbortController();
     const options = { signal: this.#subscriptions.signal };
-    const topics = /** @type {typeof StoreElement} */ (this.constructor).preferenceTopics;
-    if (topics.length > 0) window.addEventListener("storage", this.#handleStorageBound, options);
+    const topics = /** @type {typeof StoreElement} */ (this.constructor)
+      .preferenceTopics;
+    if (topics.length > 0)
+      window.addEventListener("storage", this.#handleStorageBound, options);
     if (topics.includes("cart")) {
-      document.addEventListener("cart-change", this.#handlePreferenceBound, options);
+      document.addEventListener(
+        "cart-change",
+        this.#handlePreferenceBound,
+        options,
+      );
     }
     if (topics.includes("currency")) {
-      document.addEventListener("currency-change", this.#handlePreferenceBound, options);
+      document.addEventListener(
+        "currency-change",
+        this.#handlePreferenceBound,
+        options,
+      );
     }
     // The element does not observe its own content. A published page changes it only through
     // variations, which arrive in onTemel; the Editor reports every edit with temel-changed.
@@ -66,13 +102,27 @@ export class StoreElement extends TemelElement(HTMLElement) {
   }
 
   #handleStorageChange(event) {
-    if (event.key !== null && event.key !== "yuva.cart.v1" && event.key !== "yuva.currency.v1") {
+    if (
+      event.key !== null &&
+      event.key !== "yuva.cart.v1" &&
+      event.key !== "yuva.currency.v1"
+    ) {
       return;
     }
     this.handlePreferenceChange();
   }
 
   onTemel() {
+    const chain = JSON.stringify(this.activeVariationChain ?? []);
+    if (chain !== this.#variationChain) {
+      this.#variationChain = chain;
+      for (const entry of this.#slots) {
+        if (!entry.current.parentNode) continue;
+        const freshSlot = this.#createTrackedSlot(entry);
+        entry.current.replaceWith(freshSlot);
+        entry.current = freshSlot;
+      }
+    }
     this.update();
   }
   handleContentChange() {
@@ -89,35 +139,62 @@ export class StoreElement extends TemelElement(HTMLElement) {
     else this.#internals.states.delete(name);
   }
 
-  /** @param {string} css */
-  addStyles(css) {
-    const sheet = new CSSStyleSheet();
-    sheet.replaceSync(css);
-    this.shadowRoot.adoptedStyleSheets = [...this.shadowRoot.adoptedStyleSheets, sheet];
+  /** Replace every `<slot>` placeholder under `root` with a tracked `temelSlot()`. @param {ParentNode} root */
+  mountSlots(root) {
+    for (const placeholder of root.querySelectorAll("slot")) {
+      const entry = {
+        name: placeholder.getAttribute("name") ?? "",
+        className: placeholder.className,
+        attributes: Array.from(placeholder.attributes)
+          .filter(
+            (attribute) =>
+              attribute.name !== "name" && attribute.name !== "class",
+          )
+          .map(
+            (attribute) =>
+              /** @type {[string, string]} */ ([
+                attribute.name,
+                attribute.value,
+              ]),
+          ),
+        current: null,
+      };
+      const slot = this.#createTrackedSlot(entry);
+      entry.current = slot;
+      placeholder.replaceWith(slot);
+      this.#slots.push(entry);
+    }
+  }
+
+  /** @param {string} name @returns {HTMLSlotElement | null} */
+  slotFor(name) {
+    return this.#slots.find((entry) => entry.name === name)?.current ?? null;
+  }
+
+  /** @param {{ name: string, className: string, attributes: [string, string][] }} entry */
+  #createTrackedSlot(entry) {
+    const slot = this.temelSlot(entry.name);
+    if (entry.className) {
+      for (const cascadeSlot of [slot, ...slot.querySelectorAll("slot")]) {
+        cascadeSlot.className = entry.className;
+      }
+    }
+    for (const [attrName, attrValue] of entry.attributes) {
+      slot.setAttribute(attrName, attrValue);
+    }
+    return slot;
   }
 
   /** @param {string} name @returns {HTMLElement | null} */
   field(name) {
-    const slot = this.shadowRoot.querySelector(`slot[name="${name}"]`);
-    return slot?.assignedElements()[0] ?? null;
+    const slot =
+      this.slotFor(name) ??
+      this.shadowRoot.querySelector(`slot[name="${name}"]`);
+    return slot?.assignedElements({ flatten: true })[0] ?? null;
   }
 
   /** @param {string} name @returns {string} */
   text(name) {
     return this.field(name)?.textContent.trim() ?? "";
   }
-}
-
-/** Build owned DOM without parsing HTML strings. @param {string} tag
- * @param {Record<string, string>} [attributes] @param {Node[]} [children] */
-export function node(tag, attributes = {}, children = []) {
-  const element = document.createElement(tag);
-  for (const [name, value] of Object.entries(attributes)) element.setAttribute(name, value);
-  element.append(...children);
-  return element;
-}
-
-/** @param {StoreElement} host @param {string[]} names */
-export function appendSlots(host, names) {
-  host.shadowRoot.append(...names.map((name) => host.temelSlot(name)));
 }
