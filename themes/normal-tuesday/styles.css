@@ -1,0 +1,55 @@
+@scope {
+  :scope {
+    --font-display: "Instrument Sans", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Instrument Sans", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    --tracking-tight: -0.04em;
+    --tracking-snug: -0.025em;
+    --tracking-caps: 0.14em;
+    --leading-tight: 0.94;
+    --type-display: var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-display);
+    --type-title: var(--weight-bold) var(--text-2xl)/var(--leading-tight) var(--font-display);
+    --radius-xs: 0px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+    --border-width: 2px;
+    --border-width-thick: 4px;
+    --shadow-row: 0 2px 0 0 var(--border-strong);
+    --shadow-widget: 4px 4px 0 0 light-dark(#0a0a0a, #ff3b2e);
+    --shadow-menu: 6px 6px 0 0 light-dark(#0a0a0a, #ff3b2e);
+    --background-color: light-dark(#f7f6f2, #0b0b0c);
+    --surface-card: light-dark(#ffffff, #121214);
+    --surface-panel: light-dark(#ecebe4, #17171a);
+    --surface-raised: light-dark(#ffffff, #1b1b1f);
+    --surface-hover: light-dark(#e3e1d8, #242429);
+    --surface-active: light-dark(#d4d2c7, #2f2f36);
+    --surface-input: light-dark(#ffffff, #121214);
+    --surface-overlay: light-dark(#ffffff, #17171a);
+    --surface-selected: light-dark(#e3e1d8, #26262c);
+    --surface-editor: light-dark(#f7f6f2, #0b0b0c);
+    --surface-sidebar: light-dark(#ecebe4, #121214);
+    --surface-statusbar: light-dark(#ecebe4, #121214);
+    --surface-titlebar: light-dark(#ecebe4, #121214);
+    --surface-inline-code: light-dark(#e3e1d8, #242429);
+    --text-primary: light-dark(#0a0a0a, #f5f4ef);
+    --text-secondary: light-dark(#2b2b2e, #c8c7c0);
+    --text-muted: light-dark(#525257, #9e9d96);
+    --text-inverse: light-dark(#f5f4ef, #0a0a0a);
+    --text-code: light-dark(#0a0a0a, #f5f4ef);
+    --border-default: light-dark(#0a0a0a, #e2e1da);
+    --border-subtle: light-dark(#1f1f22, #3c3c44);
+    --border-strong: light-dark(#0a0a0a, #f5f4ef);
+    --border-input: light-dark(#0a0a0a, #f5f4ef);
+    --border-focus: light-dark(#d1190c, #ff3b2e);
+    --accent: light-dark(#d1190c, #ff3b2e);
+    --accent-hover: light-dark(#ab1208, #ff5d52);
+    --accent-press: light-dark(#870d05, #e11d0f);
+    --accent-subtle: light-dark(#fde5e2, #38100d);
+    --accent-text: light-dark(#b81509, #ff6b60);
+    --text-on-accent: light-dark(#ffffff, #0a0a0a);
+    --text-link: light-dark(#b81509, #ff6b60);
+    --text-link-hover: light-dark(#0a0a0a, #ffffff);
+    --brand-center: light-dark(#0a0a0a, #f5f4ef);
+    --brand-edge: light-dark(#d1190c, #ff3b2e);
+  }
+}
