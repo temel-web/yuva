@@ -49,6 +49,11 @@ const styles = css`
     color: var(--accent-text);
   }
 
+  .meta-bar > slot {
+    flex: 1 1 auto;
+    min-inline-size: var(--space-6);
+  }
+
   .pulse-dot {
     inline-size: var(--space-5);
     block-size: var(--space-5);
@@ -147,6 +152,14 @@ const styles = css`
 
   ::slotted(*) {
     margin: 0;
+  }
+
+  ::slotted([slot^="meta"]) {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
   }
 
   ::slotted([slot^="heading"]) {

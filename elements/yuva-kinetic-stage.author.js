@@ -20,6 +20,7 @@ function stageTextSlot(label, description, maxCharacters, format = "plain") {
 
 YuvaKineticStage.temel = createAuthorContract({
   tag: "yuva-kinetic-stage",
+  logicVersion: 2,
   label: "Kinetic Swiss stage",
   description:
     "Full-width Swiss Brutalist hero pairing monumental display copy with an animated geometric artwork driven by AnimationController.",
@@ -32,11 +33,13 @@ YuvaKineticStage.temel = createAuthorContract({
       "Index strip",
       "Short Swiss issue or date line above the display heading.",
       120,
+      "plain",
     ),
     heading: stageTextSlot(
       "Heading",
       "Primary campaign display headline.",
       120,
+      "rte-document-v1",
     ),
     summary: stageTextSlot(
       "Summary",
