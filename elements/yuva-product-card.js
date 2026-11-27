@@ -13,14 +13,14 @@ const styles = css`
   :host { display: flex; flex-direction: column; background: transparent; }
   .stage { position: relative; display: flex; flex: 1 1 auto; min-block-size: 0; }
   .image-link { display: block; position: relative; flex: 1 1 auto; min-inline-size: 0; isolation: isolate; background: light-dark(#e3e0da, #d8d3cb); aspect-ratio: 4 / 5; overflow: clip; }
-  .image-link > slot { display: block; inline-size: 100%; block-size: 100%; }
+  .image-link slot { display: block; inline-size: 100%; block-size: 100%; }
   ::slotted(:is(img, temel-picture)) { position: absolute; inset: 0; box-sizing: border-box; inline-size: 100%; block-size: 100%; object-fit: contain; padding: var(--space-8); mix-blend-mode: multiply; transition: transform var(--dur-slowest) var(--ease-out); }
   :host(:state(room)) ::slotted(:is(img, temel-picture)) { object-fit: cover; padding: 0; mix-blend-mode: normal; }
   .action { position: absolute; inset-block-end: var(--space-6); inset-inline-end: var(--space-6); }
-  .action > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .action slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   .heading { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2) var(--space-6); align-items: baseline; padding-block-start: var(--space-7); }
   .meta { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--space-3) var(--space-5); font: var(--type-ui); font-size: var(--text-sm); color: var(--text-secondary); }
-  .meta > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .meta slot, .price slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   .title-link { color: var(--text-primary); text-decoration: none; font: var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-ui); text-wrap: pretty; }
   .title-link:hover { text-decoration: underline; text-underline-offset: 0.2em; }
   .title-link span, .title-link slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }

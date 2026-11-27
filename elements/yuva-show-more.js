@@ -9,8 +9,10 @@ const styles = css`
   :host { display: grid; justify-items: center; gap: var(--space-3); padding-block-start: var(--space-6); }
   :host([hidden]) { display: none; }
   button { ${buttonSizeVariables("l")} ${buttonVariantVariables("outline")} }
+  button slot { display: inline-block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   :host(.loading) button { cursor: progress; opacity: 0.6; }
   .error { margin: 0; color: var(--text-muted); }
+  .error slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   :host(:not(.error)) .error { display: none; }
 `;
 
