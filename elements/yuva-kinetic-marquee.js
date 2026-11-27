@@ -143,6 +143,7 @@ export class YuvaKineticMarquee extends TemelElement(HTMLElement) {
   #hovered = false;
   #currentFactor = 1;
   #onSlotChange;
+  #phraseObserver = new MutationObserver(() => this.#syncClones());
   #onEnter;
   #onLeave;
 
@@ -174,6 +175,8 @@ export class YuvaKineticMarquee extends TemelElement(HTMLElement) {
     this.#clones = [...(root?.querySelectorAll(".clone") ?? [])];
     this.#glyphs = [...(root?.querySelectorAll(".glyph") ?? [])];
     root?.addEventListener("slotchange", this.#onSlotChange);
+    // Editing text inside an assigned node does not fire slotchange.
+    this.#phraseObserver.observe(this, { childList: true, characterData: true, subtree: true });
     this.#band?.addEventListener("pointerenter", this.#onEnter);
     this.#band?.addEventListener("pointerleave", this.#onLeave);
     this.#syncClones();
@@ -182,6 +185,7 @@ export class YuvaKineticMarquee extends TemelElement(HTMLElement) {
 
   disconnectedCallback() {
     this.shadowRoot?.removeEventListener("slotchange", this.#onSlotChange);
+    this.#phraseObserver.disconnect();
     this.#band?.removeEventListener("pointerenter", this.#onEnter);
     this.#band?.removeEventListener("pointerleave", this.#onLeave);
     this.#animation.disconnect();
@@ -202,7 +206,7 @@ export class YuvaKineticMarquee extends TemelElement(HTMLElement) {
       .replace(/\s+/gu, " ")
       .trim();
     for (const clone of this.#clones) {
-      clone.textContent = text;
+      if (clone.textContent !== text) clone.textContent = text;
     }
   }
 
