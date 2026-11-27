@@ -383,3 +383,15 @@
     }
   }
 }
+
+/* Normal Tuesday uses soft lilac backdrops behind the kinetic art and closing cards. */
+@scope (temel-page[theme="normal-tuesday-plum-lilac"]) {
+  #nt-stage {
+    --background-color: linear-gradient(125deg, var(--surface-editor) 45%, var(--surface-hover));
+    --surface-panel: radial-gradient(ellipse at 72% 20%, var(--surface-hover), var(--accent-subtle) 72%);
+  }
+
+  #nt-manifesto-cards {
+    background: linear-gradient(145deg, var(--surface-panel), var(--background-color) 75%);
+  }
+}
