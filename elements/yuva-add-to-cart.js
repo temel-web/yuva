@@ -1,14 +1,14 @@
 import { languagePath } from "/@/runtime/language-paths.js";
+import { css, html } from "/@/runtime/temel-element.js";
 
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { StoreElement } from "./shared/store-element.js";
 import { addProduct, readCart } from "./shared/store-preferences.js";
 import {
   buttonSizeVariables,
   buttonVariantVariables,
 } from "/@temel/elements/page-essentials/page-essential-element.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { container-type: normal; }
   button { inline-size: 100%; ${buttonSizeVariables("l")} ${buttonVariantVariables("accent")} }
   :host(:not([disabled])) > button { opacity: 1; }
@@ -58,31 +58,9 @@ styles.replaceSync(`
     @starting-style { .confirmation:popover-open { opacity: 0; translate: 0 var(--space-7); } }
   }
   @media (prefers-reduced-motion: reduce) { button::after { transition: none; animation: none; } }
-`);
+`;
 
-const layout = createTemplate(`
-  <button type="button" class="add" aria-controls="cart-confirmation" aria-expanded="false">
-    <span class="label"><slot></slot></span>
-    <span class="pending-label"><slot name="pending"></slot></span>
-  </button>
-  <div role="status" class="status sr-only" aria-atomic="true"></div>
-  <aside id="cart-confirmation" class="confirmation" popover="auto" hidden aria-labelledby="confirmation-heading">
-    <h2 id="confirmation-heading"><slot name="added"></slot></h2>
-    <div class="product-summary" hidden></div>
-    <div class="quantity">
-      <slot name="quantity"></slot>
-      <output></output>
-    </div>
-    <a class="view-cart">
-      <slot name="view-cart"></slot>
-      <span class="cart-count"></span>
-    </a>
-    <button type="button" class="dismiss"><slot name="dismiss"></slot></button>
-  </aside>
-  <slot name="provenance"></slot>
-`);
-
-const previewTitleTemplate = createTemplate('<p class="title"></p>');
+const previewTitleTemplate = html`<p class="title"></p>`;
 
 /** An accessible command that adds one product to the visitor's cart. */
 export class YuvaAddToCart extends StoreElement {
@@ -98,8 +76,28 @@ export class YuvaAddToCart extends StoreElement {
     "provenance",
   ];
   static observedAttributes = ["size", "variant", "disabled", "label-display"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <button type="button" class="add" aria-controls="cart-confirmation" aria-expanded="false">
+      <span class="label"><slot></slot></span>
+      <span class="pending-label"><slot name="pending"></slot></span>
+    </button>
+    <div role="status" class="status sr-only" aria-atomic="true"></div>
+    <aside id="cart-confirmation" class="confirmation" popover="auto" hidden aria-labelledby="confirmation-heading">
+      <h2 id="confirmation-heading"><slot name="added"></slot></h2>
+      <div class="product-summary" hidden></div>
+      <div class="quantity">
+        <slot name="quantity"></slot>
+        <output></output>
+      </div>
+      <a class="view-cart">
+        <slot name="view-cart"></slot>
+        <span class="cart-count"></span>
+      </a>
+      <button type="button" class="dismiss"><slot name="dismiss"></slot></button>
+    </aside>
+    <slot name="provenance"></slot>
+  `;
   #button;
   #message;
   #confirmation;

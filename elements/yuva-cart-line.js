@@ -1,4 +1,4 @@
-import { createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
 import { PricedStoreElement } from "./shared/priced-store-element.js";
 import { priceClient } from "./shared/price-client.js";
 import {
@@ -16,8 +16,7 @@ import {
   readCurrency,
 } from "./shared/store-preferences.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { padding-block: var(--space-8); border-block-end: var(--border-width) solid var(--border-subtle); }
   :host(:not(:state(in-cart))) { display: none; }
   .line { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) auto; gap: var(--space-5) var(--space-7); align-items: start; }
@@ -50,31 +49,7 @@ styles.replaceSync(`
     .controls { grid-column: 4; justify-self: center; }
     .total { grid-column: 5; grid-row: auto; }
   }
-`);
-
-const layout = createTemplate(`
-  <div class="line">
-    <div class="image"><slot name="image"></slot></div>
-    <div class="copy">
-      <a class="title-link">
-        <span id="display-name" class="display-name"><slot name="display-name"></slot></span>
-        <span id="catalogue-title" class="catalogue-title"><slot name="title"></slot></span>
-      </a>
-      <slot name="brand"></slot>
-      <button type="button" value="remove"><slot name="remove"></slot></button>
-    </div>
-    <output class="unit" data-price></output>
-    <div class="controls">
-      <span id="quantity-label" class="sr-only"><slot name="quantity"></slot></span>
-      <button type="button" value="decrease"><slot name="decrease"></slot></button>
-      <input type="number" min="1" step="1" aria-labelledby="quantity-label">
-      <button type="button" value="increase"><slot name="increase"></slot></button>
-    </div>
-    <output class="total"></output>
-    <div role="status" class="status"></div>
-  </div>
-  <slot name="provenance"></slot>
-`);
+`;
 
 export function getReferences() {
   return {
@@ -106,8 +81,30 @@ export class YuvaCartLine extends PricedStoreElement {
     "error",
     "provenance",
   ];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <div class="line">
+      <div class="image"><slot name="image"></slot></div>
+      <div class="copy">
+        <a class="title-link">
+          <span id="display-name" class="display-name"><slot name="display-name"></slot></span>
+          <span id="catalogue-title" class="catalogue-title"><slot name="title"></slot></span>
+        </a>
+        <slot name="brand"></slot>
+        <button type="button" value="remove"><slot name="remove"></slot></button>
+      </div>
+      <output class="unit" data-price></output>
+      <div class="controls">
+        <span id="quantity-label" class="sr-only"><slot name="quantity"></slot></span>
+        <button type="button" value="decrease"><slot name="decrease"></slot></button>
+        <input type="number" min="1" step="1" aria-labelledby="quantity-label">
+        <button type="button" value="increase"><slot name="increase"></slot></button>
+      </div>
+      <output class="total"></output>
+      <div role="status" class="status"></div>
+    </div>
+    <slot name="provenance"></slot>
+  `;
   #input;
   #decrease;
   #increase;

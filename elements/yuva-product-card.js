@@ -1,5 +1,5 @@
+import { css, html } from "/@/runtime/temel-element.js";
 import { PricedStoreElement } from "./shared/priced-store-element.js";
-import { createTemplate } from "./shared/store-element.js";
 import {
   PRODUCT_FIELDS,
   productPageHref,
@@ -9,8 +9,7 @@ import {
 import { isRoomPhotograph } from "./shared/photograph-kind.js";
 import "./yuva-add-to-cart.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { display: flex; flex-direction: column; background: transparent; }
   .stage { position: relative; display: flex; flex: 1 1 auto; min-block-size: 0; }
   .image-link { display: block; position: relative; flex: 1 1 auto; min-inline-size: 0; isolation: isolate; background: light-dark(#e3e0da, #d8d3cb); aspect-ratio: 4 / 5; overflow: clip; }
@@ -41,30 +40,7 @@ styles.replaceSync(`
     :host(:hover) .image-link > slot::slotted(:is(img, temel-picture)),
     :host(:focus-within) .image-link > slot::slotted(:is(img, temel-picture)) { transform: scale(1.04); }
   }
-`);
-
-const layout = createTemplate(`
-  <div class="stage">
-    <a class="image-link" tabindex="-1" aria-hidden="true">
-      <slot name="image"></slot>
-    </a>
-    <div class="action">
-      <slot name="action"></slot>
-    </div>
-  </div>
-  <div class="heading">
-    <a class="title-link" aria-labelledby="display-name catalogue-title">
-      <span id="display-name" class="display-name"><slot name="display-name"></slot></span>
-      <span id="catalogue-title" class="catalogue-title"><slot name="title"></slot></span>
-    </a>
-    <output class="price" data-price></output>
-    <div class="meta">
-      <slot name="brand"></slot>
-      <slot name="category"></slot>
-    </div>
-  </div>
-  <slot name="provenance"></slot>
-`);
+`;
 
 export function getReferences() {
   return {
@@ -93,8 +69,29 @@ export class YuvaProductCard extends PricedStoreElement {
     "action",
     "provenance",
   ];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <div class="stage">
+      <a class="image-link" tabindex="-1" aria-hidden="true">
+        <slot name="image"></slot>
+      </a>
+      <div class="action">
+        <slot name="action"></slot>
+      </div>
+    </div>
+    <div class="heading">
+      <a class="title-link" aria-labelledby="display-name catalogue-title">
+        <span id="display-name" class="display-name"><slot name="display-name"></slot></span>
+        <span id="catalogue-title" class="catalogue-title"><slot name="title"></slot></span>
+      </a>
+      <output class="price" data-price></output>
+      <div class="meta">
+        <slot name="brand"></slot>
+        <slot name="category"></slot>
+      </div>
+    </div>
+    <slot name="provenance"></slot>
+  `;
   #link;
   #titleLink;
 

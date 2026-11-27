@@ -1,9 +1,9 @@
 import "/@/runtime/temel-provenance.js";
 import { PageContextLinkController } from "/@/runtime/page-context.js";
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
+import { StoreElement } from "./shared/store-element.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { container-type: normal; font: var(--type-ui-strong); }
   nav { min-inline-size: 0; }
   .links { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-3) var(--space-9); min-block-size: var(--space-11); min-inline-size: var(--space-11); }
@@ -28,21 +28,18 @@ styles.replaceSync(`
     .links::slotted(a)::after { display: none; }
     .links::slotted(a[aria-current="page"]) { font-weight: var(--weight-bold); }
   }
-`);
-
-const layout = createTemplate(`
-  <nav>
-    <slot class="links"></slot>
-  </nav>
-  <slot name="provenance"></slot>
-`);
+`;
 
 /** Native category links whose current-page state follows the surrounding page. */
 export class YuvaCategoryNav extends StoreElement {
   static preferenceTopics = Object.freeze([]);
-  static temelSlots = ["", "provenance"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <nav>
+      <slot class="links"></slot>
+    </nav>
+    <slot name="provenance"></slot>
+  `;
 
   #context;
 

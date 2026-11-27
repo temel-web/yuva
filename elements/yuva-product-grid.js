@@ -1,8 +1,8 @@
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
+import { StoreElement } from "./shared/store-element.js";
 import "./yuva-product-card.js";
 
-const contentStyles = new CSSStyleSheet();
-contentStyles.replaceSync(`
+const contentStyles = css`
   yuva-product-grid > :is([slot="summary"], [slot^="summary@"]) :where(p, ul, ol) { margin-block: 0 var(--space-7); }
   yuva-product-grid > :is([slot="summary"], [slot^="summary@"]) > :last-child { margin-block-end: 0; }
   yuva-product-grid temel-query-paginator { display: block; grid-column: 1 / -1; margin-block-start: var(--space-9); font: var(--type-ui-strong); }
@@ -15,10 +15,9 @@ contentStyles.replaceSync(`
   yuva-product-grid temel-query-paginator::part(current) {
     background: var(--text-primary); border-color: var(--text-primary); color: var(--background-color);
   }
-`);
+`;
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { padding: var(--space-12) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); }
   :host(:state(introduced)) { padding-block: var(--space-13) var(--space-13); }
   .introduction { display: grid; gap: var(--space-7); align-items: end; margin-block-end: var(--space-10); }
@@ -44,20 +43,7 @@ styles.replaceSync(`
   @container (min-width: 76rem) {
     :host(:not([layout="spread"], [columns="3"])) .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   }
-`);
-
-const layout = createTemplate(`
-  <div class="collection">
-    <header class="introduction">
-      <slot name="heading"></slot>
-      <slot name="summary"></slot>
-    </header>
-    <div class="grid">
-      <slot></slot>
-    </div>
-  </div>
-  <slot name="provenance"></slot>
-`);
+`;
 
 /**
  * A responsive collection of product cards. Rows fit their content, so a query's show-more or
@@ -65,9 +51,19 @@ const layout = createTemplate(`
  */
 export class YuvaProductGrid extends StoreElement {
   static preferenceTopics = Object.freeze([]);
-  static temelSlots = ["", "heading", "summary", "provenance"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <div class="collection">
+      <header class="introduction">
+        <slot name="heading"></slot>
+        <slot name="summary"></slot>
+      </header>
+      <div class="grid">
+        <slot></slot>
+      </div>
+    </div>
+    <slot name="provenance"></slot>
+  `;
 
   connectedCallback() {
     const root = /** @type {Document | ShadowRoot} */ (this.getRootNode());

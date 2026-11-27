@@ -1,8 +1,7 @@
-import { TemelElement } from "/@/runtime/temel-element.js";
+import { TemelElement, css } from "/@/runtime/temel-element.js";
 import "/@/runtime/temel-provenance.js";
 
-const foundation = new CSSStyleSheet();
-foundation.replaceSync(`
+const foundation = css`
   :host { display: block; min-inline-size: 0; color: var(--text-primary); font: var(--type-body); container-type: inline-size; }
   *, *::before, *::after { box-sizing: border-box; }
   [hidden] { display: none !important; }
@@ -21,48 +20,37 @@ foundation.replaceSync(`
   .muted { color: var(--text-muted); }
   .status { font: var(--type-caption); }
   .sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
-`);
+`;
 
-/** Parse a constant HTML template once at module load. @param {string} markup */
-export function createTemplate(markup) {
-  const template = document.createElement("template");
-  template.innerHTML = markup.trim();
-  return template;
+/**
+ * Find the outermost Slot for a declared name in a shadow root, including variation cascades.
+ * @param {ShadowRoot} shadowRoot
+ * @param {string} name
+ * @returns {HTMLSlotElement | null}
+ */
+function findLayoutSlot(shadowRoot, name) {
+  const selector = name ? `slot[name="${CSS.escape(name)}"]` : "slot:not([name])";
+  let slot = shadowRoot.querySelector(selector);
+  while (slot?.parentElement instanceof HTMLSlotElement) {
+    slot = slot.parentElement;
+  }
+  return /** @type {HTMLSlotElement | null} */ (slot);
 }
 
 /** Native foundation for Yuva's authored content and visitor interactions. */
 export class StoreElement extends TemelElement(HTMLElement) {
   static preferenceTopics = Object.freeze(["cart", "currency"]);
-  /** @type {CSSStyleSheet | null} */
-  static styles = null;
-  /** @type {HTMLTemplateElement | null} */
-  static layout = null;
+  /** @type {CSSStyleSheet[]} */
+  static styles = [foundation];
   #subscriptions;
   #internals;
-  /** @type {{ name: string, className: string, attributes: [string, string][], current: HTMLSlotElement }[]} */
-  #slots = [];
-  #variationChain = "[]";
   #handlePreferenceBound = this.handlePreferenceChange.bind(this);
   #handleStorageBound = this.#handleStorageChange.bind(this);
   #handleContentBound = this.handleContentChange.bind(this);
 
   constructor() {
     super();
-    const { styles, layout } = /** @type {typeof StoreElement} */ (
-      this.constructor
-    );
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.adoptedStyleSheets = styles
-      ? [foundation, styles]
-      : [foundation];
     this.#internals = this.attachInternals();
-    if (layout) {
-      const fragment = /** @type {DocumentFragment} */ (
-        layout.content.cloneNode(true)
-      );
-      this.mountSlots(fragment);
-      this.shadowRoot.append(fragment);
-    }
   }
 
   connectedCallback() {
@@ -113,16 +101,7 @@ export class StoreElement extends TemelElement(HTMLElement) {
   }
 
   onTemel() {
-    const chain = JSON.stringify(this.activeVariationChain ?? []);
-    if (chain !== this.#variationChain) {
-      this.#variationChain = chain;
-      for (const entry of this.#slots) {
-        if (!entry.current.parentNode) continue;
-        const freshSlot = this.#createTrackedSlot(entry);
-        entry.current.replaceWith(freshSlot);
-        entry.current = freshSlot;
-      }
-    }
+    super.onTemel();
     this.update();
   }
   handleContentChange() {
@@ -139,58 +118,14 @@ export class StoreElement extends TemelElement(HTMLElement) {
     else this.#internals.states.delete(name);
   }
 
-  /** Replace every `<slot>` placeholder under `root` with a tracked `temelSlot()`. @param {ParentNode} root */
-  mountSlots(root) {
-    for (const placeholder of root.querySelectorAll("slot")) {
-      const entry = {
-        name: placeholder.getAttribute("name") ?? "",
-        className: placeholder.className,
-        attributes: Array.from(placeholder.attributes)
-          .filter(
-            (attribute) =>
-              attribute.name !== "name" && attribute.name !== "class",
-          )
-          .map(
-            (attribute) =>
-              /** @type {[string, string]} */ ([
-                attribute.name,
-                attribute.value,
-              ]),
-          ),
-        current: null,
-      };
-      const slot = this.#createTrackedSlot(entry);
-      entry.current = slot;
-      placeholder.replaceWith(slot);
-      this.#slots.push(entry);
-    }
-  }
-
   /** @param {string} name @returns {HTMLSlotElement | null} */
   slotFor(name) {
-    return this.#slots.find((entry) => entry.name === name)?.current ?? null;
-  }
-
-  /** @param {{ name: string, className: string, attributes: [string, string][] }} entry */
-  #createTrackedSlot(entry) {
-    const slot = this.temelSlot(entry.name);
-    if (entry.className) {
-      for (const cascadeSlot of [slot, ...slot.querySelectorAll("slot")]) {
-        cascadeSlot.className = entry.className;
-      }
-    }
-    for (const [attrName, attrValue] of entry.attributes) {
-      slot.setAttribute(attrName, attrValue);
-    }
-    return slot;
+    return findLayoutSlot(this.shadowRoot, name);
   }
 
   /** @param {string} name @returns {HTMLElement | null} */
   field(name) {
-    const slot =
-      this.slotFor(name) ??
-      this.shadowRoot.querySelector(`slot[name="${name}"]`);
-    return slot?.assignedElements({ flatten: true })[0] ?? null;
+    return this.slotFor(name)?.assignedElements({ flatten: true })[0] ?? null;
   }
 
   /** @param {string} name @returns {string} */
