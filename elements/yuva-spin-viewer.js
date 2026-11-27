@@ -1,26 +1,14 @@
 import { AnimationController } from "/@/runtime/animation-controller.js";
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
+import { StoreElement } from "./shared/store-element.js";
 
 const SPIN_ATLAS_PATH_PATTERN = /^\/(?!\/)[a-z0-9/._-]+\.webp$/u;
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   canvas { display: block; inline-size: 100%; max-block-size: 65vh; object-fit: contain; aspect-ratio: 320 / 405; touch-action: pan-y; cursor: grab; background: white; }
   .controls { display: flex; gap: var(--space-4); justify-content: center; margin-block: var(--space-6); }
   #spin-label { display: block; font: var(--type-caption); color: var(--text-muted); margin-block-end: var(--space-4); }
-`);
-
-const layout = createTemplate(`
-  <span id="spin-label"><slot></slot></span>
-  <canvas width="320" height="405" tabindex="0" aria-labelledby="spin-label"></canvas>
-  <div class="controls">
-    <button type="button" value="previous"><slot name="previous"></slot></button>
-    <button type="button" value="toggle"></button>
-    <button type="button" value="next"><slot name="next"></slot></button>
-  </div>
-  <div role="status" class="status"></div>
-  <slot name="provenance"></slot>
-`);
+`;
 
 /** A lazy 36-frame turntable with one owned animation clock. */
 export class YuvaSpinViewer extends StoreElement {
@@ -36,8 +24,18 @@ export class YuvaSpinViewer extends StoreElement {
     "provenance",
   ];
   static observedAttributes = ["src"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <span id="spin-label"><slot></slot></span>
+    <canvas width="320" height="405" tabindex="0" aria-labelledby="spin-label"></canvas>
+    <div class="controls">
+      <button type="button" value="previous"><slot name="previous"></slot></button>
+      <button type="button" value="toggle"></button>
+      <button type="button" value="next"><slot name="next"></slot></button>
+    </div>
+    <div role="status" class="status"></div>
+    <slot name="provenance"></slot>
+  `;
   #canvas;
   #context;
   #image = null;

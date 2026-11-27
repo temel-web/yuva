@@ -1,4 +1,4 @@
-import { createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
 import { PricedStoreElement } from "./shared/priced-store-element.js";
 import {
   money,
@@ -10,8 +10,7 @@ import { CartContentController } from "./shared/cart-content-controller.js";
 import { priceClient } from "./shared/price-client.js";
 import "./yuva-cart-line.js";
 
-const documentStyles = new CSSStyleSheet();
-documentStyles.replaceSync(`
+const documentStyles = css`
   yuva-cart > [slot="empty"] a {
     display: inline-flex; align-items: center; min-block-size: var(--space-11);
     padding-block: var(--space-4); color: var(--text-primary); font: var(--type-ui-strong);
@@ -20,10 +19,9 @@ documentStyles.replaceSync(`
   yuva-cart > [slot="empty"] a:focus-visible {
     outline: var(--border-width-thick) solid var(--border-focus); outline-offset: var(--space-2);
   }
-`);
+`;
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); min-block-size: 50svh; }
   ::slotted([slot="heading"]) { font: var(--weight-regular) clamp(var(--text-5xl), 7cqi, var(--text-6xl))/0.96 var(--font-display); letter-spacing: -0.01em; margin-block: 0 var(--space-7); }
   ::slotted([slot="notice"]) { color: var(--text-secondary); }
@@ -45,46 +43,11 @@ styles.replaceSync(`
     .columns > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
     .items { margin-block-start: 0; }
   }
-`);
+`;
 
-const layout = createTemplate(`
-  <slot name="heading"></slot>
-  <slot name="notice"></slot>
-  <div role="status" tabindex="-1" class="loading" inert>
-    <slot name="loading"></slot>
-  </div>
-  <div class="empty" tabindex="-1" hidden>
-    <slot name="empty"></slot>
-  </div>
-  <div hidden>
-    <slot></slot>
-  </div>
-  <div class="columns" aria-hidden="true">
-    <slot name="item-label"></slot>
-    <slot name="price-label"></slot>
-    <slot name="quantity-label"></slot>
-    <slot name="total-label"></slot>
-  </div>
-  <ul class="items"></ul>
-  <div hidden>
-    <slot name="unavailable"></slot>
-    <slot name="content-error"></slot>
-    <slot name="retry"></slot>
-    <slot name="remove"></slot>
-  </div>
-  <div class="summary" hidden>
-    <slot name="subtotal"></slot>
-    <output></output>
-  </div>
-  <div role="status" class="status"></div>
-  <slot name="provenance"></slot>
-`);
-
-const rowTemplate = createTemplate("<li></li>");
-const unavailableTemplate = createTemplate(
-  '<div class="unavailable"><span></span><button type="button"></button></div>',
-);
-const retryButtonTemplate = createTemplate('<button type="button"></button>');
+const rowTemplate = html`<li></li>`;
+const unavailableTemplate = html`<div class="unavailable"><span></span><button type="button"></button></div>`;
+const retryButtonTemplate = html`<button type="button"></button>`;
 
 /** Read saved product documents and compose their cart rows in the browser. */
 export class YuvaCart extends PricedStoreElement {
@@ -107,8 +70,39 @@ export class YuvaCart extends PricedStoreElement {
     "notice",
     "provenance",
   ];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <slot name="heading"></slot>
+    <slot name="notice"></slot>
+    <div role="status" tabindex="-1" class="loading" inert>
+      <slot name="loading"></slot>
+    </div>
+    <div class="empty" tabindex="-1" hidden>
+      <slot name="empty"></slot>
+    </div>
+    <div hidden>
+      <slot></slot>
+    </div>
+    <div class="columns" aria-hidden="true">
+      <slot name="item-label"></slot>
+      <slot name="price-label"></slot>
+      <slot name="quantity-label"></slot>
+      <slot name="total-label"></slot>
+    </div>
+    <ul class="items"></ul>
+    <div hidden>
+      <slot name="unavailable"></slot>
+      <slot name="content-error"></slot>
+      <slot name="retry"></slot>
+      <slot name="remove"></slot>
+    </div>
+    <div class="summary" hidden>
+      <slot name="subtotal"></slot>
+      <output></output>
+    </div>
+    <div role="status" class="status"></div>
+    <slot name="provenance"></slot>
+  `;
   #empty;
   #summary;
   #total;
@@ -238,7 +232,7 @@ export class YuvaCart extends PricedStoreElement {
     const hasFocus = row.contains(this.shadowRoot.activeElement);
     if (entry.status === "ready") {
       if (!this.#observedLines.has(entry.line)) {
-        const template = this.slotFor("").assignedElements()[0];
+        const template = this.field("");
         const populatedSlots = new Set(
           Array.from(entry.line.children, (child) => child.slot),
         );

@@ -1,10 +1,10 @@
 import { languagePath } from "/@/runtime/language-paths.js";
+import { html } from "/@/runtime/temel-element.js";
 
-import { createTemplate } from "./store-element.js";
 import { money, readCurrency } from "./store-preferences.js";
 import { priceClient } from "./price-client.js";
 
-const reducedPriceTemplate = createTemplate("<del></del> <ins></ins>");
+const reducedPriceTemplate = html`<del></del> <ins></ins>`;
 
 const PRODUCT_PATH_PATTERN =
   /^\/products\/[a-z0-9-]+\/[a-z0-9]+(?:-[a-z0-9]+)*\.html$/u;

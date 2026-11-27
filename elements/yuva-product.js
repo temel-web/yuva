@@ -1,4 +1,4 @@
-import { createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
 import { PricedStoreElement } from "./shared/priced-store-element.js";
 import {
   PRODUCT_FIELDS,
@@ -17,8 +17,7 @@ import {
   syncThumbnailImage,
 } from "./shared/product-gallery-images.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { padding: var(--space-9) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); }
   article { display: grid; gap: var(--space-8); align-items: start; }
   .heading { display: grid; gap: var(--space-6); }
@@ -61,61 +60,9 @@ styles.replaceSync(`
     .heading { grid-column: 2; grid-row: 1; padding-block-start: var(--space-11); }
     .copy { grid-column: 2; grid-row: 2; }
   }
-`);
+`;
 
-const layout = createTemplate(`
-  <article>
-    <header class="heading">
-      <slot name="display-name"></slot>
-      <slot name="title"></slot>
-      <div class="meta">
-        <slot name="brand"></slot>
-        <slot name="category"></slot>
-      </div>
-    </header>
-    <div class="media">
-      <div class="modes">
-        <button type="button" value="photos"><slot name="photos-label"></slot></button>
-        <button type="button" value="spin"><slot name="spin-label"></slot></button>
-      </div>
-      <div class="preview">
-        <slot name="image"></slot>
-        <slot name="gallery"></slot>
-      </div>
-      <div class="spin-stage" hidden>
-        <slot name="spin"></slot>
-      </div>
-      <div class="thumbnails"></div>
-    </div>
-    <div class="copy">
-      <slot name="summary"></slot>
-      <output class="price" data-price></output>
-      <slot name="action"></slot>
-      <slot name="notice"></slot>
-      <dl class="facts">
-        <div class="fact" data-fact="color">
-          <dt><slot name="color-label"></slot></dt>
-          <dd><slot name="color"></slot></dd>
-        </div>
-        <div class="fact" data-fact="material">
-          <dt><slot name="material-label"></slot></dt>
-          <dd><slot name="material"></slot></dd>
-        </div>
-        <div class="fact" data-fact="dimensions">
-          <dt><slot name="dimensions-label"></slot></dt>
-          <dd><slot name="dimensions"></slot></dd>
-        </div>
-      </dl>
-      <slot name="description"></slot>
-      <div class="catalogue"></div>
-    </div>
-  </article>
-  <slot name="provenance"></slot>
-`);
-
-const thumbnailTemplate = createTemplate(
-  '<button type="button"><img></button>',
-);
+const thumbnailTemplate = html`<button type="button"><img></button>`;
 
 /** Product source, visitor gallery, illustrative prices, and structured product facts. */
 export class YuvaProduct extends PricedStoreElement {
@@ -139,8 +86,56 @@ export class YuvaProduct extends PricedStoreElement {
     "notice",
     "provenance",
   ];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <article>
+      <header class="heading">
+        <slot name="display-name"></slot>
+        <slot name="title"></slot>
+        <div class="meta">
+          <slot name="brand"></slot>
+          <slot name="category"></slot>
+        </div>
+      </header>
+      <div class="media">
+        <div class="modes">
+          <button type="button" value="photos"><slot name="photos-label"></slot></button>
+          <button type="button" value="spin"><slot name="spin-label"></slot></button>
+        </div>
+        <div class="preview">
+          <slot name="image"></slot>
+          <slot name="gallery"></slot>
+        </div>
+        <div class="spin-stage" hidden>
+          <slot name="spin"></slot>
+        </div>
+        <div class="thumbnails"></div>
+      </div>
+      <div class="copy">
+        <slot name="summary"></slot>
+        <output class="price" data-price></output>
+        <slot name="action"></slot>
+        <slot name="notice"></slot>
+        <dl class="facts">
+          <div class="fact" data-fact="color">
+            <dt><slot name="color-label"></slot></dt>
+            <dd><slot name="color"></slot></dd>
+          </div>
+          <div class="fact" data-fact="material">
+            <dt><slot name="material-label"></slot></dt>
+            <dd><slot name="material"></slot></dd>
+          </div>
+          <div class="fact" data-fact="dimensions">
+            <dt><slot name="dimensions-label"></slot></dt>
+            <dd><slot name="dimensions"></slot></dd>
+          </div>
+        </dl>
+        <slot name="description"></slot>
+        <div class="catalogue"></div>
+      </div>
+    </article>
+    <slot name="provenance"></slot>
+  `;
   #heading;
   #catalogue;
   #preview;

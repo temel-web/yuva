@@ -1,7 +1,5 @@
-import { TemelElement } from "/@/runtime/temel-element.js";
+import { TemelElement, css, html } from "/@/runtime/temel-element.js";
 import "/@/runtime/temel-provenance.js";
-
-import { createTemplate } from "./shared/store-element.js";
 
 const LISTS = new Map([
   [
@@ -38,8 +36,7 @@ const LISTS = new Map([
   ],
 ]);
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host {
     display: block;
     container-type: inline-size;
@@ -65,9 +62,9 @@ styles.replaceSync(`
   ::slotted(temel-data-list) { box-sizing: border-box; inline-size: 100%; margin: 0; }
   @container (max-width: 25rem) { main { padding: 0; } }
   @media (pointer: coarse) { a { min-block-size: 44px; display: inline-flex; align-items: center; } }
-`);
+`;
 
-const layout = createTemplate(`
+const layout = html`
   <main>
     <header>
       <h1 id="product-lists">Product lists</h1>
@@ -80,11 +77,11 @@ const layout = createTemplate(`
     <div class="entries"></div>
     <slot name="provenance"></slot>
   </main>
-`);
+`;
 
-const navLinkTemplate = createTemplate("<a></a>");
+const navLinkTemplate = html`<a></a>`;
 
-const sectionTemplate = createTemplate(`
+const sectionTemplate = html`
   <section>
     <div class="title">
       <h2 tabindex="-1"></h2>
@@ -93,7 +90,7 @@ const sectionTemplate = createTemplate(`
     <p></p>
     <slot></slot>
   </section>
-`);
+`;
 
 /**
  * A dedicated product-list app. Fixed application copy and layout live in shadow DOM;

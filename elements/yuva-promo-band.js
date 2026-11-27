@@ -1,7 +1,7 @@
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
+import { StoreElement } from "./shared/store-element.js";
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { color-scheme: dark; padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)); background: var(--surface-panel); color: var(--text-primary); }
   section { display: grid; gap: var(--space-7) var(--space-10); align-items: center; }
   ::slotted(*) { margin: 0; }
@@ -11,23 +11,20 @@ styles.replaceSync(`
   ::slotted(a[slot^="action"]:hover) { background: var(--accent-hover); }
   :host([visibility="returning"]:not(:state(returning))) { display: none; }
   @container (min-width: 48rem) { section { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto; } }
-`);
-
-const layout = createTemplate(`
-  <section>
-    <slot name="heading"></slot>
-    <slot name="summary"></slot>
-    <slot name="action"></slot>
-  </section>
-  <slot name="provenance"></slot>
-`);
+`;
 
 /** A short campaign message that follows the active audience path. */
 export class YuvaPromoBand extends StoreElement {
   static preferenceTopics = Object.freeze([]);
-  static temelSlots = ["heading", "summary", "action", "provenance"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <section>
+      <slot name="heading"></slot>
+      <slot name="summary"></slot>
+      <slot name="action"></slot>
+    </section>
+    <slot name="provenance"></slot>
+  `;
 
   onTemel(activePath) {
     super.onTemel();

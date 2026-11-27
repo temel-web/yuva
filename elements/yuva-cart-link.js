@@ -1,6 +1,7 @@
 import { languagePath } from "/@/runtime/language-paths.js";
+import { css, html } from "/@/runtime/temel-element.js";
 
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { StoreElement } from "./shared/store-element.js";
 import { readCart } from "./shared/store-preferences.js";
 
 const compactQuantity = new Intl.NumberFormat(undefined, {
@@ -9,8 +10,7 @@ const compactQuantity = new Intl.NumberFormat(undefined, {
   useGrouping: false,
 });
 
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { container-type: normal; display: inline-block; }
   a { display: inline-flex; align-items: center; gap: var(--space-4); padding: var(--space-4); min-block-size: var(--space-11); min-inline-size: var(--space-11); max-inline-size: 100%; color: var(--text-primary); text-decoration: none; font: var(--type-ui-strong); }
   a:hover { color: var(--text-link); }
@@ -23,27 +23,24 @@ styles.replaceSync(`
     .label { position: absolute; inline-size: var(--space-1); block-size: var(--space-1); overflow: hidden; clip-path: inset(50%); }
     .count { font: var(--type-caption); font-variant-numeric: tabular-nums; }
   }
-`);
-
-const layout = createTemplate(`
-  <a>
-    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-      <path d="M5 7h14l1 14H4L5 7ZM8 8V6a4 4 0 0 1 8 0v2"></path>
-    </svg>
-    <span class="label"><slot></slot></span>
-    <span class="count" aria-hidden="true"></span>
-    <span class="sr-only"></span>
-  </a>
-  <slot name="provenance"></slot>
-`);
+`;
 
 /** The cart destination and its live quantity count. */
 export class YuvaCartLink extends StoreElement {
   static preferenceTopics = Object.freeze(["cart"]);
-  static temelSlots = ["", "provenance"];
   static observedAttributes = ["href"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <a>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+        <path d="M5 7h14l1 14H4L5 7ZM8 8V6a4 4 0 0 1 8 0v2"></path>
+      </svg>
+      <span class="label"><slot></slot></span>
+      <span class="count" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+    <slot name="provenance"></slot>
+  `;
   #link;
   #count;
   #accessibleCount;

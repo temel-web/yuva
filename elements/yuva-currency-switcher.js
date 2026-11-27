@@ -2,7 +2,8 @@ import {
   buttonSizeVariables,
   buttonVariantVariables,
 } from "/@temel/elements/page-essentials/page-essential-element.js";
-import { StoreElement, createTemplate } from "./shared/store-element.js";
+import { css, html } from "/@/runtime/temel-element.js";
+import { StoreElement } from "./shared/store-element.js";
 import {
   CURRENCIES,
   readCurrency,
@@ -10,8 +11,7 @@ import {
 } from "./shared/store-preferences.js";
 
 const MENU_KEYS = new Set(["ArrowDown", "ArrowUp", "Home", "End"]);
-const styles = new CSSStyleSheet();
-styles.replaceSync(`
+const styles = css`
   :host { position: relative; container-type: normal; display: inline-block; font: var(--type-ui); }
   .trigger {
     ${buttonSizeVariables("s")} ${buttonVariantVariables("quiet")}
@@ -56,37 +56,7 @@ styles.replaceSync(`
   slot { display: inline-block; min-inline-size: var(--space-1); min-block-size: 1lh; }
   @media (prefers-reduced-motion: reduce) { .chevron { transition: none; } }
   @media (forced-colors: active) { .currencies { border-color: CanvasText; } }
-`);
-
-const layout = createTemplate(`
-  <button
-    type="button"
-    class="trigger"
-    popovertarget="currencies"
-    aria-haspopup="menu"
-    aria-controls="currencies"
-    aria-expanded="false"
-    aria-labelledby="currency-label current-currency"
-  >
-    <span id="current-currency"></span>
-    <svg class="chevron" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-      <path d="m6 9 6 6 6-6"></path>
-    </svg>
-  </button>
-  <div id="currencies" class="currencies" role="menu" popover="auto" aria-labelledby="currency-label">
-    <span id="currency-label" class="menu-label"><slot name="label"></slot></span>
-  </div>
-  <slot name="provenance"></slot>
-`);
-
-const choiceTemplate = createTemplate(`
-  <button type="button" class="choice" role="menuitemradio" aria-checked="false">
-    <slot></slot>
-    <svg class="check" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
-      <path d="m5 12 5 5 9-10"></path>
-    </svg>
-  </button>
-`);
+`;
 
 function nextChoiceIndex(key, index, count) {
   if (key === "Home") return 0;
@@ -98,9 +68,45 @@ function nextChoiceIndex(key, index, count) {
 /** The visitor's currency preference, chosen from a labelled dropdown. */
 export class YuvaCurrencySwitcher extends StoreElement {
   static preferenceTopics = Object.freeze(["currency"]);
-  static temelSlots = ["label", "eur", "usd", "chf", "provenance"];
-  static styles = styles;
-  static layout = layout;
+  static styles = [...super.styles, styles];
+  static template = html`
+    <button
+      type="button"
+      class="trigger"
+      popovertarget="currencies"
+      aria-haspopup="menu"
+      aria-controls="currencies"
+      aria-expanded="false"
+      aria-labelledby="currency-label current-currency"
+    >
+      <span id="current-currency"></span>
+      <svg class="chevron" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+    </button>
+    <div id="currencies" class="currencies" role="menu" popover="auto" aria-labelledby="currency-label">
+      <span id="currency-label" class="menu-label"><slot name="label"></slot></span>
+      <button type="button" class="choice" value="eur" role="menuitemradio" aria-checked="false">
+        <slot name="eur"></slot>
+        <svg class="check" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+          <path d="m5 12 5 5 9-10"></path>
+        </svg>
+      </button>
+      <button type="button" class="choice" value="usd" role="menuitemradio" aria-checked="false">
+        <slot name="usd"></slot>
+        <svg class="check" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+          <path d="m5 12 5 5 9-10"></path>
+        </svg>
+      </button>
+      <button type="button" class="choice" value="chf" role="menuitemradio" aria-checked="false">
+        <slot name="chf"></slot>
+        <svg class="check" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+          <path d="m5 12 5 5 9-10"></path>
+        </svg>
+      </button>
+    </div>
+    <slot name="provenance"></slot>
+  `;
   #choices = [];
   #trigger;
   #current;
@@ -113,8 +119,11 @@ export class YuvaCurrencySwitcher extends StoreElement {
     this.#trigger = this.shadowRoot.querySelector(".trigger");
     this.#current = this.shadowRoot.querySelector("#current-currency");
     this.#menu = this.shadowRoot.querySelector("#currencies");
-    this.#choices = CURRENCIES.map((currency) => this.#createChoice(currency));
-    this.#menu.append(...this.#choices);
+    this.#choices = Array.from(this.shadowRoot.querySelectorAll(".choice"));
+    const handleChoiceClick = this.handleCurrencyClick.bind(this);
+    for (const choice of this.#choices) {
+      choice.addEventListener("click", handleChoiceClick);
+    }
     this.#trigger.addEventListener("click", this.handleTriggerClick.bind(this));
     this.#menu.addEventListener("toggle", this.handleMenuToggle.bind(this));
     this.shadowRoot.addEventListener(
@@ -200,18 +209,6 @@ export class YuvaCurrencySwitcher extends StoreElement {
     this.#choices[
       nextChoiceIndex(event.key, index, this.#choices.length)
     ].focus();
-  }
-
-  #createChoice(currency) {
-    const fragment = /** @type {DocumentFragment} */ (
-      choiceTemplate.content.cloneNode(true)
-    );
-    const choice = fragment.querySelector("button");
-    choice.value = currency;
-    fragment.querySelector("slot").setAttribute("name", currency);
-    this.mountSlots(fragment);
-    choice.addEventListener("click", this.handleCurrencyClick.bind(this));
-    return choice;
   }
 }
 customElements.define("yuva-currency-switcher", YuvaCurrencySwitcher);
