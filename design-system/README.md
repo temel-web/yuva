@@ -9,7 +9,7 @@ owners may add any valid local CSS. The Temel application owns a separate Design
 
 ## Contract
 
-- The public custom-property vocabulary is exactly the 284 names listed below.
+- The public custom-property vocabulary is exactly the 287 names listed below.
 - Light+ and Dark+ semantic values use native `light-dark()` resolution. The browser owns the
   active scheme; an isolated preview may set `color-scheme` locally.
 - Instrument Sans, Instrument Serif, and JetBrains Mono are pinned local WOFF2 assets from Fontsource 5.3.0.
@@ -53,7 +53,7 @@ select a substitute artifact or remote asset.
 
 ## Public CSS variables
 
-The following 284 names are the complete public vocabulary. Exact values remain authoritative in
+The following 287 names are the complete public vocabulary. Exact values remain authoritative in
 `styles.css`.
 
 ### Fonts
@@ -94,6 +94,15 @@ The following 284 names are the complete public vocabulary. Exact values remain 
 `--workflow-approved-bg`, `--workflow-changes`, `--workflow-changes-bg`, `--workflow-draft`,
 `--workflow-draft-bg`, `--workflow-published`, `--workflow-published-bg`, `--workflow-review`,
 `--workflow-review-bg`, `--workflow-scheduled`, `--workflow-scheduled-bg`
+
+### Gradients
+
+- `--gradient-hero` adds a soft radial wash to hero backgrounds. Pair it with `--text-primary`.
+- `--gradient-panel` blends raised and panel surfaces. Pair it with `--text-primary`.
+- `--gradient-accent` adds a directional highlight to accent bands. Pair it with `--text-on-accent`.
+
+Apply these tokens as `background-image` over the corresponding solid `background-color`.
+The gradients use semantic colors that resolve in both Light+ and Dark+.
 
 ### Button presentation
 

@@ -383,3 +383,12 @@
     }
   }
 }
+
+/* Background images for hero sections, panels, and accent bands. */
+@scope {
+  :scope {
+    --gradient-hero: radial-gradient(ellipse at 75% 12%, var(--accent-subtle), var(--background-color) 72%); /* @kind other */
+    --gradient-panel: linear-gradient(145deg, var(--surface-raised), var(--surface-panel)); /* @kind other */
+    --gradient-accent: linear-gradient(120deg, var(--accent-hover), var(--accent)); /* @kind other */
+  }
+}
