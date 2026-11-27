@@ -1,0 +1,55 @@
+@scope {
+  :scope {
+    --font-display: "Instrument Sans", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-ui: "Instrument Sans", "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+    --tracking-tight: -0.04em;
+    --tracking-snug: -0.025em;
+    --tracking-caps: 0.14em;
+    --leading-tight: 0.94;
+    --type-display: var(--weight-bold) var(--text-5xl)/var(--leading-tight) var(--font-display);
+    --type-title: var(--weight-bold) var(--text-2xl)/var(--leading-tight) var(--font-display);
+    --radius-xs: 0px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+    --border-width: 2px;
+    --border-width-thick: 4px;
+    --shadow-row: 0 2px 0 0 var(--border-strong);
+    --shadow-widget: 4px 4px 0 0 var(--border-strong);
+    --shadow-menu: 6px 6px 0 0 var(--border-strong);
+    --background-color: light-dark(#F6F1F5, #1B1422);
+    --surface-card: light-dark(#FCF8FC, #261B2E);
+    --surface-panel: light-dark(#E6DAE9, #30233A);
+    --surface-raised: light-dark(#FCF8FC, #352740);
+    --surface-hover: light-dark(#EEE4EF, #3C2D47);
+    --surface-active: light-dark(#E1D1E5, #473453);
+    --surface-input: light-dark(#FCF8FC, #261B2E);
+    --surface-overlay: light-dark(#FCF8FC, #30233A);
+    --surface-selected: light-dark(#E1D1E5, #473453);
+    --surface-editor: light-dark(#F6F1F5, #1B1422);
+    --surface-sidebar: light-dark(#E6DAE9, #261B2E);
+    --surface-statusbar: light-dark(#E6DAE9, #261B2E);
+    --surface-titlebar: light-dark(#E6DAE9, #261B2E);
+    --surface-inline-code: light-dark(#EEE4EF, #3C2D47);
+    --text-primary: light-dark(#28212D, #F6F1F5);
+    --text-secondary: light-dark(#4E4054, #DFD0E4);
+    --text-muted: light-dark(#65516A, #BEAAC7);
+    --text-inverse: light-dark(#F6F1F5, #28212D);
+    --text-code: light-dark(#28212D, #F6F1F5);
+    --border-default: light-dark(#4E4054, #D1B9DA);
+    --border-subtle: light-dark(#765F7D, #806B89);
+    --border-strong: light-dark(#28212D, #E6DAE9);
+    --border-input: light-dark(#4E4054, #D1B9DA);
+    --border-focus: light-dark(#61386F, #D5ADE5);
+    --accent: light-dark(#61386F, #D5ADE5);
+    --accent-hover: light-dark(#512B5E, #E6C6F2);
+    --accent-press: light-dark(#44224F, #BF93D0);
+    --accent-subtle: light-dark(#E6DAE9, #3C2D47);
+    --accent-text: light-dark(#61386F, #E3C4ED);
+    --text-on-accent: light-dark(#F6F1F5, #28212D);
+    --text-link: light-dark(#61386F, #E3C4ED);
+    --text-link-hover: light-dark(#28212D, #FCF8FC);
+    --brand-center: light-dark(#28212D, #F6F1F5);
+    --brand-edge: light-dark(#61386F, #D5ADE5);
+  }
+}
