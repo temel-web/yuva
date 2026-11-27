@@ -17,6 +17,7 @@ const styles = css`
   a:hover .label { text-decoration: underline; text-underline-offset: var(--space-2); }
   svg { flex: none; inline-size: var(--space-7); block-size: var(--space-7); fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
   .label { max-inline-size: 12ch; overflow-wrap: anywhere; }
+  .label slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   .count { font: var(--type-ui); font-variant-numeric: tabular-nums; color: var(--text-secondary); }
   @container (max-width: 40rem) {
     a { gap: var(--space-3); padding-inline: var(--space-2); }

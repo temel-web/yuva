@@ -23,6 +23,7 @@ const documentStyles = css`
 
 const styles = css`
   :host { padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); min-block-size: 50svh; }
+  slot:not([name^="provenance"]) { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   ::slotted([slot="heading"]) { font: var(--weight-regular) clamp(var(--text-5xl), 7cqi, var(--text-6xl))/0.96 var(--font-display); letter-spacing: -0.01em; margin-block: 0 var(--space-7); }
   ::slotted([slot="notice"]) { color: var(--text-secondary); }
   ::slotted([slot="empty"]) { display: grid; gap: var(--space-7); max-inline-size: 42ch; padding-block: var(--space-11); }
@@ -40,7 +41,6 @@ const styles = css`
     .columns > :nth-child(1) { grid-column: 1 / 3; }
     .columns > :is(:nth-child(2), :nth-child(4)) { justify-self: end; }
     .columns > :nth-child(3) { justify-self: center; }
-    .columns > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
     .items { margin-block-start: 0; }
   }
 `;

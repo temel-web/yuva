@@ -23,7 +23,7 @@ const styles = css`
   .heading { display: grid; gap: var(--space-6); }
   .media { min-inline-size: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-6); }
   .preview { position: relative; isolation: isolate; background: light-dark(#e3e0da, #d8d3cb); aspect-ratio: 4 / 5; overflow: clip; }
-  .preview > slot { display: block; position: absolute; inset: 0; pointer-events: none; }
+  .preview slot { display: block; position: absolute; inset: 0; pointer-events: none; }
   .preview > slot::slotted(:is(img, temel-picture)) { display: none; position: absolute; inset: 0; box-sizing: border-box; inline-size: 100%; block-size: 100%; object-fit: contain; padding: clamp(var(--space-8), 8cqi, var(--space-12)); mix-blend-mode: multiply; pointer-events: auto; }
   :host(:state(room)) .preview > slot::slotted(:is(img, temel-picture)) { object-fit: cover; padding: 0; mix-blend-mode: normal; }
   .thumbnails { display: grid; grid-template-columns: repeat(4, minmax(0, 5rem)); gap: var(--space-4); margin-block: 0; align-content: start; }
@@ -37,7 +37,8 @@ const styles = css`
   .modes button[aria-pressed="true"] { background: var(--text-primary); color: var(--background-color); }
   .modes button[value="spin"]::before { content: ""; inline-size: var(--size-icon-lg); block-size: var(--size-icon-lg); background: currentColor; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12c0-2.2 4-4 9-4s9 1.8 9 4-4 4-9 4'/%3E%3Cpath d='m9 13 3 3-3 3'/%3E%3C/svg%3E") center / contain no-repeat; }
   .copy { display: grid; gap: var(--space-7); min-inline-size: 0; }
-  .copy > slot, .heading > slot, .catalogue > slot, .fact slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .copy slot, .heading slot, .meta slot, .catalogue slot, .fact slot, .spin-stage slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .modes button slot { display: inline-block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   .catalogue { color: var(--text-muted); font: var(--type-caption); padding-block-start: var(--space-7); border-block-start: var(--border-width) solid var(--border-subtle); }
   .catalogue > slot::slotted(*) { font: inherit; margin: 0; }
   .meta { order: -1; display: flex; flex-wrap: wrap; gap: var(--space-6); font: var(--weight-medium) var(--text-ui)/var(--leading-ui) var(--font-ui); color: var(--text-secondary); }

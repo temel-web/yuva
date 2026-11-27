@@ -4,6 +4,8 @@ import { StoreElement } from "./shared/store-element.js";
 const styles = css`
   :host { color-scheme: dark; padding: var(--space-11) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)); background: var(--surface-panel); color: var(--text-primary); }
   section { display: grid; gap: var(--space-7) var(--space-10); align-items: center; }
+  section slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  section slot[name^="action"] { justify-self: start; }
   ::slotted(*) { margin: 0; }
   ::slotted([slot^="heading"]) { font: var(--weight-regular) clamp(var(--text-3xl), 3.6cqi, var(--text-4xl))/1.05 var(--font-display); letter-spacing: -0.01em; text-wrap: balance; }
   ::slotted([slot^="summary"]) { color: var(--text-secondary); }

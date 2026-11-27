@@ -21,13 +21,16 @@ const styles = css`
   :host(:not(:state(in-cart))) { display: none; }
   .line { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr) auto; gap: var(--space-5) var(--space-7); align-items: start; }
   .image { grid-row: span 3; isolation: isolate; background: light-dark(#e3e0da, #d8d3cb); aspect-ratio: 1; overflow: clip; }
+  .image slot { display: block; inline-size: 100%; block-size: 100%; }
   ::slotted(:is(img, temel-picture)) { box-sizing: border-box; aspect-ratio: 1; object-fit: contain; padding: var(--space-4); mix-blend-mode: multiply; }
   .copy { grid-column: 2 / -1; display: grid; gap: var(--space-2); justify-items: start; }
+  .copy slot, .status slot, .unit slot, .controls slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  button slot { display: inline-block; }
   ::slotted([slot="title"]) { font: inherit; margin: 0; }
   ::slotted([slot="brand"]) { color: var(--text-secondary); font: var(--type-ui); }
   .title-link { color: var(--text-primary); font: var(--weight-semibold) var(--text-lg)/var(--leading-snug) var(--font-ui); text-decoration: none; }
   .title-link:hover { text-decoration: underline; text-underline-offset: 0.2em; }
-  .title-link span, .title-link slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .title-link span { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   .title-link.has-display-name .catalogue-title, .title-link:not(.has-display-name) .display-name { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); }
   ::slotted([slot="display-name"]) { font: inherit; margin: 0; }
   .copy button[value="remove"] { min-block-size: var(--space-9); padding: 0; background: transparent; border: 0; color: var(--text-secondary); font: var(--type-ui); text-decoration: underline; text-underline-offset: var(--space-2); }

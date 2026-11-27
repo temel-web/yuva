@@ -7,7 +7,9 @@ const SPIN_ATLAS_PATH_PATTERN = /^\/(?!\/)[a-z0-9/._-]+\.webp$/u;
 const styles = css`
   canvas { display: block; inline-size: 100%; max-block-size: 65vh; object-fit: contain; aspect-ratio: 320 / 405; touch-action: pan-y; cursor: grab; background: white; }
   .controls { display: flex; gap: var(--space-4); justify-content: center; margin-block: var(--space-6); }
+  .controls button slot { display: inline-block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   #spin-label { display: block; font: var(--type-caption); color: var(--text-muted); margin-block-end: var(--space-4); }
+  #spin-label slot, .status slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
 `;
 
 /** A lazy 36-frame turntable with one owned animation clock. */

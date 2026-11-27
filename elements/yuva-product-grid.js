@@ -21,8 +21,9 @@ const styles = css`
   :host { padding: var(--space-12) max(clamp(var(--space-7), 4%, var(--space-11)), calc((100% - 80rem) / 2)) var(--space-13); }
   :host(:state(introduced)) { padding-block: var(--space-13) var(--space-13); }
   .introduction { display: grid; gap: var(--space-7); align-items: end; margin-block-end: var(--space-10); }
-  .introduction:not(.is-filled) { position: absolute; inline-size: var(--space-1); block-size: var(--space-1); margin: 0; overflow: clip; }
-  .introduction > slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
+  .introduction:not(.is-filled) { position: absolute; inline-size: var(--space-1); block-size: var(--space-1); margin: 0; gap: 0; overflow: clip; }
+  .introduction:not(.is-filled) slot { grid-area: 1 / 1; }
+  .introduction slot { display: block; min-inline-size: var(--space-1); min-block-size: var(--space-1); }
   ::slotted([slot="heading"]) { margin: 0; font: var(--weight-regular) clamp(var(--text-4xl), 5.6cqi, 5rem)/0.98 var(--font-display); letter-spacing: -0.01em; text-wrap: balance; max-inline-size: 18ch; }
   ::slotted([slot="summary"]) { color: var(--text-secondary); margin: 0; max-inline-size: 40ch; font-size: var(--text-xl); }
   .grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-10) var(--space-8); align-items: stretch; }
