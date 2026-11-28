@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "commitOid": "a615002f72f3c8641401736409eaacc2ebecd554",
+  "commitOid": "1b6fe768a32dea6320166fa9187f146a6715fbda",
   "pages": {
     "yuva.demo.temel.page/": {
       "contentHash": "69a98827331cfb6b1e2084a9c19a3a42",
@@ -415,8 +415,8 @@
       "lastmod": "2026-11-27T14:31:30Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "0fa0db71d8ae4bc13fe456cf0b12ddee",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6c4fe5c195de61956472785bad04cefd",
+      "lastmod": "2026-11-28T08:47:50Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/rivet-velvet-throw-pillow.html": {
       "contentHash": "61d88e3faf814c534ef4070bd8298a6e",
@@ -535,8 +535,8 @@
       "lastmod": "2026-11-27T14:31:30Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "bc53ca926a5bb750af130f1ca8a6c841",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "db695a5c299c1b9d5f4fa017bee21bbe",
+      "lastmod": "2026-11-28T08:47:50Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-roaring-twenties-wall-art.html": {
       "contentHash": "8759e38869cc7e7eb0eab6b6ab518521",
