@@ -1,1198 +1,1198 @@
 {
   "version": 1,
-  "commitOid": "1b6fe768a32dea6320166fa9187f146a6715fbda",
+  "commitOid": "2f36e00dda77661933fef7ed56427fc0390f5d85",
   "pages": {
     "yuva.demo.temel.page/": {
-      "contentHash": "69a98827331cfb6b1e2084a9c19a3a42",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "d99d4fc2759c62ded4aa3ddcbd0da76e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/bedroom/": {
-      "contentHash": "2582ce0ccf3e34d89f9825aefcaafddd",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "cb477b3b2d83800e64abe9bb9e7d9ca4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/campaigns/black-friday.html": {
-      "contentHash": "cf43915ac8de3f9acb0635c299363a9d",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "bba8a1b9ad9c9930a2c62e2003e3b4b4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/campaigns/winter.html": {
-      "contentHash": "85e959e6266de794e0ba18d9814edb2a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "6985a37f7f2489bd26823c553a62ad96",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/": {
-      "contentHash": "9a5629c13f3f9aec8d857f5fd6670124",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "808b8471782e6ebc7d93c9a85e8ab060",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/bedroom/": {
-      "contentHash": "39232e86dcf55e09bf1e6db1576a87ef",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0904bb50ae3dbf4ab38ef0d05ef7668c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/campaigns/black-friday.html": {
-      "contentHash": "fcf442752f1afb9847a0a6c9c2dcb41c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9bb7c4873868a48d63824d8db340ea2a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/campaigns/winter.html": {
-      "contentHash": "4f5af314d7ac806df13ef5c7bec684a0",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "154553949017153c720e93ed694974f3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/decor/": {
-      "contentHash": "ddac0f0435536d3febf9262820e9ecec",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ed32f85db2f221e05c653da75b40379e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/lighting/": {
-      "contentHash": "0cfbc83e5459e524f6ad37e16cdea993",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b1fe053b9cdf6fa9010f6c6263819592",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/movian-corona-sideboard.html": {
-      "contentHash": "f86480856b52b7a2e802cb1b0a460103",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c5d5b2198581a6bcc29b37e4a5ae2929",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/movian-loue-sideboard.html": {
-      "contentHash": "ddd78aae69e475e0c692bc3ef9f6802e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "224e8acc3c3fd3c08b24cbc3d7eae920",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/movian-minho-sideboard.html": {
-      "contentHash": "829e1de0deaa737e09f1b0cddd630c10",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3ea27cc2b1e72e137c0caf928a7bf136",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/rivet-nova-queen-bed.html": {
-      "contentHash": "a7d8a6ea0fb424aab43cfb134d551912",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0507f0868ac8e82203458526a9d72f64",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/rivet-west-queen-bed.html": {
-      "contentHash": "a6095de7d4b53c2d80a64a81be24fb86",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7b9ecb73eae9934fd4b4f3fe5dad25e6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/stone-beam-clifton-king-bed.html": {
-      "contentHash": "05e73d07328d7543e5096d2d19de981e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b685eca85bdd3898917a44c1e12a7543",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/stone-beam-glenwood-king-bed.html": {
-      "contentHash": "8ed6dbfe415ee0e2baae5a3293d952f3",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2eb93e16b97e195db8a6dd0e82e328bf",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/stone-beam-glenwood-queen-bed.html": {
-      "contentHash": "13b08c7ff996dc31f9cc4fdb668b8e4c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "fda7e191b69490c3b14e4e362946af29",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/stone-beam-newport-dresser.html": {
-      "contentHash": "66da3c0c43db17ece11a5b2e86fce324",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6a85a185eb45569465c548d58edfd209",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/bedroom/stone-beam-parson-queen-bed.html": {
-      "contentHash": "c9b8ce84172f4cfbe3e54d7340c2afb1",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c35f1822e9b42b54dd88413261cf743a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/amazonbasics-hanging-planter.html": {
-      "contentHash": "08676f3ce142f38c638f9c10103d1c58",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "e73017e058bf9e2eaec609711649f80f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/amazonbasics-walnut-wall-mirror.html": {
-      "contentHash": "68b4c73b2435a13d3cb71cad7ae2818b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "edf15bf2e73a3c2f3af9357178582ad6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-be-a-little-wild-wall-art.html": {
-      "contentHash": "457f05dc2d43e7b435cba9134f75abb8",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7bace03ae85e13ab6632f66e9ccb5062",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-bohemian-stripe-pillow.html": {
-      "contentHash": "b6322c616d63f50d121745799b9a599b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9731e6de3f6640645bf8d9731456e9e6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-ceramic-planter-tall.html": {
-      "contentHash": "c982fd9c807afc075b81a7cc989985fe",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "e3ec2e2b9f860cf7b9835ac8028c2940",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-ceramic-planter-wide.html": {
-      "contentHash": "1f2ad7e1577d9ee8a709488795cf2046",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4f7789d592c6341e47809d544e2d6c5c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-crosshatch-planter.html": {
-      "contentHash": "c4af2073a5714ab613b2c8050150281a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d3d58bcbc5cc7d87cfbcbd3c5280d65e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-hanging-plants-wall-art.html": {
-      "contentHash": "c790c299157f6f735e4313b44e92ee52",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "bf05d59817d22b9cb43560cf90bad4e9",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "87733c4a7c64614471bb022a76fee28c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "002b4ec43e87d988a827a44e4a9271a3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-roaring-twenties-wall-art.html": {
-      "contentHash": "f8cab92bfc88bcc9546e60b28288d37d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2824c25e8e1d770953da71ae60999d06",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-san-francisco-canvas-print.html": {
-      "contentHash": "1c3bcad0eadc503d6bf058bd2d2e7289",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "340fa1feb00c6159130d08cd7d51a53e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-tile-mirror.html": {
-      "contentHash": "d860d6ea93c67e20c214ec7ce73d642c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "70418475954d8d8e86cd051f69ffc1f9",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/rivet-velvet-throw-pillow.html": {
-      "contentHash": "5909d1a1e9c1d57a48b6b88ceeeca68b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0df1c60bfea92b2ca5136be9ce85a6cc",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-abstract-wall-art.html": {
-      "contentHash": "856b439a00a56e35ac7ddc12cea2b75a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9d19023f3ea32d670270982ccc8a018d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-embossed-planter.html": {
-      "contentHash": "be33c3f7a880d381e622207bbf31c156",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a763b605a9099048769548523c1320b4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-floral-canvas.html": {
-      "contentHash": "00ff27c98867eb57853cec2e4c837e62",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ab9a5861c34d7f5d5bac292b57266771",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-french-laundry-throw-pillow.html": {
-      "contentHash": "d202e28f58e2da4d1b745c0179c6eed5",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "edd3e8bdeeca7f1df417c6bc61fe9e48",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-medallion-throw-pillow.html": {
-      "contentHash": "b7212ebc1b5d4ad09d1e0b4142481355",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "49046917fd7e44e1da8e84fa02eb3964",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-purple-floral-wall-art.html": {
-      "contentHash": "5aa4197c7fbca4816d864c251e68439d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "641a18bf3d9775502e3f2ef70da778b1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-quadrant-mirror.html": {
-      "contentHash": "6670a48dea6089481ab56d29fb0606b3",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "91900088c2d5095ab8216f676228017e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-rectangular-mirror.html": {
-      "contentHash": "eb1073cdb6456491f73b1dbc731bcc01",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "180d41744c043f7d0b630d2890ff798d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-striped-throw-pillow.html": {
-      "contentHash": "c76d50103e702f60e564f01797d8c097",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c1e45c41b16a2ab51aaebc7131b1f44e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-velvet-throw-pillow.html": {
-      "contentHash": "8d7491a33069f0361edba77b95fa9f46",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d4ae63b572540d49a2910a37ed73a990",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/decor/stone-beam-wood-rope-mirror.html": {
-      "contentHash": "63ffd6f435e01b55756eccc92eb2df04",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9ff7557f0b9172a931bcf94b121cf514",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/rivet-black-cage-pendant.html": {
-      "contentHash": "2da5c81a8de9b93a01b265b92c63d752",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "1c605ee578e673d8caf95e763f7f24a1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/rivet-caden-floor-lamp.html": {
-      "contentHash": "ebdbb1f57b748c139fa082d564e6768e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "359018656a7a23e1c64aff6de1c7db93",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/rivet-marble-brass-table-lamp.html": {
-      "contentHash": "d8bbd907facdf80d4e706177b97d8877",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "663dae9caf083847e7e596110fb3e509",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/rivet-white-cage-pendant.html": {
-      "contentHash": "ac1e619d49ac535ddb9977a576e1064d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6cbec06663ee8a2ae5b61f6374c58906",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-dome-pendant.html": {
-      "contentHash": "93ccdee7eb867317b4c68950017ed861",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "deed1aeb20e5ed4e0b8d15f829d606e1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-farmhouse-pendant.html": {
-      "contentHash": "fc6c2045ff18baaec3af2be09e003d83",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d8895b2712872c7f044f4455651c9ac0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-geometric-table-lamp.html": {
-      "contentHash": "d268ac8e6bb69761a3bf243e4d09b506",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b86358945bbbe587f56f3e7f23b8811b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-glass-column-floor-lamp.html": {
-      "contentHash": "c527614dff75fa7f715853f213743515",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a81632e9129daf12023d579808b397f3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-glass-column-table-lamp.html": {
-      "contentHash": "5baa3f90905fbbac970819573de73752",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3b0ed7bff0ebc5067ccd4d69189339a4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/lighting/stone-beam-pulley-chandelier.html": {
-      "contentHash": "b5829076c837a7da13815cc9d052837c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "40bd91745f17c3a34e524f2d22847d75",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-bordered-sisal-rug.html": {
-      "contentHash": "c47c0b1eeb751789b7dc007fac8713ab",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a3c7140b4ce1213583eac7ddab949b8f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-diamond-trellis-rug.html": {
-      "contentHash": "639b88b8cf378d3f2369e273bca2052c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6d5c8b97c185c8bb127b5b6fd71b7404",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-medallion-rug-5x8.html": {
-      "contentHash": "f6f0d8257477913ccc0022e512a769bf",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6e88b19a8a227b53d99bb332d46b5bb8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-medallion-rug-7ft6x9ft6.html": {
-      "contentHash": "e4acce2695148c2fed12d35501c83816",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7acdcd9b0451fdc8adb22aa0cb224a64",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-ombre-wool-rug-red.html": {
-      "contentHash": "c7fc0e1215698edb6b531b7d0578354d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "aac5b15f8717f447529d6338bec810c1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-sunset-rug-blush.html": {
-      "contentHash": "434c8cbd153fa76aeb5dd95d10302030",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d99491c93a36eaa564a3957066834d38",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/rivet-wave-rug-moss.html": {
-      "contentHash": "8692a92f33dc8823352cc6d72f7e6e37",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a241e24027fb389b38632aafda7a33e1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/stone-beam-dusk-wool-rug.html": {
-      "contentHash": "0d39416ee55a6a421dcffc81bb7e6fa9",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "377d22ca44e721fe20cb13a35eb86319",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/stone-beam-jute-rug-tan.html": {
-      "contentHash": "08dddb22738af4a8cd09dbf54722efd6",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "19065c2644a90e296fc734dfda37083c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/rugs/stone-beam-textured-wool-rug.html": {
-      "contentHash": "e4f2d2f66cb0f988285f3732bfe63aea",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2d38b8344b539d815b03bdc5e97c72b6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/alkove-holt-leather-sofa.html": {
-      "contentHash": "08b7a88a4f9aca053b2d35ebe87058bc",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "466a977060d7d621c3f91564e05eae56",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/amazonbasics-storage-ottoman-bench.html": {
-      "contentHash": "a7c88ba1405bb58399c79c8b2ba87c68",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "1b1c93ceb15af7c9ce53594c836e062c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/ashley-leahlyn-dining-chairs.html": {
-      "contentHash": "4609b7b92139a4be8c55c4ec6ad37874",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "37aea3062dcefe8e04f345a997dfde9d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/ravenna-home-mayes-sofa.html": {
-      "contentHash": "ee066e606f41d1643be371df446b595f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d25a4746efcc7df59b25cebacd794d5a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-aiden-leather-chair.html": {
-      "contentHash": "74ed44cdd1d21b0c3af0e8afe8f39189",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a863b54426d23646a9e68e07d463388c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-apex-sofa.html": {
-      "contentHash": "bb0f0d3b1e97e1bc8f96e7ada79212ce",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "119ba6df1388f7f5266b6c3bcf86f651",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-channel-back-dining-chair.html": {
-      "contentHash": "5452d311c080da576130dde146bbf47c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9b53a6ba824a0165eba80689e7843401",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-charlotte-accent-chair.html": {
-      "contentHash": "98b28b161165f69afe31b074d067f854",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d25d99922ac629519536b9dc944a35c2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-emerly-sectional-sofa.html": {
-      "contentHash": "634bfa0c6806bf5417f4fb99a80c3f0b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ad8f614a392d67ceb4d1a78ff3c2239e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-huxley-accent-chair.html": {
-      "contentHash": "432400a06233e09bacbd1e79dfa809d1",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "826c8935c898e17885379ce7358c20d6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-madison-storage-ottoman.html": {
-      "contentHash": "cd54268a2653179b58c25888318e5649",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "cdbe2acf33967c49d7d54ff92b0d0894",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-malida-bar-stool.html": {
-      "contentHash": "ab7cf4bfb7234fbb4fc2db6093eef3fe",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "8db642cac86b814d2bcbc22dcc482cd1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-north-end-sofa.html": {
-      "contentHash": "18b594460139da662cb9c5ebef5211df",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c53acbc73f99200d461f51da040e16d2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-ross-storage-ottoman.html": {
-      "contentHash": "2b88f1930737d1ea62d381e663d7d92f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0cbc7295991b4c995729742c54fe8dd6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-slade-swivel-chair.html": {
-      "contentHash": "5bb8603fc20cfe30ae2626c92bba1ccc",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a73f98533c906a97b2c0834270a0e940",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-sloane-ottoman.html": {
-      "contentHash": "0877f1b9455febdb275ebf52dd3b10de",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3889266979d2f94d9c698e56440db334",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-summit-leather-chair.html": {
-      "contentHash": "6d97fcedf1e080fbf9b810eb1a42f8c9",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "5d7aa25bd243752b6b4978f33d4e24dd",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/rivet-willard-lounge-chair.html": {
-      "contentHash": "044a9a0ebd80b55006cf090d7b42a31a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "948a1bf9629309a2b6e09425c9ded6da",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-bradbury-leather-sofa.html": {
-      "contentHash": "722eb38fd2fe4dfbdd35f48b204a3b8b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "068824220761a3cd98a9667882c0b1f2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-dalton-sectional-sofa.html": {
-      "contentHash": "adde979c73bec6ca1460260c734e4de4",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3b1bb244dbeaee55c8bf3b570142738f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-kristin-ottoman.html": {
-      "contentHash": "ac181c4f693df58eaabcfd8082124157",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ea9adb434354d24accf0c0626ebc4e88",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-sascha-wingback-chair.html": {
-      "contentHash": "184fc361f43a91edb25a3c4dc3bf916c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "23cfc9741f030f503e56cdf3d1929fe2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-sophia-counter-stool.html": {
-      "contentHash": "fd9c9a123e98580d33c054a4a7bfb219",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "21537b76cc6fdcdc1954baf9a4a57818",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/seating/stone-beam-wishbone-dining-chair.html": {
-      "contentHash": "0b561bab98ab2d9c1494e0f5464ad617",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "5b8148ea6468e24ec2ad75cba03aa610",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/movian-corona-bedside-chest.html": {
-      "contentHash": "a9ee654e0bba441b08322a75c924e06b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6526a21e6498af501925958b357d9ccc",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/movian-corona-console-table.html": {
-      "contentHash": "b8793fef658508314dc1d02cefb8b1e6",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f961ee72eeec11173ae2f1dfbd73cffb",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/movian-corona-nesting-tables.html": {
-      "contentHash": "fb74ea25935e848eb9924274b4cac013",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c0de16c15738b3a1874cda3cca50384e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/movian-haven-desk.html": {
-      "contentHash": "6a43904b066221a4d66d8a747d359cba",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f16806f3a3d17b12746393ae895e8534",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/rivet-bristol-side-table.html": {
-      "contentHash": "5e593f730f903d95e34c1a9910ddf9bb",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ce7a027c834e6a83d144949b223f0ad0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/rivet-hillside-coffee-table.html": {
-      "contentHash": "c5ea5be1e0b9b6c3fa88c84cfe126679",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "46effba4797638ebcb5520a9091bc4a8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/rivet-hourglass-marble-side-table.html": {
-      "contentHash": "3174ced29f548ea78abfadec3de0c347",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2d5a1e0ddf435d93c66aa968700eeb0b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/rivet-round-dining-table.html": {
-      "contentHash": "a10dad489d84c7c4f4c83a098141f869",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "5fd4110f553ee36a24a5a7deb34e3e00",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/vida-corona-dining-set.html": {
-      "contentHash": "0fa80413bca3441f18e4db233d3236db",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f052be3c3ab0e56fdecd59e085efaf1d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/products/tables/vida-corona-four-drawer-chest.html": {
-      "contentHash": "9b021ed532f131e97286042cc61b8fa4",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4a6259c399d2b037c19f7e99d0a7d486",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/rugs/": {
-      "contentHash": "5841624ec6ce7c0651ca97645ae00c10",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "066a307e10b8becca007e435a08f6066",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/seating/": {
-      "contentHash": "cef7f13264356f7dba7a598ffd2eb89a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4185274457ee2d04f327b0fa844ca5ed",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/de/tables/": {
-      "contentHash": "7257dc0d1943ccbe28d264ce9d116558",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "203fa79289ecdbe4b0ddd6f083293eb6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/decor/": {
-      "contentHash": "bea224d320c5a10038cd57b3db9db63b",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "95b83eaacc9b9b2f64f924d06bb504ec",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/rivet-bohemian-stripe-pillow.html": {
-      "contentHash": "9eb8b9a8f99145714fa07edcb1292764",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d3424728492a528e05d3d3ae6d83cdea",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "6c4fe5c195de61956472785bad04cefd",
-      "lastmod": "2026-11-28T08:47:50Z"
+      "contentHash": "d9f8934f53fddd17abf00eeb6f59974b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/rivet-velvet-throw-pillow.html": {
-      "contentHash": "61d88e3faf814c534ef4070bd8298a6e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0cabd7c0dea63989f4c237140492681f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/stone-beam-french-laundry-throw-pillow.html": {
-      "contentHash": "9f2d9fbd30b39de6cc50da7a8251a584",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c12b607c41702e2c2a9e8adf33d71cea",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/stone-beam-medallion-throw-pillow.html": {
-      "contentHash": "61bf4983af16f7f021d258dbac43b5d8",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2e91abc06bc24324eca9b085fd2fd98d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/stone-beam-striped-throw-pillow.html": {
-      "contentHash": "126fac60cb3ea147d0ee5703fcd3c8ee",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "faaab99ea5c7ff94279bbfb3e0364d69",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr-ch/products/decor/stone-beam-velvet-throw-pillow.html": {
-      "contentHash": "03e6c727bc7a04b7f043c287f0ca56d4",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3b8db000c6d2429026a2e68d7aa7b96f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/": {
-      "contentHash": "424c0df9e1422df86ae1afb2478445a0",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c704e850dcedae0a056848307918da01",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/bedroom/": {
-      "contentHash": "60a26fad73bcc1bc366c1f56db0c7a6f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "318d8fe053d2e993bd4f2428d7567611",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/campaigns/black-friday.html": {
-      "contentHash": "099da3c411b27a57d54367db8b3c03dd",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "1aa023d90436893440842a7f6448fe1c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/campaigns/winter.html": {
-      "contentHash": "450134de87560115b7c92d4c14c291f0",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b08db59bfb0a6fa3e919ddab944f8218",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/decor/": {
-      "contentHash": "6080921ed3275367e4be93f708c32473",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c0e2b26530cb308da60c0955dbc7d05a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/lighting/": {
-      "contentHash": "2329178f92f87b4162442bb2c97551c9",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "21d87596ba9a9c4d656efd5e12762a38",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/movian-corona-sideboard.html": {
-      "contentHash": "03a7e46639704781dcd31010791c6673",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "12d8eeb237b58adf23ddc36b632efdd6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/movian-loue-sideboard.html": {
-      "contentHash": "cd9fea4dbe7768ed66649530c0cee0e2",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "51d40cef5d5cbf4de14802dbedbb6906",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/movian-minho-sideboard.html": {
-      "contentHash": "e6c8ee71dc05636e5f74eaab9c1c75f4",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6936fa11b8f65610892809aa16bd0c66",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/rivet-nova-queen-bed.html": {
-      "contentHash": "0cb7838736e73d47e3e7b52acbcbbc3f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f1a168e7af11de94291faca56636e20a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/rivet-west-queen-bed.html": {
-      "contentHash": "34c9ed66d36bce933fc2a6873e89d08a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "41c2d18721167e742b26e5722de73f1e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/stone-beam-clifton-king-bed.html": {
-      "contentHash": "5b557a96cd5fa48f2e297999f7db694d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6bf4ebe55af1d77e0b701b44368c9769",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/stone-beam-glenwood-king-bed.html": {
-      "contentHash": "8285a80bcf38b43025b2025bf401bfd5",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f6ce429733610a11ce9633f77411168a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/stone-beam-glenwood-queen-bed.html": {
-      "contentHash": "b45d8b269caf5a33d28417ff90586d0d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a27e1686fbf867396a717c7c84a25751",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/stone-beam-newport-dresser.html": {
-      "contentHash": "f7edf05be55a862e96666e73cf21a15e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "696cf009cbaba34e9c7e53a94bdb8022",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/bedroom/stone-beam-parson-queen-bed.html": {
-      "contentHash": "059c31c92c8b5eda4cd598a2628fe335",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7d2d1a8177a98bfd86dbe6625f464b97",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/amazonbasics-hanging-planter.html": {
-      "contentHash": "d1eac9e38d9a53ffb0d56226793928ec",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "11afc7aec77aaaedc5a8e9fd835a58b9",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/amazonbasics-walnut-wall-mirror.html": {
-      "contentHash": "e7e7b31680428e0606ba49d4ce177f53",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "5c280cbb97a6401d3ca3a724ab03a77e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-be-a-little-wild-wall-art.html": {
-      "contentHash": "cb8e01b3b14b3cc995a8d973b9415c8b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "cdccb86add236c350b6262f039d2d4c1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-bohemian-stripe-pillow.html": {
-      "contentHash": "0513bbf1b1e60679727228d8d5d29f99",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ba8529ed554c53fa2b2ee691e0935839",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-ceramic-planter-tall.html": {
-      "contentHash": "c372fb4d7c094bf0d2a75208d59e5a88",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "33e3c3d53311ccf2b4eb96cc3e139a9d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-ceramic-planter-wide.html": {
-      "contentHash": "ecfcf3bf48d74a98eba66ec5e8fda7eb",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "bf6174040d85ea6c3d00bb6c6f1028bb",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-crosshatch-planter.html": {
-      "contentHash": "38edfc6111047e60d28f7ba308b875fd",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "e94b14a7941644aa304b3a0024959055",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-hanging-plants-wall-art.html": {
-      "contentHash": "8444aa11c20321aba4749bf9bb255b13",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "33beea8179730fdc8e2097cf7c9ce58d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "db695a5c299c1b9d5f4fa017bee21bbe",
-      "lastmod": "2026-11-28T08:47:50Z"
+      "contentHash": "6c61733ce2ef83f82c405bc254573a9a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-roaring-twenties-wall-art.html": {
-      "contentHash": "8759e38869cc7e7eb0eab6b6ab518521",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "61e1fbfd80d92a596e18392bcfbc8003",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-san-francisco-canvas-print.html": {
-      "contentHash": "5798ba1cd2d10af01503c57f0fb6a67e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "afca82f36fa09cc133f82ecc0f153ef8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-tile-mirror.html": {
-      "contentHash": "7d56dd60e5708b98c7b596cb125a1ecc",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "0ae95214aa02f8c1f43b0bc4552775be",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/rivet-velvet-throw-pillow.html": {
-      "contentHash": "a9cb74b06851da16cecc4cfedeffb93a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "cdfc11059c656b3d3c6cf75adc908557",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-abstract-wall-art.html": {
-      "contentHash": "fd5987bc9ba7e98a745a99b77426470d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "45925cf6c6559da6bf09f220bd9c2b2f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-embossed-planter.html": {
-      "contentHash": "8f6f638dbb1a69455096de1791687b1d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "263ef187d23e059f6c565390d54f3752",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-floral-canvas.html": {
-      "contentHash": "a0fc60e4eda22a96d179229450c47e78",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4069de413096f865bee2149ba45156f8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-french-laundry-throw-pillow.html": {
-      "contentHash": "be49e6e54846de0016e95afa902fa183",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "73dc9e397503da6b39bfda20afab1689",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-medallion-throw-pillow.html": {
-      "contentHash": "a2d8b4e422dce7e9c2b61117e9a1f558",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c9a3fe40020c016b8e7eddd1f3b2ce6b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-purple-floral-wall-art.html": {
-      "contentHash": "cd687fe41504816c4a698477d85da609",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "75d622222708e299c426ecedb48e16b0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-quadrant-mirror.html": {
-      "contentHash": "a147944a660cd54492a630618237f570",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f18695cd8cddd8ede629fd47df6f3ad4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-rectangular-mirror.html": {
-      "contentHash": "257f5c4113ba9f427e918189d7ef4421",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a5a71dd952fe1372b01f03db4431d633",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-striped-throw-pillow.html": {
-      "contentHash": "7c6d238e78fd0a7ddd9df8912a68e03d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "749c05885856faa4cb02d43faa0be151",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-velvet-throw-pillow.html": {
-      "contentHash": "7ad21ac74521fbd18788d6e2d9f2a9cb",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d4ae6fb24486d2bb7f5fab5fa1ea43b6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/decor/stone-beam-wood-rope-mirror.html": {
-      "contentHash": "f0fa5356c6b7169ca4b8d555f787ce11",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ad98886e8b03b393fe1ec08dc1e4893f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/rivet-black-cage-pendant.html": {
-      "contentHash": "d178167dba1d13c4becb4bc205622078",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "2877483edc9f555fd2d65dc0c17bea14",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/rivet-caden-floor-lamp.html": {
-      "contentHash": "9b7609004dc8c8cce0843d69bcd86466",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "dc72a18e81924dcc6a78c3cc2620e29d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/rivet-marble-brass-table-lamp.html": {
-      "contentHash": "4ec6d02dc19e6d85a461451a2d05cfab",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "e484ca43cfa7982e53d2df92d4f0e48b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/rivet-white-cage-pendant.html": {
-      "contentHash": "89a469314f5740797bb1db8f55dc5cd8",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "747003c94f221494dbf0269b7e8df665",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-dome-pendant.html": {
-      "contentHash": "df1f8fc753376b37b5145682f2a37554",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "458c9109a55bfbf372b2b376763d4f13",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-farmhouse-pendant.html": {
-      "contentHash": "467cdf41a120ecf9a2aef13c10f2f9ec",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "9a4cfaab95402411f023186ad72df6a2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-geometric-table-lamp.html": {
-      "contentHash": "eb36baff0140f74f47265d85e2c8d97d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b9e02ce428b06afca46d7c9018679fab",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-glass-column-floor-lamp.html": {
-      "contentHash": "55656b7f0273e0f14e7df802ac80694a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "8ec3fc7ab4dabec2569cadb8ab9dad0d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-glass-column-table-lamp.html": {
-      "contentHash": "382c7850059f3570253848915c60cbe6",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "db03b226482a96d7711f0722bfa79d58",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/lighting/stone-beam-pulley-chandelier.html": {
-      "contentHash": "04ba0a7dadd0caf5fd1cdd856d3cdcf5",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ee0c66bab5bac1d5e1d99f9c1efb7f25",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-bordered-sisal-rug.html": {
-      "contentHash": "040d0c274b08254b9b58505a8d20f7bf",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4e0d86f3426181924ec35a1cf49785f8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-diamond-trellis-rug.html": {
-      "contentHash": "674dbade650441f433b795056d3877d0",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "1e17fd8b4f9f1e74ccebcb3c0fcaf83f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-medallion-rug-5x8.html": {
-      "contentHash": "0a0ba937da169cd33b37f23c65c1ac8b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d8eeea6b23977c7d8bcabe1d92b40eb2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-medallion-rug-7ft6x9ft6.html": {
-      "contentHash": "652b3775623984eb23fdea20213aec19",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b6c9dfa4531e7386354c5108279925e2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-ombre-wool-rug-red.html": {
-      "contentHash": "3810bfd84fc20d559ad9b010171c2d37",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "e4fef58965dbf5c0fe80a60d69a4a481",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-sunset-rug-blush.html": {
-      "contentHash": "7b41819d7d002213ae3fcc47fc8230c2",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "aa43d2e1dd725429944bfadcbdc85c6a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/rivet-wave-rug-moss.html": {
-      "contentHash": "5b3664eb165282409d9cbb755473322f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "de6a90fc7a668cbc3395cf99d2df6ff2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/stone-beam-dusk-wool-rug.html": {
-      "contentHash": "db60f29c0fb9fdcacc7ae85c24dab235",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "65b41c354973b1eca0d95b92d8f0ecaf",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/stone-beam-jute-rug-tan.html": {
-      "contentHash": "f66fea3d61a1d18c46a39d3d0c8508c2",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c7278b6f007a0f0a0fcdc539c789da8a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/rugs/stone-beam-textured-wool-rug.html": {
-      "contentHash": "35fd5330c850fe4e3472329536db6ceb",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a283f10b1069a29588a3271d9c46ee70",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/alkove-holt-leather-sofa.html": {
-      "contentHash": "a27cf7bc331ab3395e947098fe85d54c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "dfc32b25f1148fd92ae6d92c9e805ef2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/amazonbasics-storage-ottoman-bench.html": {
-      "contentHash": "c2402891f1fc135dc72710e80fcbb67a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "24c6483cd0cbd453866d187b97da25e2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/ashley-leahlyn-dining-chairs.html": {
-      "contentHash": "1e707a399d6dff2cbe0687f6ac1a0d06",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "08906be6eae5c5eef724127de850a866",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/ravenna-home-mayes-sofa.html": {
-      "contentHash": "58971291282a18aad71f5f17f0cfb74d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7e765fcde30ba0c3f2fac782b00020b1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-aiden-leather-chair.html": {
-      "contentHash": "6427c3439c7c9ba544d1fdb963a1eb9b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "70e442f7ff67ba254de450df5c05e146",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-apex-sofa.html": {
-      "contentHash": "0326cfbc19c06b23d7a97a3ab07d2f7a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "edfd95526a0a1ae7851a03c0d9fb4810",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-channel-back-dining-chair.html": {
-      "contentHash": "169d12757add667f0dc1d07d812b9045",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ca7d179a20d1e2a8d38d7eba67c0724f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-charlotte-accent-chair.html": {
-      "contentHash": "5af02567fcedd48b37335fa14bcf0934",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "84466358669e35f37ca8022bc31fa802",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-emerly-sectional-sofa.html": {
-      "contentHash": "3c9b79e98a230a8d612e467f04ee4e77",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6b13e8a9a081fc4ab4669852a9194878",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-huxley-accent-chair.html": {
-      "contentHash": "53f95cbaf715f6cc519cced923a8d91f",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a2ae020c275bfe32bb9d74df1d1b9f2b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-madison-storage-ottoman.html": {
-      "contentHash": "f15c2a92f38441f3780c192ba0ee8923",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b5bbe62d5dab81c0e1d2e4c0b75cc75b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-malida-bar-stool.html": {
-      "contentHash": "4c87d9525bb0f687902d514f1b8ae6f5",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b00e96d00a7ec1a5288d38cf55537153",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-north-end-sofa.html": {
-      "contentHash": "7add54f0a9039eb2f89732ddae65bd91",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "d21126c157c1d96afecaee00032b7c80",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-ross-storage-ottoman.html": {
-      "contentHash": "746180298239739c34318f7d28f9dc61",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "da4b41fc16f47f367281f0852ba0bf09",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-slade-swivel-chair.html": {
-      "contentHash": "b6d6a76c7d416f1aa4a728ddff031683",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "af898a42c54f788332aac604c56b7476",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-sloane-ottoman.html": {
-      "contentHash": "ac1bb15ee62f3a20d5b3aabc8262d834",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "7ba3b3556bf733db068633340abc9d22",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-summit-leather-chair.html": {
-      "contentHash": "0a2f9bba7fd06a912b5e618d04b86316",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "5a924828df8c7397a0789f4f21fdd6aa",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/rivet-willard-lounge-chair.html": {
-      "contentHash": "0a2d91c8e539576bc41bbb1d32c4ab16",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "3a1e6f363154694b8f28652397e4a42e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-bradbury-leather-sofa.html": {
-      "contentHash": "3729dc5cf58091f87460a2cf3f153740",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "1ed6e6c5dddce1ad0ebd7d42ac752b0b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-dalton-sectional-sofa.html": {
-      "contentHash": "366f650d5ccb8f694cb0c660e58e440a",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "05a7a35a10b20876d3ba9b95c287c692",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-kristin-ottoman.html": {
-      "contentHash": "2279e435c958d6eeb0f494c4f083d50c",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "71a6ae181a6aafa0339b0c1a31986423",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-sascha-wingback-chair.html": {
-      "contentHash": "11fd305665ce8c35793eec91c4c1c0aa",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a36caeaedd62c7205278ca0020d349ca",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-sophia-counter-stool.html": {
-      "contentHash": "6309016424b9ca1d0795e7fce912db6b",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "63371f4fec987b759d423ecfd04481bc",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/seating/stone-beam-wishbone-dining-chair.html": {
-      "contentHash": "3018cdd2cfd8ac4e2c5d155945c0258e",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "529b3a597fd11cdf455c05c6930471d9",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/movian-corona-bedside-chest.html": {
-      "contentHash": "a5752ca5049257854b40023bb04bbc95",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "ce8ab7039dc33effb090f2185cc83373",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/movian-corona-console-table.html": {
-      "contentHash": "3d2838cb786fc551ecf0dabacc1578c2",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "8c8a809061d5d9c1d3e3b5cc1b9c615d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/movian-corona-nesting-tables.html": {
-      "contentHash": "e03b1f7ab49b5d54c291aa5787dbfe94",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "b3d2dc5f2f8f3f72fd653de835792097",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/movian-haven-desk.html": {
-      "contentHash": "a9f061d7e474dff6752a184252845a64",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "38081d5fc1ef92dc4198ff7bf43086e6",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/rivet-bristol-side-table.html": {
-      "contentHash": "24b883fa2ba2369f824bf12c4fe6889d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "f79b4c24a93cedd2d4cd5bc6bbaff8fc",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/rivet-hillside-coffee-table.html": {
-      "contentHash": "567bc75e908d9adb7334a9c8555c5a16",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "c8cfd207e71b4f4d4aa8196e481fdc59",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/rivet-hourglass-marble-side-table.html": {
-      "contentHash": "622a84955558e16c9aa6ca354be698d7",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "46d1a712bc450ff3993d64a924d99186",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/rivet-round-dining-table.html": {
-      "contentHash": "b5d7d87798d6bbc13ac76a58f47de41d",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "44442e8eb284c3655001f5f360a264fd",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/vida-corona-dining-set.html": {
-      "contentHash": "b19d4f5ebeacee757fea2b0e8e0c1742",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "4180c33cf9b0e6b23f5a8b40d8c7cd38",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/products/tables/vida-corona-four-drawer-chest.html": {
-      "contentHash": "d1b2fa0661b508c7db5b651165e383ea",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "6566732e17ec29211f2cdb34938ce219",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/rugs/": {
-      "contentHash": "d70795f96016f32efca3188828a10a94",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "a025375feb06e468fb43c9e716466693",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/seating/": {
-      "contentHash": "0ecd12524d24186bd43ddae98591ce45",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "221ad3f53c00b0c9c5b7ec2a2d79a00c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/fr/tables/": {
-      "contentHash": "aaad2cc3bb549135b5af4fcfc5069876",
-      "lastmod": "2026-11-27T14:31:30Z"
+      "contentHash": "52b421c4cb939032477c0ec9147dd518",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/lighting/": {
-      "contentHash": "8f8e694386fc365b40d2b70f58bdee16",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "62cd9509be148c5c451846f73c9bb825",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/movian-corona-sideboard.html": {
-      "contentHash": "d63d8ca8d7792852408e5b9dfcce3951",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "867461dfd50b64f931c999dc1e4ded08",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/movian-loue-sideboard.html": {
-      "contentHash": "acfcc690f306ac55e282877012dd0d1c",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "4a7734e93d26bd55e9ea833a853d29c1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/movian-minho-sideboard.html": {
-      "contentHash": "5cca25038b223626ff74b0f4eeae7eb7",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "d96b25560916b1da1a99bb858d587083",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/rivet-nova-queen-bed.html": {
-      "contentHash": "d98b009a4beaa26a3f065bd92c0c9340",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "f79598e77b4d2956d039a75dc1a24d5e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/rivet-west-queen-bed.html": {
-      "contentHash": "4a1653f9e12e1283bce66d60206dc014",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "3f221237029bb0367c1cec0f847e5bc0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/stone-beam-clifton-king-bed.html": {
-      "contentHash": "b4fafc82f36fe4e560ef7743e71eca76",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "f69867cb564cc0e3fed2ea1dbcc9f036",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/stone-beam-glenwood-king-bed.html": {
-      "contentHash": "767837047895d4b19f78e23d81b1db43",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "2fe7c1310f537efa3f2813a75a7040b4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/stone-beam-glenwood-queen-bed.html": {
-      "contentHash": "6a6b2883eba1a1292511802d0a4d249a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "1662f17c0f87fd51d38471f35d475742",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/stone-beam-newport-dresser.html": {
-      "contentHash": "53ccbc9003785c210bf9754c63178c16",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "5384fe7c845458a3cd015fd130729ac5",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/bedroom/stone-beam-parson-queen-bed.html": {
-      "contentHash": "8ec7d1fb437abe2b58c7bdf63ff8e774",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "4ab4a832557ab6c39b53cdcbc9f60c3e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/amazonbasics-hanging-planter.html": {
-      "contentHash": "ef6441721a5d16feb250f6c2f8af51f1",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "270c453f99d5ec0e521854954286bff4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/amazonbasics-walnut-wall-mirror.html": {
-      "contentHash": "ce80788bb0c12db88efb9201c422a7ee",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "02698ab8e42570d283e755537e3eb36c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-be-a-little-wild-wall-art.html": {
-      "contentHash": "47e485eae3dd15c9d7bce0a1071a7d55",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "f42c9d2905dd40942d16496c780a5f2a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-bohemian-stripe-pillow.html": {
-      "contentHash": "c7c00279a30c5d9b7182348428e25da2",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "893eadea86cbaebe2295505c5e560717",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-ceramic-planter-tall.html": {
-      "contentHash": "4038547b1918ff4c918755b392b14d63",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "a04ae0bb8abebacf8609e9725c9896ab",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-ceramic-planter-wide.html": {
-      "contentHash": "1f53e4ec2116951267537a738e862c89",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "1a024c3baf9b4791456ee3d2eb0e15b8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-crosshatch-planter.html": {
-      "contentHash": "611421c24a3dd29e035eea55c16cdedb",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "61400291829544cb43274d22c04e5c7c",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-hanging-plants-wall-art.html": {
-      "contentHash": "a2581bf16792410e6ca0d005e5b7e6c4",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "ec6f0c687575adcced55db97d354bab1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-mudcloth-throw-pillow.html": {
-      "contentHash": "774abb4c085d3d384a9e4f8f35ada8d1",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "f83275c5f2952629d9f837d3d4926ef0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-roaring-twenties-wall-art.html": {
-      "contentHash": "c838f0551ef684786d9eec19f86e2a3f",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "a64fd1546f3da1a818b7429eb78f12f1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-san-francisco-canvas-print.html": {
-      "contentHash": "841ad7a10ade358fce7010b7f4c45255",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "3f5014deab9089de048f0ae59a72c584",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-tile-mirror.html": {
-      "contentHash": "9898b0c3b7ce90abf066379ce2357976",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "fb8debaaedd2d6c93800f19dadbbc37f",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/rivet-velvet-throw-pillow.html": {
-      "contentHash": "99dec0e402bedabbaff26ba77fef224a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "844dfbb2574b27d9a1e1b250198690c5",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-abstract-wall-art.html": {
-      "contentHash": "7b20886d0f251e59fb668e67b7dd4e4d",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "11a502f2cb778ec5ba657daa59c2a859",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-embossed-planter.html": {
-      "contentHash": "9053904c0efd54c709966f3f4f4992fe",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "b859563939a8095031b8a74ef16c3529",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-floral-canvas.html": {
-      "contentHash": "139297c5b83edc3a2e72a72005d596b2",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "affd0c2c4604fb46f3fa59d74b3cc3be",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-french-laundry-throw-pillow.html": {
-      "contentHash": "cdf5df2f55596d1dfbc8127d4706bf68",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "b33057af94176cd38f8461d822fba566",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-medallion-throw-pillow.html": {
-      "contentHash": "a0895dbc0a308fd7851b44990c78baf7",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "392f88cda87ad8a89bd0e3fd895c7751",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-purple-floral-wall-art.html": {
-      "contentHash": "fa37bbefa94fb24fea36cd7f87826e30",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "795ae1253e4a155208b11313dbd38571",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-quadrant-mirror.html": {
-      "contentHash": "61a6e12ed3bdfe0d3a639c3639df4ab3",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "16b87794977800a77a0bb4d4b71d2538",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-rectangular-mirror.html": {
-      "contentHash": "2d2ecf410df270f2ef8ddda5884e3095",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "86f3e7822d946fbe94d0b1c762763aec",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-striped-throw-pillow.html": {
-      "contentHash": "89b2df6bf3d8a8203773b3f1b7a9a454",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "b18c4a12db6100df64a7b05632c117e5",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-velvet-throw-pillow.html": {
-      "contentHash": "48ca6dacea71c15021589dbd633c4e53",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "1eae0d8c549443fff7e2439b7a205002",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/decor/stone-beam-wood-rope-mirror.html": {
-      "contentHash": "6a899566e173815ba2d1d8af9f064e8e",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "863c59698f1e4dfaa133b12f4c2c20ab",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/rivet-black-cage-pendant.html": {
-      "contentHash": "d472764d24235388e2803413b87970e5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "ae1b9a9ca26e9aeb6ea5776baa15bdcf",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/rivet-caden-floor-lamp.html": {
-      "contentHash": "733b37a09299debbdf53fe1d576623d3",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "fb8bb3603a56835ba441fed5c8be87df",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/rivet-marble-brass-table-lamp.html": {
-      "contentHash": "5491c474b2929947517a87f96ddc0de3",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "021bc66384415e9664c34b50cddd2292",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/rivet-white-cage-pendant.html": {
-      "contentHash": "24fb18287cd629b1f504cacaaeb112da",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "fd0cf6f52086a75b2f59163bcc1d6953",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-dome-pendant.html": {
-      "contentHash": "31b9ee5b881763f5e745e40125434666",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "6b5ad4a329b132ca6a19dae989d8356b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-farmhouse-pendant.html": {
-      "contentHash": "4acef111393d3596e18d445a35ef5b7a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "18685eab1564aa693f925a72bc2389d3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-geometric-table-lamp.html": {
-      "contentHash": "d9f39eff6139484545a36371971c1af3",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "888fe6a576b04641474c45e361510291",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-glass-column-floor-lamp.html": {
-      "contentHash": "1b79d2beb6d3167ef67688ffd352afb8",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "92febd6b60d941a4caa4294cce1be985",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-glass-column-table-lamp.html": {
-      "contentHash": "46cb78156166a1683658cc4e40acc87c",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "09d32f24577ea63219dee2e3be95d7d1",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/lighting/stone-beam-pulley-chandelier.html": {
-      "contentHash": "0189e681f5ddc0714f8d4b581bfec93a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "aa9713a1d4fb87508b614661294aecc3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-bordered-sisal-rug.html": {
-      "contentHash": "69e6b4f04589a7b232dd503725b35eaf",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "9fd051956988c5e8a29a853dc6c2b9cf",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-diamond-trellis-rug.html": {
-      "contentHash": "93e039963aa15f283386b18218c2e721",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "0a73bf256b15ba7eee9fc06bedde22aa",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-medallion-rug-5x8.html": {
-      "contentHash": "10012905ff4799243586858d6edf7897",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "40fb8270442c4a2ffcc249963a1f9b9e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-medallion-rug-7ft6x9ft6.html": {
-      "contentHash": "f3200a4f325b2173baaef49b094dece0",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "5ebddc3dab48e870b757d6fade6f0ee8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-ombre-wool-rug-red.html": {
-      "contentHash": "83cd372d52d74807d0e6404c89d2f023",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "dbcf3eeba32ad08edb9e5850c02ee17b",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-sunset-rug-blush.html": {
-      "contentHash": "e30c5c376b1ad285649643743144164c",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "110ca49599c80995e903b60bf9d7bcfd",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/rivet-wave-rug-moss.html": {
-      "contentHash": "9cd4684634c0caa597d99ad79ba92c16",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "83089e9b4dc45b5d0a5d4d8a35597405",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/stone-beam-dusk-wool-rug.html": {
-      "contentHash": "8f14e1566bd7eef1b49d50f1577175ce",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "2b249d7552c614265d96804f3f9770b8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/stone-beam-jute-rug-tan.html": {
-      "contentHash": "2d125418b30f7ddeb80560423f3996be",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "20ffabffbc77d1030ca991ebbdc985ed",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/rugs/stone-beam-textured-wool-rug.html": {
-      "contentHash": "20714874dc40bc7a5e983089de217d05",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "84de9304b4ea0c04a83f523d77871f6e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/alkove-holt-leather-sofa.html": {
-      "contentHash": "f694bc3cd30e8182060bb3458029b3a8",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "746aa7ef7bc87407061697e19ecb4b73",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/amazonbasics-storage-ottoman-bench.html": {
-      "contentHash": "34e6b54bbee69a19e24462d367c5f89a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "cb0593e6a5648a1ae9b8b271810397d8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/ashley-leahlyn-dining-chairs.html": {
-      "contentHash": "052c3e355daf0174ac8da77c737f6351",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "1ba3b615bc50f7a58a5ed30df0a33b63",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/ravenna-home-mayes-sofa.html": {
-      "contentHash": "c6091f3d2217d28cd624a5702bfb9348",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "28aa44c790ee7fb52be726bd30e621c4",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-aiden-leather-chair.html": {
-      "contentHash": "42a70ec1aa656a2cf13dc10f088e065f",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "5fd90f44962c36f25245ca4c28f651c8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-apex-sofa.html": {
-      "contentHash": "87eaef846266cc7540584506d6b0bbd8",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "6464ea819e31b9eba81515e7d95664d5",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-channel-back-dining-chair.html": {
-      "contentHash": "77fb01da9fabcfc01e89b7f778f4d7e7",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "362ea725b04e7d08c90769042a02fe34",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-charlotte-accent-chair.html": {
-      "contentHash": "d0099c64217047f98f49c34191d6a9ef",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "2a6a3b1c7f1e743232019b08b9483c8e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-emerly-sectional-sofa.html": {
-      "contentHash": "a23dbd17b3ddb35a5d7e2fe844c723d3",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "cc19b0a63fdbf8009183fbedeb786246",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-huxley-accent-chair.html": {
-      "contentHash": "356e45471ebd2beab590284dfaa711de",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "339eb7a08a9cdbf7189003c9a55f421d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-madison-storage-ottoman.html": {
-      "contentHash": "d2a82f39d0d26af469e4e6b2ca73f860",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "8acd88d75243db344c943213e9ae16bd",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-malida-bar-stool.html": {
-      "contentHash": "2a3eb6ac891cc25b5f42bb615c2936c4",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "ce56ca1138df0f0b77dc38c7cf3d5050",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-north-end-sofa.html": {
-      "contentHash": "4449a3ca940b22b74c59a7fb60f1dec4",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "00fb012b540705c445ab327f250177a0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-ross-storage-ottoman.html": {
-      "contentHash": "6de83d5876ca767daf9a149d477b65c8",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "791059034505b8cd6b2576c3ec47d476",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-slade-swivel-chair.html": {
-      "contentHash": "5aa34a71327815db87fb0b0a9d4fb00a",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "9119092cb6a3c0b57bfe334543c26a76",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-sloane-ottoman.html": {
-      "contentHash": "99213a53da6c0cf38de985e546f7dae0",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "13f9bb488e0dd2567548f0e541ec26ad",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-summit-leather-chair.html": {
-      "contentHash": "8ab4f73059455e18d8ba0968a5da36b8",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "166e9b39f069778f64f5c5a854bafe2e",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/rivet-willard-lounge-chair.html": {
-      "contentHash": "2d6692af006705131c421da826cc26c5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "0b559eaaff7310167c5720841125ecfc",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-bradbury-leather-sofa.html": {
-      "contentHash": "4e04fee64b3f06fb9d2fc00831368f2b",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "18e5d4941e898781743f8e5c11290853",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-dalton-sectional-sofa.html": {
-      "contentHash": "379b7c5ae066f90e85c8c0ef0a812c16",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "9e7e71c77ed1aae0ce9db45fca3f5f1a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-kristin-ottoman.html": {
-      "contentHash": "c4e87d6585ab8ad8152257d007d6c9d5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "090b0300fd9ea0d27cc43bca5bf060b8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-sascha-wingback-chair.html": {
-      "contentHash": "05ef61e14afeffb93d6b54d9a48ddc95",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "16af733544522b16a9a40ae51f742eb0",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-sophia-counter-stool.html": {
-      "contentHash": "0283692eb29e579a7b6e821ac272f22e",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "8b7b5dc7a6ffc4c541a8fda513e7fe61",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/seating/stone-beam-wishbone-dining-chair.html": {
-      "contentHash": "4202fd4b06db559a440534e4d35d8ee6",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "41878d603e197881ac9ae940bb2143b3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/movian-corona-bedside-chest.html": {
-      "contentHash": "fba81dbe8fecd3a8d3b7e3557836ebf2",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "4178ae0c9816802666b48346c4208f7d",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/movian-corona-console-table.html": {
-      "contentHash": "aa547d1f5ce7843810efa1a8e8d998d6",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "1e84fdc2ab57ad47bd1a20a858ac2a05",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/movian-corona-nesting-tables.html": {
-      "contentHash": "fc448ac06616afa8e17c28302fc025e5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "e59e8601bfb7a55f3c93bef9ae8261a7",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/movian-haven-desk.html": {
-      "contentHash": "2cbbeb2ba3a1200ac28b500abb68fa7d",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "4185a8dfe79759c228d1161d7f652e00",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/rivet-bristol-side-table.html": {
-      "contentHash": "e5b2adf18ecfe0af61fa9efdba05c920",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "c68f837558413977ca5695a1ee04a061",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/rivet-hillside-coffee-table.html": {
-      "contentHash": "ff3d630cec78a5cef4b5fb605510672c",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "5e88632a7f6ffc869054a854e28d4e3a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/rivet-hourglass-marble-side-table.html": {
-      "contentHash": "469a104b07a83ac4b990a2940a3bf969",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "4c8758e5fb24260e5e2668c5821cfae2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/rivet-round-dining-table.html": {
-      "contentHash": "920afdf155160ca636b6d62766a668eb",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "c54efb41c5554bcf5cee3b3f3227b8a8",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/vida-corona-dining-set.html": {
-      "contentHash": "0cf91598e899b4a639df4424c0cc1e65",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "3224c74e3399d4eeca326fbd4f792ce2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/products/tables/vida-corona-four-drawer-chest.html": {
-      "contentHash": "73d61b4812c23184ef56817c7327ea14",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "c7f0d92ef719788bec46367dd7581ce3",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/rugs/": {
-      "contentHash": "01d70296f754cfad721c7430a57cbba5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "23d3b39b8008ba05106b07d7024484a2",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/seating/": {
-      "contentHash": "7f4766bf4cf28d685903f92ab68b09a5",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "0815cafbc8fc1d7068c61ad3cb209d9a",
+      "lastmod": "2026-11-28T11:45:17Z"
     },
     "yuva.demo.temel.page/tables/": {
-      "contentHash": "95c500fdad739993fe99073823e5c339",
-      "lastmod": "2026-11-27T19:11:24Z"
+      "contentHash": "064907ee03d810d15a90dd1d3ad4f7f3",
+      "lastmod": "2026-11-28T11:45:17Z"
     }
   }
 }
